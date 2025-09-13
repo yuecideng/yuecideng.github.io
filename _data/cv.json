@@ -1,43 +1,38 @@
 {
   "basics": {
-    "name": "Your Sidebar Name",
-    "email": "none@example.org",
-    "phone": "",
-    "website": "https://academicpages.github.io",
-    "summary": "Currently employed at Red Brick University. Short biography for the left-hand sidebar",
+    "name": "Yueci Deng (邓岳慈）",
+    "email": "yuecideng@link.cuhk.edu.cn",
+    "phone": "(+86) 15361017685",
+    "website": "https://yuecideng.github.io/",
+    "summary": "Currently first-year PhD student", 
     "location": {
       "address": "",
       "postalCode": "",
-      "city": "Earth",
-      "countryCode": "US",
+      "city": "Shenzhen, China",
+      "countryCode": "CN",
       "region": ""
     },
     "profiles": [
       {
         "network": "Google Scholar",
         "username": "",
-        "url": "https://scholar.google.com/citations?user=PS_CX0AAAAAJ"
-      },
-      {
-        "network": "ORCID",
-        "username": "",
-        "url": "http://orcid.org/yourorcidurl"
+        "url": "https://scholar.google.com/citations?user=URHu9IUAAAAJ&hl=en"
       },
       {
         "network": "GitHub",
-        "username": "academicpages",
-        "url": "https://github.com/academicpages"
+        "username": "yuecideng",
+        "url": "https://github.com/yuecideng"
       }
     ]
   },
   "work": [],
   "education": [
     {
-      "institution": "GitHub University",
-      "area": "Ph.D in Version Control Theory",
-      "studyType": "",
-      "startDate": "",
-      "endDate": "2018",
+      "institution": "The Chinese University of Hong Kong, Shenzhen",
+      "area": "PhD in Computer Science",
+      "studyType": "full-time",
+      "startDate": "2025",
+      "endDate": "Present",
       "gpa": null,
       "courses": []
     },

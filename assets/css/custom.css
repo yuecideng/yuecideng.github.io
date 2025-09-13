@@ -1,0 +1,396 @@
+/* latin-ext */
+@font-face {
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Lato Italic'), local('Lato-Italic'), url(https://fonts.gstatic.com/s/lato/v15/S6u8w4BMUTPHjxsAUi-qNiXg7eU0.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Lato Italic'), local('Lato-Italic'), url(https://fonts.gstatic.com/s/lato/v15/S6u8w4BMUTPHjxsAXC-qNiXg7Q.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 700;
+  src: local('Lato Bold Italic'), local('Lato-BoldItalic'), url(https://fonts.gstatic.com/s/lato/v15/S6u_w4BMUTPHjxsI5wq_FQftx9897sxZ.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 700;
+  src: local('Lato Bold Italic'), local('Lato-BoldItalic'), url(https://fonts.gstatic.com/s/lato/v15/S6u_w4BMUTPHjxsI5wq_Gwftx9897g.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v15/S6uyw4BMUTPHjxAwXiWtFCfQ7A.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v15/S6uyw4BMUTPHjx4wXiWtFCc.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Lato Bold'), local('Lato-Bold'), url(https://fonts.gstatic.com/s/lato/v15/S6u9w4BMUTPHh6UVSwaPGQ3q5d0N7w.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Lato Bold'), local('Lato-Bold'), url(https://fonts.gstatic.com/s/lato/v15/S6u9w4BMUTPHh6UVSwiPGQ3q5d0.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+a {
+  color: #1772d0;
+  text-decoration: none;
+}
+
+a:focus,
+a:hover {
+  color: #f09228;
+  text-decoration: none;
+}
+
+body,
+td,
+th,
+tr,
+p,
+a {
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-size: 16px;
+}
+
+strong {
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-size: 16px;
+}
+
+h2 {
+  margin: 0;
+  font-weight: normal;
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-size: 20px;
+}
+
+.papertitle {
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.name {
+  padding-top: 20px;
+  margin: 0;
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-size: 32px;
+}
+
+.one {
+  width: 160px;
+  height: 160px;
+  position: relative;
+}
+
+.two {
+  width: 160px;
+  height: 160px;
+  position: absolute;
+  transition: opacity .2s ease-in-out;
+  -moz-transition: opacity .2s ease-in-out;
+  -webkit-transition: opacity .2s ease-in-out;
+}
+
+.fade {
+  transition: opacity .2s ease-in-out;
+  -moz-transition: opacity .2s ease-in-out;
+  -webkit-transition: opacity .2s ease-in-out;
+}
+
+span.highlight {
+  background-color: #ffffd0;
+}
+
+/* Page layout optimization - More aggressive approach */
+.page {
+  width: 100% !important;
+  max-width: none !important;
+  margin: 0 !important;
+  padding: 0 1em !important;
+}
+
+.page__inner-wrap {
+  width: 100% !important;
+  max-width: none !important;
+}
+
+.page__content {
+  width: 100% !important;
+  max-width: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* Sidebar and main content layout */
+.sidebar {
+  width: 200px !important;
+  margin-right: 2em !important;
+}
+
+.page__content .archive {
+  width: calc(100% - 220px) !important;
+  max-width: none !important;
+  float: right !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* Container adjustments */
+.initial-content {
+  display: flex !important;
+  max-width: none !important;
+  width: 100% !important;
+  margin: 0 !important;
+  padding: 0 1em !important;
+}
+
+/* Table optimization */
+table {
+  width: 100% !important;
+  max-width: none !important;
+  margin: 1em 0 !important;
+}
+
+/* Publication table styles */
+.papertitle {
+  font-size: 16px;
+  font-weight: bold;
+  color: #2f7f93;
+  text-decoration: none;
+}
+
+.papertitle:hover {
+  color: #1c4c58;
+}
+
+/* Equal contribution asterisk styling */
+sup {
+  font-size: 0.8em;
+  color: #e74c3c;
+  font-weight: bold;
+}
+
+/* Publication table responsive design */
+@media (max-width: 768px) {
+  .page__content .archive {
+    width: 100% !important;
+    float: none !important;
+  }
+  
+  .sidebar {
+    width: 100% !important;
+    margin-right: 0 !important;
+    margin-bottom: 1em !important;
+  }
+  
+  .initial-content {
+    flex-direction: column !important;
+  }
+  
+  table {
+    font-size: 14px;
+  }
+  
+  .papertitle {
+    font-size: 15px;
+  }
+  
+  table td img {
+    max-width: 200px;
+    height: auto;
+  }
+}
+
+/* Dark theme support */
+@media (prefers-color-scheme: dark) {
+  /* Table background colors for dark theme */
+  table tr[bgcolor="#ffffee"] {
+    background-color: #2d2d30 !important;
+  }
+  
+  table tr[bgcolor="#efffff"] {
+    background-color: #2d2d30 !important;
+  }
+  
+  /* Text colors for dark theme */
+  .papertitle {
+    color: #5dade2 !important;
+  }
+  
+  .papertitle:hover {
+    color: #85c1e9 !important;
+  }
+  
+  /* All table text should be light in dark theme */
+  table td, table td p, table td strong, table td em, table td small {
+    color: #e8e8e8 !important;
+  }
+  
+  /* Links in tables */
+  table td a {
+    color: #5dade2 !important;
+  }
+  
+  table td a:hover {
+    color: #85c1e9 !important;
+  }
+  
+  /* Coming soon text */
+  table td span[style*="color: #888"] {
+    color: #aaa !important;
+  }
+}
+
+/* Force dark theme support (in case the theme uses specific classes) */
+.dark-theme table tr, 
+html[data-theme="dark"] table tr,
+body.dark table tr {
+  background-color: #2d2d30 !important;
+}
+
+.dark-theme .papertitle,
+html[data-theme="dark"] .papertitle,
+body.dark .papertitle {
+  color: #5dade2 !important;
+}
+
+.dark-theme table td,
+.dark-theme table td p,
+.dark-theme table td strong,
+.dark-theme table td em,
+.dark-theme table td small,
+html[data-theme="dark"] table td,
+html[data-theme="dark"] table td p,
+html[data-theme="dark"] table td strong,
+html[data-theme="dark"] table td em,
+html[data-theme="dark"] table td small,
+body.dark table td,
+body.dark table td p,
+body.dark table td strong,
+body.dark table td em,
+body.dark table td small {
+  color: #e8e8e8 !important;
+}
+
+.dark-theme table td a,
+html[data-theme="dark"] table td a,
+body.dark table td a {
+  color: #5dade2 !important;
+}
+
+.dark-theme table td a:hover,
+html[data-theme="dark"] table td a:hover,
+body.dark table td a:hover {
+  color: #85c1e9 !important;
+}
+
+/* Override inline styles for dark theme */
+@media (prefers-color-scheme: dark) {
+  /* Override all inline text colors */
+  table td span[style*="color: #555"],
+  table td span[style*="color: #333"] {
+    color: #e8e8e8 !important;
+  }
+  
+  table td p[style*="color: #333"] {
+    color: #e8e8e8 !important;
+  }
+  
+  table td strong[style*="color: #2f7f93"] {
+    color: #5dade2 !important;
+  }
+}
+
+.dark-theme table td span[style*="color: #555"],
+.dark-theme table td span[style*="color: #333"],
+html[data-theme="dark"] table td span[style*="color: #555"],
+html[data-theme="dark"] table td span[style*="color: #333"],
+body.dark table td span[style*="color: #555"],
+body.dark table td span[style*="color: #333"] {
+  color: #e8e8e8 !important;
+}
+
+.dark-theme table td p[style*="color: #333"],
+html[data-theme="dark"] table td p[style*="color: #333"],
+body.dark table td p[style*="color: #333"] {
+  color: #e8e8e8 !important;
+}
+
+.dark-theme table td strong[style*="color: #2f7f93"],
+html[data-theme="dark"] table td strong[style*="color: #2f7f93"],
+body.dark table td strong[style*="color: #2f7f93"] {
+  color: #5dade2 !important;
+}
+
+/* Override inline styles for conference info in dark theme */
+@media (prefers-color-scheme: dark) {
+  /* Conference info styles */
+  table td em[style*="color: #666"],
+  table td span[style*="color: #666"] {
+    color: #bbb !important;
+  }
+  
+  /* Author list styles */
+  table td span[style*="color: #555"] {
+    color: #ccc !important;
+  }
+  
+  /* Equal contribution text */
+  table td small[style*="color: #888"] {
+    color: #aaa !important;
+  }
+}
+
+.dark-theme table td em[style*="color: #666"],
+.dark-theme table td span[style*="color: #666"],
+html[data-theme="dark"] table td em[style*="color: #666"],
+html[data-theme="dark"] table td span[style*="color: #666"],
+body.dark table td em[style*="color: #666"],
+body.dark table td span[style*="color: #666"] {
+  color: #bbb !important;
+}
+
+.dark-theme table td span[style*="color: #555"],
+html[data-theme="dark"] table td span[style*="color: #555"],
+body.dark table td span[style*="color: #555"] {
+  color: #ccc !important;
+}
+
+.dark-theme table td small[style*="color: #888"],
+html[data-theme="dark"] table td small[style*="color: #888"],
+body.dark table td small[style*="color: #888"] {
+  color: #aaa !important;
+}
