@@ -45,7 +45,7 @@ My research interests are mainly in the following areas:
         <img src="images/gs-world.png" alt="GS-World" width="350" height="350" style="border-style: none">
       </td>
       <td width="75%" valign="middle">
-        <span class="papertitle">GS-World: An Engine-driven Learning Paradigm for Pursuing Embodied Intelligence using World Models of Generative Simulation</span>
+        <span class="papertitle" style="color: #555;">GS-World: An Engine-driven Learning Paradigm for Pursuing Embodied Intelligence using World Models of Generative Simulation</span>
         <span style="display:inline-block;background:#ffefc2;color:#6b3b00;padding:3px 8px;border-radius:12px;font-size:0.85em;margin-left:10px;vertical-align:middle;">Position paper</span>
         <br>
         <span style="color: #555;"><a href="http://guiliang.me/">Guiliang Liu</a>, <a href="https://yuecideng.github.io"><strong>Yueci Deng</strong></a>, <a href="https://itszhen.com/"><strong>Zhen Liu</strong></a>,  <a href="http://kuijia.site/">Kui Jia</a></span>
