@@ -10,8 +10,9 @@ redirect_from:
 I am a first-year CS Ph.D. student at the School of Data Science, Chinese University of Hong Kong, Shenzhen (CUHK-SZ), supervised by Prof [Kui Jia](http://kuijia.site/). I received my Bachelor's degree in University of Electronic Science and Technology of China (UESTC, 2014 - 2018), and Master's degree in Nanyang Technological University (NTU, 2018-2019), Singapore. Before joining CUHK-SZ, I worked as a R&D engineer at [DexForce Technology](https://www.dexforce.com/), where I lead the development of DexVerse<sup>TM</sup>, the world's leading Sim2Real AI Platform for embodied intelligence. 
 
 My research interests are mainly in the following areas:
-- **Simulation**: Generative simulation, Differentiable rendering and physics,  GPU-accelerated simulation.
-- **Embodied Intelligence**: Large-scale model training with online data streams, Sim2Real and domain adaptation, Continual learning and self-evolution of embodied agents.
+- **Simulation**: Generative model for simulation, Differentiable rendering and physics,  GPU-accelerated simulation.
+- **Embodied Intelligence**: Physics-Structured Model Architecture,
+ Large-scale model training with online data streams, Sim2Real and domain adaptation, Continual learning and self-evolution of embodied agents.
 
 ## Projects {#projects}
 
@@ -36,6 +37,25 @@ My research interests are mainly in the following areas:
 
 
 ## Publications {#publications}
+
+<table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+  <tbody>
+    <tr bgcolor="#efffff">
+      <td style="padding:5px;width:35%;vertical-align:middle">
+        <img src="images/gs-world.png" alt="GS-World" width="350" height="350" style="border-style: none">
+      </td>
+      <td width="75%" valign="middle">
+        <span class="papertitle">GS-World: An Engine-driven Learning Paradigm for Pursuing Embodied Intelligence using World Models of Generative Simulation</span>
+        <span style="display:inline-block;background:#ffefc2;color:#6b3b00;padding:3px 8px;border-radius:12px;font-size:0.85em;margin-left:10px;vertical-align:middle;">Position paper</span>
+        <br>
+        <span style="color: #555;"><a href="http://guiliang.me/">Guiliang Liu</a>, <a href="https://yuecideng.github.io"><strong>Yueci Deng</strong></a>, <a href="https://itszhen.com/"><strong>Zhen Liu</strong></a>,  <a href="http://kuijia.site/">Kui Jia</a></span>
+        <br>
+        <a href="https://www.researchgate.net/profile/Guiliang-Liu-2/publication/396641390_GS-World_An_Efficient_Engine-driven_Learning_Paradigm_for_Pursuing_Embodied_Intelligence_using_World_Models_of_Generative_Simulation/links/68f33c277d9a4d4e870a9a9d/GS-World-An-Efficient-Engine-driven_Learning_Paradigm-for-Pursuing-Embodied-Intelligence-using-World-Models-of-Generative-Simulation.pdf">Paper</a>
+        <br>
+      </td>
+    </tr>
+  </tbody>
+</table>   
 
 <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
   <tbody>
