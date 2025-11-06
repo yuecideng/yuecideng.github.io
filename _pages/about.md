@@ -16,13 +16,13 @@ My research interests are mainly in the following areas:
 
 ## Projects {#projects}
 
-<table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+<table style="width:100%;max-width:1500px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
   <tbody>
     <tr bgcolor="#ffffee">
-      <td style="padding:5px;width:35%;vertical-align:middle">
+      <td style="padding:5px;width:40%;vertical-align:middle">
         <img src="images/open3d.png" alt="Open3D" width="350" height="350" style="border-style: none">
       </td>
-      <td width="75%" valign="middle">
+      <td width="60%" valign="middle">
         <a href="https://www.open3d.org/" id="Open3D">
           <span class="papertitle">Open3D: A Modern Library for 3D Data Processing</span>
         </a>
@@ -38,13 +38,13 @@ My research interests are mainly in the following areas:
 
 ## Publications {#publications}
 
-<table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+<table style="width:100%;max-width:1500px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
   <tbody>
     <tr bgcolor="#efffff">
-      <td style="padding:5px;width:35%;vertical-align:middle">
+      <td style="padding:5px;width:40%;vertical-align:middle">
         <img src="images/gs-world.png" alt="GS-World" width="350" height="350" style="border-style: none">
       </td>
-      <td width="75%" valign="middle">
+      <td width="60%" valign="middle">
         <span class="papertitle" style="color: #555;">GS-World: An Engine-driven Learning Paradigm for Pursuing Embodied Intelligence using World Models of Generative Simulation</span>
         <span style="display:inline-block;background:#ffefc2;color:#6b3b00;padding:3px 8px;border-radius:12px;font-size:0.85em;margin-left:10px;vertical-align:middle;">Position paper</span>
         <br>
@@ -57,13 +57,13 @@ My research interests are mainly in the following areas:
   </tbody>
 </table>   
 
-<table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+<table style="width:100%;max-width:1500px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
   <tbody>
     <tr bgcolor="#efffff">
-      <td style="padding:5px;width:35%;vertical-align:middle">
+      <td style="padding:5px;width:40%;vertical-align:middle">
         <img src="images/dexscale.png" alt="DexScale" width="350" height="350" style="border-style: none">
       </td>
-      <td width="75%" valign="middle">
+      <td width="60%" valign="middle">
         <a href="https://edem-ai.github.io/dexscale.github.io/" id="DexScale">
           <span class="papertitle">DexScale: Automating Data Scaling for Sim2Real Generalizable Robot Control</span>
         </a>
@@ -82,13 +82,13 @@ My research interests are mainly in the following areas:
   </tbody>
 </table>   
 
-<table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+<table style="width:100%;max-width:1500px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
   <tbody>
     <tr bgcolor="#efffff">
-      <td style="padding:5px;width:35%;vertical-align:middle">
+      <td style="padding:5px;width:40%;vertical-align:middle">
         <img src="images/yoto.png" alt="YOTO" width="300" height="300" style="border-style: none">
       </td>
-      <td width="75%" valign="middle">
+      <td width="60%" valign="middle">
         <a href="https://hnuzhy.github.io/projects/YOTO" id="DexScale">
           <span class="papertitle">You Only Teach Once: Learn One-Shot Bimanual Robotic Manipulation from Video Demonstrations</span>
         </a>
