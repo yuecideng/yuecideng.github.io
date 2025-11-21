@@ -64,7 +64,7 @@ My research interests are mainly in the following areas:
         <span class="papertitle" style="color: #555;">GS-World: An Engine-driven Learning Paradigm for Pursuing Embodied Intelligence using World Models of Generative Simulation</span>
         <span style="display:inline-block;background:#ffefc2;color:#6b3b00;padding:3px 8px;border-radius:12px;font-size:0.85em;margin-left:10px;vertical-align:middle;">Position paper</span>
         <br>
-        <span style="color: #555;"><a href="http://guiliang.me/">Guiliang Liu</a>, <a href="https://yuecideng.github.io"><strong>Yueci Deng</strong></a>, <a href="https://itszhen.com/"><strong>Zhen Liu</strong></a>,  <a href="http://kuijia.site/">Kui Jia</a></span>
+        <span style="color: #555;"><a href="http://guiliang.me/">Guiliang Liu</a>, <a href="https://yuecideng.github.io"><strong>Yueci Deng</strong></a>, <a href="https://itszhen.com/">Zhen Liu</a>,  <a href="http://kuijia.site/">Kui Jia</a></span>
         <br>
         <a href="https://www.researchgate.net/profile/Guiliang-Liu-2/publication/396641390_GS-World_An_Efficient_Engine-driven_Learning_Paradigm_for_Pursuing_Embodied_Intelligence_using_World_Models_of_Generative_Simulation/links/68f33c277d9a4d4e870a9a9d/GS-World-An-Efficient-Engine-driven_Learning_Paradigm-for-Pursuing-Embodied-Intelligence-using-World-Models-of-Generative-Simulation.pdf">Paper</a>
         <br>
@@ -90,7 +90,7 @@ My research interests are mainly in the following areas:
         <br>
         <em style="color: #666;">International Conference on Machine Learning (ICML)</em>, <span style="color: #666;">2025 Poster</span>
         <br>
-        <a href="https://openreview.net/pdf?id=AVVXX0erKT">Paper</a> / <span style="color: #888;">Code (Coming Soon)</span>
+        <a href="https://openreview.net/pdf?id=AVVXX0erKT">Paper</a> / <a   href="https://github.com/DexForce/EmbodiChain">Code</a>
         <br>
         <p style="color: #333; margin-top: 0.5em;"><strong style="color: #2f7f93;">Description:</strong> A novel data engine for automating data generation and scaling for sim-to-real transfer of robotic manipulation tasks.</p>
       </td>
