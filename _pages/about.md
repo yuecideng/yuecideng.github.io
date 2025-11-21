@@ -20,6 +20,22 @@ My research interests are mainly in the following areas:
   <tbody>
     <tr bgcolor="#ffffee">
       <td style="padding:5px;width:40%;vertical-align:middle">
+        <img src="images/embodichain.jpg" alt="EmbodiChain" width="350" height="350" style="border-style: none">
+      </td>
+      <td width="60%" valign="middle">
+        <a href="https://github.com/DexForce/EmbodiChain" id="EmbodiChain">
+          <span class="papertitle">EmbodiChain: An end-to-end, GPU-accelerated, and modular platform for building generalized Embodied Intelligence</span>
+        </a>
+        <p style="color: #333; margin-top: 0.5em;"><strong style="color: #2f7f93;">Description:</strong> EmbodiChain is a unified, GPU-accelerated framework designed for pushing the boundaries of embodied AI research and development. It integrates high-performance simulation, data collection via real-to-sim techniques, data scaling pipeline, modular model architectures, and efficient training & evaluation tools. All of these components work seamlessly together to facilitate rapid experimentation and deployment of embodied intelligence and perform Sim2Real transfer into real-world robotic systems.</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width:100%;max-width:1500px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+  <tbody>
+    <tr bgcolor="#ffffee">
+      <td style="padding:5px;width:40%;vertical-align:middle">
         <img src="images/open3d.png" alt="Open3D" width="350" height="350" style="border-style: none">
       </td>
       <td width="60%" valign="middle">
