@@ -7,12 +7,20 @@ redirect_from:
   - /about.html
 ---
 
-I am a first-year CS Ph.D. student at the School of Data Science, Chinese University of Hong Kong, Shenzhen (CUHK-SZ), supervised by Prof [Kui Jia](http://kuijia.site/). I received my Bachelor's degree in University of Electronic Science and Technology of China (UESTC, 2014 - 2018), and Master's degree in Nanyang Technological University (NTU, 2018-2019), Singapore. Before joining CUHK-SZ, I worked as a R&D engineer at [DexForce Technology](https://www.dexforce.com/), where I lead the development of DexVerse<sup>TM</sup>, the world's leading Sim2Real AI Platform for embodied intelligence. 
+I am a first-year CS Ph.D. student at the School of Data Science, Chinese University of Hong Kong, Shenzhen (CUHK-SZ), supervised by Prof [Kui Jia](http://kuijia.site/). I received my Bachelor's degree in University of Electronic Science and Technology of China (UESTC, 2014 - 2018), and Master's degree in Nanyang Technological University (NTU, 2018-2019), Singapore. Before joining CUHK-SZ, I worked as a R&D engineer at [DexForce Technology](https://www.dexforce.com/), where I lead the development of DexVerse<sup>TM</sup>, the world's leading Sim2Real AI Platform for Embodied Intelligence. 
 
 My research interests are mainly in the following areas:
-- **Simulation**: Generative model for simulation, Differentiable rendering and physics,  GPU-accelerated simulation.
-- **Embodied Intelligence**: Physics-Structured Model Architecture,
- Large-scale model training with online data streams, Sim2Real and domain adaptation, Continual learning and self-evolution of embodied agents.
+- **Systems**: 
+    - High-performance Simulation Engine Architecture 
+    - Data and Model Training Systems for Embodied Intelligence
+- **Simulation**: 
+    - Generative Model for Simulation
+    - Differentiable Rendering and Physics
+    - GPU-accelerated Simulation.
+- **Embodied Intelligence**: 
+    - Physics-Structured Model Architecture
+    - Online, Continual, and Lifelong Learning for Embodied Agents
+    - Sim2Real Transfer and Domain Adaptation
 
 ## Projects {#projects}
 
