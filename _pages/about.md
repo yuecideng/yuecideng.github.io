@@ -11,15 +11,16 @@ I am a first-year CS Ph.D. student at the School of Data Science, Chinese Univer
 
 My research interests are mainly in the following areas:
 - **Systems**: 
-    - High-performance Simulation Engine Architecture 
-    - Data and Model Training Systems for Embodied Intelligence
+    - High-performance, Heterogeneous and GPU-accelerated Simulation Engine Architecture 
+    - Data Generation and Model Training Systems for Embodied Intelligence
 - **Simulation**: 
     - Generative Model for Simulation
     - Differentiable Rendering and Physics
-    - GPU-accelerated Simulation.
+    - Neural Representation for Simulation
+
 - **Embodied Intelligence**: 
     - Physics-Structured Model Architecture
-    - Online, Continual, and Lifelong Learning for Embodied Agents
+    - Online and Continual Learning for Embodied Agents
     - Sim2Real Transfer and Domain Adaptation
 
 ## Projects {#projects}
