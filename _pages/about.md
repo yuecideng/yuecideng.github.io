@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-I am a first-year CS Ph.D. student at the School of Data Science, Chinese University of Hong Kong, Shenzhen (CUHK-SZ), supervised by Prof [Kui Jia](http://kuijia.site/). I received my Bachelor's degree in University of Electronic Science and Technology of China (UESTC, 2014 - 2018), and Master's degree in Nanyang Technological University (NTU, 2018-2019), Singapore. Before joining CUHK-SZ, I worked as a R&D engineer at [DexForce Technology](https://www.dexforce.com/), where I lead the development of DexVerse<sup>TM</sup>, the world's leading Sim2Real AI Platform for Embodied Intelligence. 
+I am a first-year CS Ph.D. student at the School of Data Science, Chinese University of Hong Kong, Shenzhen (CUHK-SZ), supervised by Prof [Kui Jia](http://kuijia.site/). I received my Bachelor's degree in University of Electronic Science and Technology of China (UESTC, 2014 - 2018), and Master's degree in Nanyang Technological University (NTU, 2018-2019), Singapore. Before joining CUHK-SZ, I worked as a R&D engineer at [DexForce Technology](https://en.dexforce.com/core.html), where I lead the development of DexVerse<sup>TM</sup>, the world's leading Sim2Real AI Platform for Embodied Intelligence. 
 
 My research interests are mainly in the following areas:
 - **Systems**: 
@@ -70,6 +70,29 @@ My research interests are mainly in the following areas:
   <tbody>
     <tr bgcolor="#efffff">
       <td style="padding:5px;width:40%;vertical-align:middle">
+        <img src="images/sim2real-vla.png" alt="Sim2Real-VLA" width="350" height="350" style="border-style: none">
+      </td>
+      <td width="60%" valign="middle">
+        <a href="https://openreview.net/pdf?id=H4SyKHjd4c" id="Sim2Real-VLA">
+          <span class="papertitle">Sim2Real VLA: Zero-Shot Generalization of Synthesized Skills to Realistic Manipulation</span>
+        </a>
+        <br>
+        <span style="color: #555;"><a href="https://github.com/ZhaoRunyi">Runyi Zhao</a>, <a href="https://shengxu.net/">Sheng Xu</a>, Ruixing Jin, <a href="https://yuecideng.github.io"><strong>Yueci Deng</strong></a>, Yunxin Tai, <a href="http://kuijia.site/">Kui Jia</a>, <a href="http://guiliang.me/">Guiliang Liu</a></span>
+        <br>
+        <span style="color: #666;">International Conference on Learning Representations (ICLR), 2026 Poster</span>
+        <br>
+        <a href="https://openreview.net/pdf?id=AVVXX0erKT">Paper</a> / <a   href="https://github.com/DexForce/EmbodiChain">Code</a>
+        <br>
+        <p style="color: #333; margin-top: 0.5em;"><strong style="color: #2f7f93;">Description:</strong> This paper introduces Sim2Real-VLA, a generalist robotic control model that enables zero-shot transfer from synthetic simulation to real-world manipulation tasks.</p>
+      </td>
+    </tr>
+  </tbody>
+</table>  
+
+<table style="width:100%;max-width:1500px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+  <tbody>
+    <tr bgcolor="#efffff">
+      <td style="padding:5px;width:40%;vertical-align:middle">
         <img src="images/gs-world.png" alt="GS-World" width="350" height="350" style="border-style: none">
       </td>
       <td width="60%" valign="middle">
@@ -100,7 +123,7 @@ My research interests are mainly in the following areas:
         <br>
         <small style="color: #888;">(*Equal contribution)</small>
         <br>
-        <em style="color: #666;">International Conference on Machine Learning (ICML)</em>, <span style="color: #666;">2025 Poster</span>
+        <span style="color: #666;">International Conference on Machine Learning (ICML), 2025 Poster</span>
         <br>
         <a href="https://openreview.net/pdf?id=AVVXX0erKT">Paper</a> / <a   href="https://github.com/DexForce/EmbodiChain">Code</a>
         <br>
@@ -123,7 +146,7 @@ My research interests are mainly in the following areas:
         <br>
         <span style="color: #555;"><a href="https://hnuzhy.github.io/">Huayi Zhou</a>,  <a href="https://openreview.net/profile?id=~Ruixiang_Wang3">Ruixiang Wang</a>, Yunxin Tai, <a href="https://yuecideng.github.io"><strong>Yueci Deng</strong></a>, <a href="http://guiliang.me/">Guiliang Liu</a>, <a href="http://kuijia.site/">Kui Jia</a></span>
         <br>
-        <em style="color: #666;">Robotics: Science and Systems (RSS)</em>, <span style="color: #666;">2025</span>
+        <span style="color: #666;">Robotics: Science and Systems (RSS), 2025</span>
         <br>
         <a href="https://arxiv.org/abs/2501.14208">Paper</a> / <a   href="https://github.com/hnuzhy/YOTO">Code</a>
         <br>
