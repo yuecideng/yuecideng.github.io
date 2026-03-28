@@ -73,6 +73,46 @@ My research interests are mainly in the following areas:
   <button class="pub-filter-btn" data-filter="position">Position Papers</button>
 </div>
 
+
+
+<table class="pub-table" data-year="2026" style="width:100%;max-width:1500px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+  <tbody>
+    <tr bgcolor="#efffff">
+      <td style="padding:5px;width:40%;vertical-align:middle">
+        <img src="images/research/ewa.png" alt="EWA" width="350" height="350" style="border-style: none">
+      </td>
+      <td width="60%" valign="middle">
+        <span class="papertitle" style="color: #555;">EWA: Aligning Video World Models with Executable Robot Actions via Inverse Dynamics Rewards</span>
+        <br>
+        <span style="color: #555;"><a href="https://robbinw.github.io/">Ruixiang Wang</a>, <a href="https://github.com/MobiusLqm">Qingming Liu</a>, <a href="https://yuecideng.github.io"><strong>Yueci Deng</strong></a>, <a href="http://guiliang.me/">Guiliang Liu</a>, <a href="https://itszhen.com/">Zhen Liu</a>, <a href="http://kuijia.site/">Kui Jia</a></span>
+        <br>
+        <a href="https://arxiv.org/pdf/2603.17808">Paper</a> / <a href="https://github.com/RobbinW/EVA">Code</a>
+        <br>
+        <p style="color: #333; margin-top: 0.5em;"><strong style="color: #2f7f93;">Description:</strong> A reward-aligned post-training framework that bridges visually plausible video rollouts and executable robot actions via inverse dynamics rewards.</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table class="pub-table" data-year="2026" style="width:100%;max-width:1500px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+  <tbody>
+    <tr bgcolor="#efffff">
+      <td style="padding:5px;width:40%;vertical-align:middle">
+        <img src="images/research/pact.jpeg" alt="PAct" width="350" height="350" style="border-style: none">
+      </td>
+      <td width="60%" valign="middle">
+        <span class="papertitle" style="color: #555;">PAct: Part-Decomposed Single-View Articulated Object Generation</span>
+        <br>
+        <span style="color: #555;"><a href="https://github.com/MobiusLqm">Qingming Liu</a>, Xinyue Yao, Shuyuan Zhang, <a href="https://yuecideng.github.io"><strong>Yueci Deng</strong></a>, <a href="http://guiliang.me/">Guiliang Liu</a>, <a href="https://itszhen.com/">Zhen Liu</a>, <a href="http://kuijia.site/">Kui Jia</a></span>
+        <br>
+        <a href="https://arxiv.org/html/2602.14965v1">Paper</a> / <a href="https://github.com/PAct-project/PAct">Code</a>
+        <br>
+        <p style="color: #333; margin-top: 0.5em;"><strong style="color: #2f7f93;">Description:</strong> A part-centric generative framework for articulated object creation that synthesizes part geometry, composition, and articulation from a single image, enabling fast feed-forward inference without per-instance optimization.</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
 <table class="pub-table" data-year="2026" style="width:100%;max-width:1500px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
   <tbody>
     <tr bgcolor="#efffff">
@@ -153,7 +193,7 @@ My research interests are mainly in the following areas:
           <span class="papertitle">You Only Teach Once: Learn One-Shot Bimanual Robotic Manipulation from Video Demonstrations</span>
         </a>
         <br>
-        <span style="color: #555;"><a href="https://hnuzhy.github.io/">Huayi Zhou</a>,  <a href="https://openreview.net/profile?id=~Ruixiang_Wang3">Ruixiang Wang</a>, Yunxin Tai, <a href="https://yuecideng.github.io"><strong>Yueci Deng</strong></a>, <a href="http://guiliang.me/">Guiliang Liu</a>, <a href="http://kuijia.site/">Kui Jia</a></span>
+        <span style="color: #555;"><a href="https://hnuzhy.github.io/">Huayi Zhou</a>,  <a href="https://robbinw.github.io/">Ruixiang Wang</a>, Yunxin Tai, <a href="https://yuecideng.github.io"><strong>Yueci Deng</strong></a>, <a href="http://guiliang.me/">Guiliang Liu</a>, <a href="http://kuijia.site/">Kui Jia</a></span>
         <br>
         <span style="color: #666;">Robotics: Science and Systems (RSS), 2025</span>
         <br>
