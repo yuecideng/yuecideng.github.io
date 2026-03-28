@@ -66,7 +66,14 @@ My research interests are mainly in the following areas:
 
 ## Publications {#publications}
 
-<table style="width:100%;max-width:1500px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+<div id="pub-filter-bar">
+  <button class="pub-filter-btn active" data-filter="all">All</button>
+  <button class="pub-filter-btn" data-filter="2026">2026</button>
+  <button class="pub-filter-btn" data-filter="2025">2025</button>
+  <button class="pub-filter-btn" data-filter="position">Position Papers</button>
+</div>
+
+<table class="pub-table" data-year="2026" style="width:100%;max-width:1500px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
   <tbody>
     <tr bgcolor="#efffff">
       <td style="padding:5px;width:40%;vertical-align:middle">
@@ -87,9 +94,11 @@ My research interests are mainly in the following areas:
       </td>
     </tr>
   </tbody>
-</table>  
+</table>
 
-<table style="width:100%;max-width:1500px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+<!-- <h3 class="position-heading">Position Papers</h3> -->
+
+<table class="pub-table" data-year="2025" data-category="position" style="width:100%;max-width:1500px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
   <tbody>
     <tr bgcolor="#efffff">
       <td style="padding:5px;width:40%;vertical-align:middle">
@@ -106,13 +115,13 @@ My research interests are mainly in the following areas:
       </td>
     </tr>
   </tbody>
-</table>   
+</table>
 
-<table style="width:100%;max-width:1500px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+<table class="pub-table" data-year="2025" style="width:100%;max-width:1500px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
   <tbody>
     <tr bgcolor="#efffff">
       <td style="padding:5px;width:40%;vertical-align:middle">
-        <img src="images/dexscale.png" alt="DexScale" width="350" height="350" style="border-style: none">
+        <img src="images/research/dexscale.png" alt="DexScale" width="350" height="350" style="border-style: none">
       </td>
       <td width="60%" valign="middle">
         <a href="https://edem-ai.github.io/dexscale.github.io/" id="DexScale">
@@ -133,7 +142,7 @@ My research interests are mainly in the following areas:
   </tbody>
 </table>   
 
-<table style="width:100%;max-width:1500px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+<table class="pub-table" data-year="2025" style="width:100%;max-width:1500px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
   <tbody>
     <tr bgcolor="#efffff">
       <td style="padding:5px;width:40%;vertical-align:middle">
@@ -154,4 +163,70 @@ My research interests are mainly in the following areas:
       </td>
     </tr>
   </tbody>
-</table>  
+</table>
+
+<style>
+#pub-filter-bar {
+  display: flex;
+  gap: 0.5em;
+  flex-wrap: wrap;
+  margin-bottom: 1.5em;
+}
+.pub-filter-btn {
+  padding: 0.4em 1em;
+  border: 1px solid #ccc;
+  border-radius: 999px;
+  background: #f5f5f5;
+  color: #555;
+  font-size: 0.9em;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.pub-filter-btn:hover {
+  background: #e0e0e0;
+  color: #333;
+}
+.pub-filter-btn.active {
+  background: #2f7f93;
+  color: #fff;
+  border-color: #2f7f93;
+}
+.pub-table {
+  transition: opacity 0.3s ease;
+}
+.pub-table.hidden {
+  display: none;
+}
+</style>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  var buttons = document.querySelectorAll('#pub-filter-bar .pub-filter-btn');
+  var tables = document.querySelectorAll('.pub-table');
+
+  buttons.forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      var filter = this.getAttribute('data-filter');
+
+      buttons.forEach(function(b) { b.classList.remove('active'); });
+      this.classList.add('active');
+
+      tables.forEach(function(table) {
+        var show = false;
+        if (filter === 'all') {
+          show = true;
+        } else if (filter === 'position') {
+          show = table.getAttribute('data-category') === 'position';
+        } else {
+          show = table.getAttribute('data-year') === filter;
+        }
+        if (show) {
+          table.classList.remove('hidden');
+        } else {
+          table.classList.add('hidden');
+        }
+      });
+    });
+  });
+});
+</script>
