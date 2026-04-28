@@ -11,54 +11,19 @@ redirect_from:
 
 Education
 ======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+* Ph.D. in Computer Science, The Chinese University of Hong Kong, Shenzhen (CUHK-SZ), 2025 - Present
+  * Supervisor: Prof. Kui Jia
+* M.S. in Nanyang Technological University (NTU), Singapore, 2018 - 2019
+* B.S. in University of Electronic Science and Technology of China (UESTC), 2014 - 2018
 
-Work experience
+Work Experience
 ======
-* Spring 2024: Academic Pages Collaborator
-  * GitHub University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
+* 2022 - Present: Architect, DexForce Technology
+  * Led the development of DexVerse<sup>TM</sup>, a Sim2Real AI Platform for Embodied Intelligence
 
-* Fall 2015: Research Assistant
-  * GitHub University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
+Research Interests
+======
+* **Systems**: High-performance simulation engine architecture, GPU-accelerated computing, data generation and model training systems
+* **Generative Simulation**: Generative models for simulation, differentiable rendering and physics, neural representations
+* **Embodied Intelligence**: Physics-structured model architectures, online and continual learning, Sim2Real transfer
 
-* Summer 2015: Research Assistant
-  * GitHub University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
-  
-Skills
-======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
-
-Publications
-======
-  <ul>{% for post in site.publications reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Talks
-======
-  <ul>{% for post in site.talks reversed %}
-    {% include archive-single-talk-cv.html  %}
-  {% endfor %}</ul>
-  
-Teaching
-======
-  <ul>{% for post in site.teaching reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Service and leadership
-======
-* Currently signed in to 43 different slack teams

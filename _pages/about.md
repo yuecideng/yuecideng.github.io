@@ -1,68 +1,69 @@
 ---
 permalink: /
 title: ""
-author_profile: true
-redirect_from:  
+author_profile: false
+redirect_from:
   - /about/
   - /about.html
 ---
 
-I am a first-year CS Ph.D. student at the School of Data Science, Chinese University of Hong Kong, Shenzhen (CUHK-SZ), supervised by Prof [Kui Jia](http://kuijia.site/). I received my Bachelor's degree in University of Electronic Science and Technology of China (UESTC, 2014 - 2018), and Master's degree in Nanyang Technological University (NTU, 2018-2019), Singapore. Before joining CUHK-SZ, I worked as a R&D engineer at [DexForce Technology](https://en.dexforce.com/core.html), where I lead the development of DexVerse<sup>TM</sup>, the world's leading Sim2Real AI Platform for Embodied Intelligence. 
+<div class="intro">
+  <div class="intro-photo">
+    <img src="images/dyc.png" alt="Yueci Deng">
+  </div>
+  <div class="intro-bio">
+    <h1 class="intro-name">Yueci Deng (邓岳慈)</h1>
+    <p class="intro-affil">Ph.D. Student, School of Data Science, CUHK-SZ</p>
+    <p class="intro-text">I am a first-year CS Ph.D. student at the Chinese University of Hong Kong, Shenzhen (CUHK-SZ), supervised by Prof <a href="http://kuijia.site/">Kui Jia</a>. I received my B.S. from UESTC (2014-2018) and M.S. from NTU, Singapore (2018-2019). Before joining CUHK-SZ, I worked as an architect at <a href="https://en.dexforce.com/core.html">DexForce Technology</a>, where I led the development of DexVerse<sup>TM</sup>, a Sim2Real AI Platform for Embodied Intelligence.</p>
+    <div class="intro-links">
+      <a href="mailto:yuecideng@link.cuhk.edu.cn"><i class="fas fa-envelope"></i> Email</a>
+      <a href="https://scholar.google.com/citations?user=URHu9IUAAAAJ"><i class="ai ai-google-scholar"></i> Scholar</a>
+      <a href="https://github.com/yuecideng"><i class="fab fa-github"></i> GitHub</a>
+    </div>
+  </div>
+</div>
 
 My research interests are mainly in the following areas:
-- **Systems**: 
-    - High-performance, Heterogeneous and GPU-accelerated Simulation Engine Architecture 
+- **Systems**:
+    - High-performance, Heterogeneous and GPU-accelerated Simulation Engine Architecture
     - Data Generation and Model Training Systems for Embodied Intelligence
-- **Simulation**: 
+- **Generative Simulation**:
     - Generative Model for Simulation
     - Differentiable Rendering and Physics
     - Neural Representation for Simulation
 
-- **Embodied Intelligence**: 
+- **Embodied Intelligence**:
     - Physics-Structured Model Architecture
     - Online and Continual Learning for Embodied Agents
     - Sim2Real Transfer and Domain Adaptation
 
 ## Projects {#projects}
 
-<table style="width:100%;max-width:1500px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-  <tbody>
-    <tr bgcolor="#ffffee">
-      <td style="padding:5px;width:40%;vertical-align:middle">
-        <img src="images/embodichain_teaser.jpg" alt="EmbodiChain" width="350" height="350" style="border-style: none">
-      </td>
-      <td width="60%" valign="middle">
-        <a href="https://github.com/DexForce/EmbodiChain" id="EmbodiChain">
-          <span class="papertitle">EmbodiChain: An end-to-end, GPU-accelerated, and modular platform for building generalized Embodied Intelligence</span>
-        </a>
-        <br>
-        <a href="https://dexforce.com/embodichain/index.html#/">Website</a> | <a href="https://github.com/DexForce/EmbodiChain">Code</a>
-        <br>
-        <p style="color: #333; margin-top: 0.5em;"><strong style="color: #2f7f93;">Description:</strong> EmbodiChain is a unified, GPU-accelerated framework designed for pushing the boundaries of embodied AI research and development. It integrates high-performance simulation, data collection via real-to-sim techniques, data scaling pipeline, modular model architectures, and efficient training & evaluation tools. All of these components work seamlessly together to facilitate rapid experimentation and deployment of embodied intelligence and perform Sim2Real transfer into real-world robotic systems.</p>
-      </td>
-    </tr>
-  </tbody>
-</table>
+<div class="card">
+  <div class="card-image">
+    <img src="images/embodichain_teaser.jpg" alt="EmbodiChain">
+  </div>
+  <div class="card-content">
+    <a href="https://github.com/DexForce/EmbodiChain" class="papertitle">EmbodiChain: An end-to-end, GPU-accelerated, and modular platform for building generalized Embodied Intelligence</a>
+    <div class="card-links">
+      <a href="https://dexforce.com/embodichain/index.html#/">Website</a> | <a href="https://github.com/DexForce/EmbodiChain">Code</a>
+    </div>
+    <p class="card-desc"><strong>Description:</strong> EmbodiChain is a unified, GPU-accelerated framework designed for pushing the boundaries of embodied AI research and development. It integrates high-performance simulation, data collection via real-to-sim techniques, data scaling pipeline, modular model architectures, and efficient training & evaluation tools. All of these components work seamlessly together to facilitate rapid experimentation and deployment of embodied intelligence and perform Sim2Real transfer into real-world robotic systems.</p>
+  </div>
+</div>
 
-<table style="width:100%;max-width:1500px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-  <tbody>
-    <tr bgcolor="#ffffee">
-      <td style="padding:5px;width:40%;vertical-align:middle">
-        <img src="images/open3d.png" alt="Open3D" width="350" height="350" style="border-style: none">
-      </td>
-      <td width="60%" valign="middle">
-        <a href="https://www.open3d.org/" id="Open3D">
-          <span class="papertitle">Open3D: A Modern Library for 3D Data Processing</span>
-        </a>
-        <br>
-        <a href="https://www.open3d.org/">Website</a> | <a href="https://github.com/isl-org/Open3D">Code</a>
-        <br>
-        <p style="color: #333; margin-top: 0.5em;"><strong style="color: #2f7f93;">Description:</strong> The leading open-source library for 3D processing with 400K+ monthly downloads from PyPI. Open3D exposes a set of carefully selected data structures and algorithms in both C++ and Python for 3D data processing tasks including point cloud processing, mesh processing, and 3D visualization.</p>
-      </td>
-    </tr>
-  </tbody>
-</table>
-
+<div class="card">
+  <div class="card-image">
+    <img src="images/open3d.png" alt="Open3D">
+  </div>
+  <div class="card-content">
+    <a href="https://www.open3d.org/" class="papertitle">Open3D: A Modern Library for 3D Data Processing</a>
+    <div class="card-links">
+      <a href="https://www.open3d.org/">Website</a> | <a href="https://github.com/isl-org/Open3D">Code</a>
+    </div>
+    <p class="card-desc"><strong>Description:</strong> The leading open-source library for 3D processing with 400K+ monthly downloads from PyPI. Open3D exposes a set of carefully selected data structures and algorithms in both C++ and Python for 3D data processing tasks including point cloud processing, mesh processing, and 3D visualization.</p>
+  </div>
+</div>
 
 ## Publications {#publications}
 
@@ -73,200 +74,142 @@ My research interests are mainly in the following areas:
   <button class="pub-filter-btn" data-filter="position">Position Papers</button>
 </div>
 
+<div class="card pub-card" data-year="2026">
+  <div class="card-image">
+    <img src="images/research/ewa.png" alt="EWA">
+  </div>
+  <div class="card-content">
+    <span class="papertitle">EWA: Aligning Video World Models with Executable Robot Actions via Inverse Dynamics Rewards</span>
+    <div class="card-authors">
+      <a href="https://robbinw.github.io/">Ruixiang Wang</a>,
+      <a href="https://github.com/MobiusLqm">Qingming Liu</a>,
+      <a href="https://yuecideng.github.io"><strong>Yueci Deng</strong></a>,
+      <a href="http://guiliang.me/">Guiliang Liu</a>,
+      <a href="https://itszhen.com/">Zhen Liu</a>,
+      <a href="http://kuijia.site/">Kui Jia</a>
+    </div>
+    <div class="card-links">
+      <a href="https://arxiv.org/pdf/2603.17808">Paper</a> /
+      <a href="https://github.com/RobbinW/EVA">Code</a>
+    </div>
+    <p class="card-desc"><strong>Description:</strong> A reward-aligned post-training framework that bridges visually plausible video rollouts and executable robot actions via inverse dynamics rewards.</p>
+  </div>
+</div>
 
+<div class="card pub-card" data-year="2026">
+  <div class="card-image">
+    <img src="images/research/pact.jpeg" alt="PAct">
+  </div>
+  <div class="card-content">
+    <span class="papertitle">PAct: Part-Decomposed Single-View Articulated Object Generation</span>
+    <div class="card-authors">
+      <a href="https://github.com/MobiusLqm">Qingming Liu</a>,
+      Xinyue Yao,
+      Shuyuan Zhang,
+      <a href="https://yuecideng.github.io"><strong>Yueci Deng</strong></a>,
+      <a href="http://guiliang.me/">Guiliang Liu</a>,
+      <a href="https://itszhen.com/">Zhen Liu</a>,
+      <a href="http://kuijia.site/">Kui Jia</a>
+    </div>
+    <div class="card-links">
+      <a href="https://arxiv.org/html/2602.14965v1">Paper</a> /
+      <a href="https://github.com/PAct-project/PAct">Code</a>
+    </div>
+    <p class="card-desc"><strong>Description:</strong> A part-centric generative framework for articulated object creation that synthesizes part geometry, composition, and articulation from a single image, enabling fast feed-forward inference without per-instance optimization.</p>
+  </div>
+</div>
 
-<table class="pub-table" data-year="2026" style="width:100%;max-width:1500px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-  <tbody>
-    <tr bgcolor="#efffff">
-      <td style="padding:5px;width:40%;vertical-align:middle">
-        <img src="images/research/ewa.png" alt="EWA" width="350" height="350" style="border-style: none">
-      </td>
-      <td width="60%" valign="middle">
-        <span class="papertitle" style="color: #555;">EWA: Aligning Video World Models with Executable Robot Actions via Inverse Dynamics Rewards</span>
-        <br>
-        <span style="color: #555;"><a href="https://robbinw.github.io/">Ruixiang Wang</a>, <a href="https://github.com/MobiusLqm">Qingming Liu</a>, <a href="https://yuecideng.github.io"><strong>Yueci Deng</strong></a>, <a href="http://guiliang.me/">Guiliang Liu</a>, <a href="https://itszhen.com/">Zhen Liu</a>, <a href="http://kuijia.site/">Kui Jia</a></span>
-        <br>
-        <a href="https://arxiv.org/pdf/2603.17808">Paper</a> / <a href="https://github.com/RobbinW/EVA">Code</a>
-        <br>
-        <p style="color: #333; margin-top: 0.5em;"><strong style="color: #2f7f93;">Description:</strong> A reward-aligned post-training framework that bridges visually plausible video rollouts and executable robot actions via inverse dynamics rewards.</p>
-      </td>
-    </tr>
-  </tbody>
-</table>
+<div class="card pub-card" data-year="2026">
+  <div class="card-image">
+    <img src="images/sim2real-vla.png" alt="Sim2Real-VLA">
+  </div>
+  <div class="card-content">
+    <a href="https://openreview.net/pdf?id=H4SyKHjd4c" class="papertitle">Sim2Real VLA: Zero-Shot Generalization of Synthesized Skills to Realistic Manipulation</a>
+    <div class="card-authors">
+      <a href="https://github.com/ZhaoRunyi">Runyi Zhao</a>,
+      <a href="https://shengxu.net/">Sheng Xu</a>,
+      Ruixing Jin,
+      <a href="https://yuecideng.github.io"><strong>Yueci Deng</strong></a>,
+      Yunxin Tai,
+      <a href="http://kuijia.site/">Kui Jia</a>,
+      <a href="http://guiliang.me/">Guiliang Liu</a>
+    </div>
+    <div class="card-venue">International Conference on Learning Representations (ICLR), 2026 Poster</div>
+    <div class="card-links">
+      <a href="https://openreview.net/pdf?id=AVVXX0erKT">Paper</a> /
+      <a href="https://github.com/DexForce/EmbodiChain">Code</a>
+    </div>
+    <p class="card-desc"><strong>Description:</strong> This paper introduces Sim2Real-VLA, a generalist robotic control model that enables zero-shot transfer from synthetic simulation to real-world manipulation tasks.</p>
+  </div>
+</div>
 
-<table class="pub-table" data-year="2026" style="width:100%;max-width:1500px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-  <tbody>
-    <tr bgcolor="#efffff">
-      <td style="padding:5px;width:40%;vertical-align:middle">
-        <img src="images/research/pact.jpeg" alt="PAct" width="350" height="350" style="border-style: none">
-      </td>
-      <td width="60%" valign="middle">
-        <span class="papertitle" style="color: #555;">PAct: Part-Decomposed Single-View Articulated Object Generation</span>
-        <br>
-        <span style="color: #555;"><a href="https://github.com/MobiusLqm">Qingming Liu</a>, Xinyue Yao, Shuyuan Zhang, <a href="https://yuecideng.github.io"><strong>Yueci Deng</strong></a>, <a href="http://guiliang.me/">Guiliang Liu</a>, <a href="https://itszhen.com/">Zhen Liu</a>, <a href="http://kuijia.site/">Kui Jia</a></span>
-        <br>
-        <a href="https://arxiv.org/html/2602.14965v1">Paper</a> / <a href="https://github.com/PAct-project/PAct">Code</a>
-        <br>
-        <p style="color: #333; margin-top: 0.5em;"><strong style="color: #2f7f93;">Description:</strong> A part-centric generative framework for articulated object creation that synthesizes part geometry, composition, and articulation from a single image, enabling fast feed-forward inference without per-instance optimization.</p>
-      </td>
-    </tr>
-  </tbody>
-</table>
+<div class="card pub-card" data-year="2025" data-category="position">
+  <div class="card-image">
+    <img src="images/gs-world.png" alt="GS-World">
+  </div>
+  <div class="card-content">
+    <span class="papertitle">GS-World: An Engine-driven Learning Paradigm for Pursuing Embodied Intelligence using World Models of Generative Simulation</span>
+    <span class="pub-tag">Position paper</span>
+    <div class="card-authors">
+      <a href="http://guiliang.me/">Guiliang Liu</a>,
+      <a href="https://yuecideng.github.io"><strong>Yueci Deng</strong></a>,
+      <a href="https://itszhen.com/">Zhen Liu</a>,
+      <a href="http://kuijia.site/">Kui Jia</a>
+    </div>
+    <div class="card-links">
+      <a href="https://www.researchgate.net/profile/Guiliang-Liu-2/publication/396641390_GS-World_An_Efficient_Engine-driven_Learning_Paradigm_for_Pursuing_Embodied_Intelligence_using_World_Models_of_Generative_Simulation/links/68f33c277d9a4d4e870a9a9d/GS-World-An-Efficient-Engine-driven-Learning-Paradigm-for-Pursuing-Embodied-Intelligence-using-World-Models-of-Generative-Simulation.pdf">Paper</a>
+    </div>
+  </div>
+</div>
 
-<table class="pub-table" data-year="2026" style="width:100%;max-width:1500px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-  <tbody>
-    <tr bgcolor="#efffff">
-      <td style="padding:5px;width:40%;vertical-align:middle">
-        <img src="images/sim2real-vla.png" alt="Sim2Real-VLA" width="350" height="350" style="border-style: none">
-      </td>
-      <td width="60%" valign="middle">
-        <a href="https://openreview.net/pdf?id=H4SyKHjd4c" id="Sim2Real-VLA">
-          <span class="papertitle">Sim2Real VLA: Zero-Shot Generalization of Synthesized Skills to Realistic Manipulation</span>
-        </a>
-        <br>
-        <span style="color: #555;"><a href="https://github.com/ZhaoRunyi">Runyi Zhao</a>, <a href="https://shengxu.net/">Sheng Xu</a>, Ruixing Jin, <a href="https://yuecideng.github.io"><strong>Yueci Deng</strong></a>, Yunxin Tai, <a href="http://kuijia.site/">Kui Jia</a>, <a href="http://guiliang.me/">Guiliang Liu</a></span>
-        <br>
-        <span style="color: #666;">International Conference on Learning Representations (ICLR), 2026 Poster</span>
-        <br>
-        <a href="https://openreview.net/pdf?id=AVVXX0erKT">Paper</a> / <a   href="https://github.com/DexForce/EmbodiChain">Code</a>
-        <br>
-        <p style="color: #333; margin-top: 0.5em;"><strong style="color: #2f7f93;">Description:</strong> This paper introduces Sim2Real-VLA, a generalist robotic control model that enables zero-shot transfer from synthetic simulation to real-world manipulation tasks.</p>
-      </td>
-    </tr>
-  </tbody>
-</table>
+<div class="card pub-card" data-year="2025">
+  <div class="card-image">
+    <img src="images/research/dexscale.png" alt="DexScale">
+  </div>
+  <div class="card-content">
+    <a href="https://edem-ai.github.io/dexscale.github.io/" class="papertitle">DexScale: Automating Data Scaling for Sim2Real Generalizable Robot Control</a>
+    <div class="card-authors">
+      <a href="http://guiliang.me/">Guiliang Liu</a><sup>*</sup>,
+      <a href="https://yuecideng.github.io"><strong>Yueci Deng</strong></a><sup>*</sup>,
+      <a href="https://github.com/ZhaoRunyi">Runyi Zhao</a>,
+      <a href="https://hnuzhy.github.io/">Huayi Zhou</a>,
+      Jian Chen,
+      Jietao Chen,
+      Ruiyan Xu,
+      Yunxin Tai,
+      <a href="http://kuijia.site/">Kui Jia</a>
+    </div>
+    <div class="card-note">(*Equal contribution)</div>
+    <div class="card-venue">International Conference on Machine Learning (ICML), 2025 Poster</div>
+    <div class="card-links">
+      <a href="https://openreview.net/pdf?id=AVVXX0erKT">Paper</a> /
+      <a href="https://github.com/DexForce/EmbodiChain">Code</a>
+    </div>
+    <p class="card-desc"><strong>Description:</strong> A novel data engine for automating data generation and scaling for sim-to-real transfer of robotic manipulation tasks.</p>
+  </div>
+</div>
 
-<!-- <h3 class="position-heading">Position Papers</h3> -->
+<div class="card pub-card" data-year="2025">
+  <div class="card-image">
+    <img src="images/yoto.png" alt="YOTO">
+  </div>
+  <div class="card-content">
+    <a href="https://hnuzhy.github.io/projects/YOTO" class="papertitle">You Only Teach Once: Learn One-Shot Bimanual Robotic Manipulation from Video Demonstrations</a>
+    <div class="card-authors">
+      <a href="https://hnuzhy.github.io/">Huayi Zhou</a>,
+      <a href="https://robbinw.github.io/">Ruixiang Wang</a>,
+      Yunxin Tai,
+      <a href="https://yuecideng.github.io"><strong>Yueci Deng</strong></a>,
+      <a href="http://guiliang.me/">Guiliang Liu</a>,
+      <a href="http://kuijia.site/">Kui Jia</a>
+    </div>
+    <div class="card-venue">Robotics: Science and Systems (RSS), 2025</div>
+    <div class="card-links">
+      <a href="https://arxiv.org/abs/2501.14208">Paper</a> /
+      <a href="https://github.com/hnuzhy/YOTO">Code</a>
+    </div>
+    <p class="card-desc"><strong>Description:</strong> This work proposes the YOTO (You Only Teach Once), which can extract and then inject patterns of bimanual actions from as few as a single binocular observation of hand movements, and teach dual robot arms various complex tasks.</p>
+  </div>
+</div>
 
-<table class="pub-table" data-year="2025" data-category="position" style="width:100%;max-width:1500px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-  <tbody>
-    <tr bgcolor="#efffff">
-      <td style="padding:5px;width:40%;vertical-align:middle">
-        <img src="images/gs-world.png" alt="GS-World" width="350" height="350" style="border-style: none">
-      </td>
-      <td width="60%" valign="middle">
-        <span class="papertitle" style="color: #555;">GS-World: An Engine-driven Learning Paradigm for Pursuing Embodied Intelligence using World Models of Generative Simulation</span>
-        <span style="display:inline-block;background:#ffefc2;color:#6b3b00;padding:3px 8px;border-radius:12px;font-size:0.85em;margin-left:10px;vertical-align:middle;">Position paper</span>
-        <br>
-        <span style="color: #555;"><a href="http://guiliang.me/">Guiliang Liu</a>, <a href="https://yuecideng.github.io"><strong>Yueci Deng</strong></a>, <a href="https://itszhen.com/">Zhen Liu</a>,  <a href="http://kuijia.site/">Kui Jia</a></span>
-        <br>
-        <a href="https://www.researchgate.net/profile/Guiliang-Liu-2/publication/396641390_GS-World_An_Efficient_Engine-driven_Learning_Paradigm_for_Pursuing_Embodied_Intelligence_using_World_Models_of_Generative_Simulation/links/68f33c277d9a4d4e870a9a9d/GS-World-An-Efficient-Engine-driven_Learning_Paradigm-for-Pursuing-Embodied-Intelligence-using-World-Models-of-Generative-Simulation.pdf">Paper</a>
-        <br>
-      </td>
-    </tr>
-  </tbody>
-</table>
-
-<table class="pub-table" data-year="2025" style="width:100%;max-width:1500px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-  <tbody>
-    <tr bgcolor="#efffff">
-      <td style="padding:5px;width:40%;vertical-align:middle">
-        <img src="images/research/dexscale.png" alt="DexScale" width="350" height="350" style="border-style: none">
-      </td>
-      <td width="60%" valign="middle">
-        <a href="https://edem-ai.github.io/dexscale.github.io/" id="DexScale">
-          <span class="papertitle">DexScale: Automating Data Scaling for Sim2Real Generalizable Robot Control</span>
-        </a>
-        <br>
-        <span style="color: #555;"><a href="http://guiliang.me/">Guiliang Liu</a><sup>*</sup>, <a href="https://yuecideng.github.io"><strong>Yueci Deng</strong></a><sup>*</sup>, <a href="https://github.com/ZhaoRunyi">Runyi Zhao</a>, <a href="https://hnuzhy.github.io/">Huayi Zhou</a>, Jian Chen, Jietao Chen, Ruiyan Xu, Yunxin Tai, <a href="http://kuijia.site/">Kui Jia</a></span>
-        <br>
-        <small style="color: #888;">(*Equal contribution)</small>
-        <br>
-        <span style="color: #666;">International Conference on Machine Learning (ICML), 2025 Poster</span>
-        <br>
-        <a href="https://openreview.net/pdf?id=AVVXX0erKT">Paper</a> / <a   href="https://github.com/DexForce/EmbodiChain">Code</a>
-        <br>
-        <p style="color: #333; margin-top: 0.5em;"><strong style="color: #2f7f93;">Description:</strong> A novel data engine for automating data generation and scaling for sim-to-real transfer of robotic manipulation tasks.</p>
-      </td>
-    </tr>
-  </tbody>
-</table>   
-
-<table class="pub-table" data-year="2025" style="width:100%;max-width:1500px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-  <tbody>
-    <tr bgcolor="#efffff">
-      <td style="padding:5px;width:40%;vertical-align:middle">
-        <img src="images/yoto.png" alt="YOTO" width="300" height="300" style="border-style: none">
-      </td>
-      <td width="60%" valign="middle">
-        <a href="https://hnuzhy.github.io/projects/YOTO" id="DexScale">
-          <span class="papertitle">You Only Teach Once: Learn One-Shot Bimanual Robotic Manipulation from Video Demonstrations</span>
-        </a>
-        <br>
-        <span style="color: #555;"><a href="https://hnuzhy.github.io/">Huayi Zhou</a>,  <a href="https://robbinw.github.io/">Ruixiang Wang</a>, Yunxin Tai, <a href="https://yuecideng.github.io"><strong>Yueci Deng</strong></a>, <a href="http://guiliang.me/">Guiliang Liu</a>, <a href="http://kuijia.site/">Kui Jia</a></span>
-        <br>
-        <span style="color: #666;">Robotics: Science and Systems (RSS), 2025</span>
-        <br>
-        <a href="https://arxiv.org/abs/2501.14208">Paper</a> / <a   href="https://github.com/hnuzhy/YOTO">Code</a>
-        <br>
-        <p style="color: #333; margin-top: 0.5em;"><strong style="color: #2f7f93;">Description:</strong> This work proposes the YOTO (You Only Teach Once), which can extract and then inject patterns of bimanual actions from as few as a single binocular observation of hand movements, and teach dual robot arms various complex tasks.</p>
-      </td>
-    </tr>
-  </tbody>
-</table>
-
-<style>
-#pub-filter-bar {
-  display: flex;
-  gap: 0.5em;
-  flex-wrap: wrap;
-  margin-bottom: 1.5em;
-}
-.pub-filter-btn {
-  padding: 0.4em 1em;
-  border: 1px solid #ccc;
-  border-radius: 999px;
-  background: #f5f5f5;
-  color: #555;
-  font-size: 0.9em;
-  cursor: pointer;
-  transition: all 0.2s ease;
-}
-.pub-filter-btn:hover {
-  background: #e0e0e0;
-  color: #333;
-}
-.pub-filter-btn.active {
-  background: #2f7f93;
-  color: #fff;
-  border-color: #2f7f93;
-}
-.pub-table {
-  transition: opacity 0.3s ease;
-}
-.pub-table.hidden {
-  display: none;
-}
-</style>
-
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-  var buttons = document.querySelectorAll('#pub-filter-bar .pub-filter-btn');
-  var tables = document.querySelectorAll('.pub-table');
-
-  buttons.forEach(function(btn) {
-    btn.addEventListener('click', function() {
-      var filter = this.getAttribute('data-filter');
-
-      buttons.forEach(function(b) { b.classList.remove('active'); });
-      this.classList.add('active');
-
-      tables.forEach(function(table) {
-        var show = false;
-        if (filter === 'all') {
-          show = true;
-        } else if (filter === 'position') {
-          show = table.getAttribute('data-category') === 'position';
-        } else {
-          show = table.getAttribute('data-year') === filter;
-        }
-        if (show) {
-          table.classList.remove('hidden');
-        } else {
-          table.classList.add('hidden');
-        }
-      });
-    });
-  });
-});
-</script>
+<script src="{{ '/assets/js/pub-filter.js' | relative_url }}" defer></script>

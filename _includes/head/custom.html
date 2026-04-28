@@ -2,6 +2,14 @@
 
 <!-- start custom head snippets -->
 
+<!-- Custom styles -->
+<link rel="stylesheet" href="{{ base_path }}/assets/css/custom.css"/>
+
+<!-- Google Fonts (Lato) -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
 <!-- Support for Academicons -->
 <link rel="stylesheet" href="{{ base_path }}/assets/css/academicons.css"/>
 
@@ -13,5 +21,30 @@
 <link rel="manifest" href="{{ base_path }}/images/manifest.json"/>
 <link rel="icon" href="/images/favicon.ico"/>
 <meta name="theme-color" content="#ffffff"/>
+
+<!-- Structured Data: Person -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Yueci Deng",
+  "alternateName": "邓岳慈",
+  "url": "https://yuecideng.github.io",
+  "image": "https://yuecideng.github.io/images/dyc.png",
+  "jobTitle": "PhD Student",
+  "worksFor": {
+    "@type": "CollegeOrUniversity",
+    "name": "The Chinese University of Hong Kong, Shenzhen"
+  },
+  "alumniOf": [
+    {"@type": "CollegeOrUniversity", "name": "Nanyang Technological University"},
+    {"@type": "CollegeOrUniversity", "name": "University of Electronic Science and Technology of China"}
+  ],
+  "sameAs": [
+    "https://scholar.google.com/citations?user=URHu9IUAAAAJ",
+    "https://github.com/yuecideng"
+  ]
+}
+</script>
 
 <!-- end custom head snippets -->

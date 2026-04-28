@@ -9,10 +9,10 @@
 # Basic Site Settings
 locale                   : "en-US"
 site_theme               : "default"
-title                    : "Home"
+title                    : "Yueci Deng"
 title_separator          : "-"
 name                     : &name "Yueci Deng" # Your name, used in the title and author profile
-description              : &description "personal description"
+description              : &description "Yueci Deng - PhD Student at CUHK-SZ. Research in Systems, Simulation, and Embodied Intelligence."
 url                      : https://yuecideng.github.io # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io" or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "yuecideng/yuecideng.github.io"
@@ -124,8 +124,8 @@ facebook:
   username               :
   app_id                 :
   publisher              :
-og_image                 :  # Social media default site image
-og_description           :  # Social media default site image description
+og_image                 : "dyc.png"
+og_description           : "Yueci Deng - PhD Student at CUHK-SZ. Research in Systems, Simulation, and Embodied Intelligence."
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
