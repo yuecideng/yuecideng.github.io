@@ -48,7 +48,7 @@ My research interests are mainly in the following areas:
     <div class="card-links">
       <a href="https://dexforce.com/embodichain/index.html#/">Website</a> | <a href="https://github.com/DexForce/EmbodiChain">Code</a>
     </div>
-    <p class="card-desc"><strong>Description:</strong> EmbodiChain is a unified, GPU-accelerated framework designed for pushing the boundaries of embodied AI research and development. It integrates high-performance simulation, data collection via real-to-sim techniques, data scaling pipeline, modular model architectures, and efficient training & evaluation tools. All of these components work seamlessly together to facilitate rapid experimentation and deployment of embodied intelligence and perform Sim2Real transfer into real-world robotic systems.</p>
+    <p class="card-desc"><strong>Description:</strong> EmbodiChain is a unified, GPU-accelerated framework designed for pushing the boundaries of embodied AI research and development. It integrates high-performance simulation, data collection via automated generative simulation techniques, data scaling pipeline, modular model architectures, and efficient training & evaluation tools. All of these components work seamlessly together to facilitate rapid experimentation and deployment of embodied intelligence and perform Sim2Real transfer into real-world robotic systems.</p>
   </div>
 </div>
 
