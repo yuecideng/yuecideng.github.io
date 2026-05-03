@@ -27,6 +27,7 @@ My research interests are mainly in the following areas:
 - **Systems**:
     - High-performance, Heterogeneous and GPU-accelerated Simulation Engine Architecture
     - Data Generation and Model Training Systems for Embodied Intelligence
+    - 
 - **Generative Simulation**:
     - Generative Model for Simulation
     - Differentiable Rendering and Physics
@@ -36,6 +37,11 @@ My research interests are mainly in the following areas:
     - Physics-Structured Model Architecture
     - Online and Continual Learning for Embodied Agents
     - Sim2Real Transfer and Domain Adaptation
+
+
+## Collaborations & Opportunities
+
+I welcome research or open source project collaborations on Embodied Intelligence and Simulation Infrastructure. If you're interested in joint projects, code sharing, student internships, or industry partnerships, please contact me at <a href="mailto:yuecideng@link.cuhk.edu.cn">yuecideng@link.cuhk.edu.cn</a>.
 
 ## Projects {#projects}
 
