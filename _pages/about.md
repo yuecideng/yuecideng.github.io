@@ -82,6 +82,31 @@ I welcome research or open source project collaborations on Embodied Intelligenc
 
 <div class="card pub-card" data-year="2026">
   <div class="card-image">
+    <img src="images/research/yoto++.png" alt="YOTO++">
+  </div>
+  <div class="card-content">
+    <span class="papertitle">YOTO++: Learning Long-Horizon Closed-Loop Bimanual Manipulation from One-Shot Human Video Demonstrations</span>
+    <div class="card-authors">
+      <a href="https://hnuzhy.github.io/">Huayi Zhou</a>,
+      <a href="https://robbinw.github.io/">Ruixiang Wang</a>,
+      Yunxin Tai,
+      <a href="https://yuecideng.github.io"><strong>Yueci Deng</strong></a>,
+      <a href="http://guiliang.me/">Guiliang Liu</a>,
+      <a href="http://kuijia.site/">Kui Jia</a>
+    </div>
+    <div class="card-venue">Transactions on Pattern Analysis and Machine Intelligence (TPAMI), 2026</div>
+    <div class="card-links">
+      <a href="https://ieeexplore.ieee.org/document/11495283/">Paper</a> /
+      <a href="https://hnuzhy.github.io/projects/YOTOPlus/">Project</a> /
+      <a href="https://hnuzhy.github.io/projects/YOTOPlus/final_YOTO++.pdf">PDF</a> /
+      <a href="https://github.com/hnuzhy/YOTO">Code</a>
+    </div>
+    <p class="card-desc"><strong>Description:</strong> YOTO++ (extended from the conference version You Only Teach Once) enables cross-embodiment deployment (from the contralateral to humanoid dual-arm setups), and facilitates diverse bimanual tasks including asynchronous, synchronous and tool-using scenarios, with closed-loop control under dynamic disturbances during pre-grasping.</p>
+  </div>
+</div>
+
+<div class="card pub-card" data-year="2026">
+  <div class="card-image">
     <img src="images/research/ewa.png" alt="EWA">
   </div>
   <div class="card-content">
