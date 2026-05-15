@@ -82,6 +82,32 @@ I welcome research or open source project collaborations on Embodied Intelligenc
 
 <div class="card pub-card" data-year="2026">
   <div class="card-image">
+    <img src="images/research/agent-chord.jpeg" alt="AgentChord">
+  </div>
+  <div class="card-content">
+    <span class="papertitle">From Reaction to Anticipation: Proactive Failure Recovery through Agentic Task Graph for Robotic Manipulation</span>
+    <div class="card-authors">
+      <a href="https://shengxu.net/">Sheng Xu</a>,
+      Ruixing Jin,
+      <a href="https://hnuzhy.github.io/">Huayi Zhou</a>,
+      Bo Yue,
+      <a href="https://qiaoguanren.github.io/">Guanren Qiao</a>,
+      Yunxin Tai,
+      <a href="https://yuecideng.github.io"><strong>Yueci Deng</strong></a>,
+      <a href="http://kuijia.site/">Kui Jia</a>,
+      <a href="http://guiliang.me/">Guiliang Liu</a>,
+    </div>
+    <div class="card-links">
+      <a href="https://arxiv.org/abs/2605.11951">Paper</a> /
+      <a href="https://shengxu.net/AgentChord/">Project</a> /
+      <a href="https://github.com/EDEM-AI/AgentChord">Code</a>
+    </div>
+    <p class="card-desc"><strong>Description:</strong> A recovery-aware task-graph system that helps real robots anticipate disturbances, switch to prepared recovery branches, and keep long-horizon manipulation moving.</p>
+  </div>
+</div>
+
+<div class="card pub-card" data-year="2026">
+  <div class="card-image">
     <img src="images/research/yoto++.png" alt="YOTO++">
   </div>
   <div class="card-content">
@@ -121,6 +147,7 @@ I welcome research or open source project collaborations on Embodied Intelligenc
     </div>
     <div class="card-links">
       <a href="https://arxiv.org/pdf/2603.17808">Paper</a> /
+      <a href="https://eva-project-page.github.io/">Project</a> /
       <a href="https://github.com/RobbinW/EVA">Code</a>
     </div>
     <p class="card-desc"><strong>Description:</strong> A reward-aligned post-training framework that bridges visually plausible video rollouts and executable robot actions via inverse dynamics rewards.</p>
