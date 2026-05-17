@@ -97,6 +97,7 @@ I welcome research or open source project collaborations on Embodied Intelligenc
       <a href="http://kuijia.site/">Kui Jia</a>,
       <a href="http://guiliang.me/">Guiliang Liu</a>,
     </div>
+    <div class="card-venue">Robotics: Science and Systems (RSS), 2026</div>
     <div class="card-links">
       <a href="https://arxiv.org/abs/2605.11951">Paper</a> /
       <a href="https://shengxu.net/AgentChord/">Project</a> /
@@ -151,29 +152,6 @@ I welcome research or open source project collaborations on Embodied Intelligenc
       <a href="https://github.com/RobbinW/EVA">Code</a>
     </div>
     <p class="card-desc"><strong>Description:</strong> A reward-aligned post-training framework that bridges visually plausible video rollouts and executable robot actions via inverse dynamics rewards.</p>
-  </div>
-</div>
-
-<div class="card pub-card" data-year="2026">
-  <div class="card-image">
-    <img src="images/research/pact.jpeg" alt="PAct">
-  </div>
-  <div class="card-content">
-    <span class="papertitle">PAct: Part-Decomposed Single-View Articulated Object Generation</span>
-    <div class="card-authors">
-      <a href="https://github.com/MobiusLqm">Qingming Liu</a>,
-      Xinyue Yao,
-      Shuyuan Zhang,
-      <a href="https://yuecideng.github.io"><strong>Yueci Deng</strong></a>,
-      <a href="http://guiliang.me/">Guiliang Liu</a>,
-      <a href="https://itszhen.com/">Zhen Liu</a>,
-      <a href="http://kuijia.site/">Kui Jia</a>
-    </div>
-    <div class="card-links">
-      <a href="https://arxiv.org/html/2602.14965v1">Paper</a> /
-      <a href="https://github.com/PAct-project/PAct">Code</a>
-    </div>
-    <p class="card-desc"><strong>Description:</strong> A part-centric generative framework for articulated object creation that synthesizes part geometry, composition, and articulation from a single image, enabling fast feed-forward inference without per-instance optimization.</p>
   </div>
 </div>
 
