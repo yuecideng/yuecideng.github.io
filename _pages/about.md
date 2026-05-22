@@ -27,7 +27,7 @@ My research interests are mainly in the following areas:
 - **Systems**:
     - High-performance, Heterogeneous and GPU-accelerated Simulation Engine Architecture
     - Data Generation and Model Training Systems for Embodied Intelligence
-    - 
+
 - **Generative Simulation**:
     - Generative Model for Simulation
     - Differentiable Rendering and Physics
