@@ -28,12 +28,14 @@ My research interests are mainly in the following areas:
     - High-performance, Heterogeneous and GPU-accelerated Simulation Engine Architecture
     - Data Generation and Model Training Systems for Embodied Intelligence
 
-- **Generative Simulation**:
-    - Generative Model for Simulation
+- **Simulation**:
+    - Generative Simulation 
     - Differentiable Rendering and Physics
     - Neural Representation for Simulation
+    - Differentiable environments for Analytic Policy Gradients
 
 - **Embodied Intelligence**:
+    - Neural Motion Generation for Robot Control
     - Physics-Structured Model Architecture
     - Online and Continual Learning for Embodied Agents
     - Sim2Real Transfer and Domain Adaptation
@@ -78,6 +80,30 @@ I welcome research or open source project collaborations on Embodied Intelligenc
   <button class="pub-filter-btn" data-filter="2026">2026</button>
   <button class="pub-filter-btn" data-filter="2025">2025</button>
   <button class="pub-filter-btn" data-filter="position">Position Papers</button>
+</div>
+
+<div class="card pub-card" data-year="2026">
+  <div class="card-image">
+    <img src="images/research/ftc.png" alt="FTC">
+  </div>
+  <div class="card-content">
+    <span class="papertitle">Focus-Then-Contact: Speeding Up Robotic Contact-Rich Task Learning with Affordance-Guided Real-World Residual Reinforcement Learning</span>
+    <div class="card-authors">
+      <a href="https://qiaoguanren.github.io/">Guanren Qiao</a>,
+      Ruixiang Ouyang,
+      <a href="https://shengxu.net/">Sheng Xu</a>,
+      Ruixing Jin,
+      <a href="https://yuecideng.github.io"><strong>Yueci Deng</strong></a>,
+      Yunxin Tai,
+      <a href="http://kuijia.site/">Kui Jia</a>,
+      <a href="http://guiliang.me/">Guiliang Liu</a>
+    </div>
+    <div class="card-venue">International Conference on Machine Learning (ICML), 2026</div>
+    <div class="card-links">
+      Paper / Project / Code (Coming Soon)
+    </div>
+    <p class="card-desc"><strong>Description:</strong> A lightweight real-world RL method that uses residual RL and affordance-guided rewards to speed up contact-rich robot manipulation learning with minimal human-in-the-loop effort.</p>
+  </div>
 </div>
 
 <div class="card pub-card" data-year="2026">
