@@ -23,6 +23,8 @@ redirect_from:
   </div>
 </div>
 
+My research focuses on building high-performance, automated, and scalable simulation, data-generation, and AI training systems for embodied intelligence. My long-term goal is to develop neural world models and simulation engines that enable embodied agents to autonomously learn, evolve, transfer to the real world, and continually improve during deployment.
+
 My research interests are mainly in the following areas:
 - **Systems**:
     - High-performance, Heterogeneous and GPU-accelerated Simulation Engine Architecture
