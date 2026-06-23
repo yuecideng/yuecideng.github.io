@@ -30,15 +30,14 @@ My research interests are mainly in the following areas:
 
 - **Simulation**:
     - Generative Simulation 
-    - Differentiable Rendering and Physics
     - Neural Representation for Simulation
-    - Differentiable environments for Analytic Policy Gradients
+    - Differentiable Simulation for Analytic Policy Gradients
 
 - **Embodied Intelligence**:
     - Neural Motion Generation for Robot Control
     - Physics-Structured Model Architecture
-    - Online and Continual Learning for Embodied Agents
     - Sim2Real Transfer and Domain Adaptation
+    - Online and Continual Learning for Embodied Agents
 
 
 ## Collaborations & Opportunities
@@ -80,6 +79,23 @@ I welcome research or open source project collaborations on Embodied Intelligenc
   <button class="pub-filter-btn" data-filter="2026">2026</button>
   <button class="pub-filter-btn" data-filter="2025">2025</button>
   <button class="pub-filter-btn" data-filter="position">Position Papers</button>
+</div>
+
+<div class="card pub-card" data-year="2026">
+  <div class="card-image">
+    <img src="images/research/apg_vs_ppo.png" alt="APG vs PPO">
+  </div>
+  <div class="card-content">
+    <span class="papertitle">Backpropagating Through Simulation: Analytic Policy Gradients for Sample and Learning Efficient Differentiable Continuous Control</span>
+    <div class="card-authors">
+      <a href="https://yuecideng.github.io"><strong>Yueci Deng</strong></a>,
+    </div>
+    <div class="card-links">
+      <a href="https://arxiv.org/pdf/2606.21525">Paper</a> /
+      <a href="https://github.com/yuecideng/analytic_policy_gradients">Code</a>
+    </div>
+    <p class="card-desc"><strong>Description:</strong> A differentiable-control benchmark and training framework that compares Analytic Policy Gradients with PPO across continuous control tasks, using backpropagation through simulation to study sample-efficient policy optimization.</p>
+  </div>
 </div>
 
 <div class="card pub-card" data-year="2026">
