@@ -281,6 +281,12 @@ sup {
   min-width: 0;
 }
 
+.card-title {
+  font-size: inherit;
+  line-height: inherit;
+  margin: 0;
+}
+
 .papertitle {
   color: var(--c-accent-dark);
   display: block;
@@ -566,11 +572,23 @@ a.papertitle:hover {
 
 /* --- Pointer-only polish --- */
 @media (hover: hover) and (pointer: fine) {
-  .project-card:hover,
-  .publication-card:hover {
+  .project-card:hover {
     border-color: color-mix(in srgb, var(--c-accent) 48%, var(--c-border));
     box-shadow: var(--c-shadow-hover);
     transform: translateY(-3px);
+  }
+
+  .publication-card:hover {
+    border-color: color-mix(in srgb, var(--c-accent) 48%, var(--c-border));
+    box-shadow: var(--c-shadow-hover);
+  }
+}
+
+@media (pointer: coarse) {
+  .action-link,
+  .intro-links a,
+  .pub-filter-btn {
+    min-height: 44px;
   }
 }
 

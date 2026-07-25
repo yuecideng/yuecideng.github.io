@@ -25,12 +25,14 @@ test("renders publication controls and ten publication rows", () => {
     (homepage.match(/class="publication-card pub-card"/g) || []).length,
     10
   );
+  assert.equal((homepage.match(/<h3 class="card-title">/g) || []).length, 12);
 });
 
 test("uses action links and natural descriptions", () => {
   assert.ok(homepage.includes('class="action-links project-links"'));
   assert.ok(homepage.includes('class="action-links publication-links"'));
   assert.ok(homepage.includes('class="action-link"'));
+  assert.ok(homepage.includes("Paper / Project / Code (Coming Soon)"));
   assert.ok(!homepage.includes("<strong>Description:</strong>"));
   assert.ok(homepage.includes("PAct generates complete, part-decomposed"));
 });
@@ -54,7 +56,7 @@ function classList(initial = []) {
   };
 }
 
-test("publication filtering synchronizes visibility and pressed state", () => {
+function filterHarness() {
   const listeners = {};
   const buttons = ["all", "2026", "2025", "position"].map((filter, index) => ({
     attributes: { "data-filter": filter },
@@ -71,10 +73,12 @@ test("publication filtering synchronizes visibility and pressed state", () => {
   }));
   const cards = [
     { attributes: { "data-year": "2026" }, classList: classList() },
+    { attributes: { "data-year": "2026" }, classList: classList() },
     {
       attributes: { "data-year": "2025", "data-category": "position" },
       classList: classList(),
     },
+    { attributes: { "data-year": "2025" }, classList: classList() },
   ].map((card) => ({
     ...card,
     getAttribute(name) {
@@ -94,12 +98,39 @@ test("publication filtering synchronizes visibility and pressed state", () => {
     fs.readFileSync("assets/js/pub-filter.js", "utf8"),
     { document }
   );
-  listeners.position.call(buttons[3]);
 
-  assert.deepEqual(
-    buttons.map((button) => button.attributes["aria-pressed"]),
-    ["false", "false", "false", "true"]
-  );
-  assert.equal(cards[0].classList.contains("hidden"), true);
-  assert.equal(cards[1].classList.contains("hidden"), false);
+  return { buttons, cards, listeners };
+}
+
+test("publication filtering handles all four branches and button states", () => {
+  const cases = [
+    ["all", [true, true, true, true]],
+    ["2026", [true, true, false, false]],
+    ["2025", [false, false, true, true]],
+    ["position", [false, false, true, false]],
+  ];
+
+  for (const [filter, expectedVisibility] of cases) {
+    const { buttons, cards, listeners } = filterHarness();
+    const selectedIndex = buttons.findIndex(
+      (button) => button.attributes["data-filter"] === filter
+    );
+    listeners[filter].call(buttons[selectedIndex]);
+
+    assert.deepEqual(
+      cards.map((card) => !card.classList.contains("hidden")),
+      expectedVisibility,
+      `${filter} visibility`
+    );
+    assert.deepEqual(
+      buttons.map((button) => button.classList.contains("active")),
+      buttons.map((_, index) => index === selectedIndex),
+      `${filter} active class`
+    );
+    assert.deepEqual(
+      buttons.map((button) => button.attributes["aria-pressed"]),
+      buttons.map((_, index) => String(index === selectedIndex)),
+      `${filter} pressed state`
+    );
+  }
 });
