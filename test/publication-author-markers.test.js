@@ -5,7 +5,7 @@ const test = require("node:test");
 const homepage = fs.readFileSync("_site/index.html", "utf8");
 const publicationCards = [
   ...homepage.matchAll(
-    /<div class="card pub-card"[\s\S]*?(?=<div class="card pub-card"|<script src=)/g
+    /<article class="publication-card pub-card"[\s\S]*?<\/article>/g
   ),
 ].map((match) => match[0]);
 
