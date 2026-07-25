@@ -99,4 +99,3 @@ The approved direction is **Editorial Research**: give projects stronger visual 
 - Verify the publication filter for all four choices.
 - Inspect desktop, tablet, and mobile layouts in both light and dark themes.
 - Confirm project/publication ordering, all author markers, and all existing destinations remain intact.
-
