@@ -5,9 +5,13 @@ document.addEventListener('DOMContentLoaded', function() {
   buttons.forEach(function(btn) {
     btn.addEventListener('click', function() {
       var filter = this.getAttribute('data-filter');
+      var selectedButton = this;
 
-      buttons.forEach(function(b) { b.classList.remove('active'); });
-      this.classList.add('active');
+      buttons.forEach(function(b) {
+        var isActive = b === selectedButton;
+        b.classList.toggle('active', isActive);
+        b.setAttribute('aria-pressed', String(isActive));
+      });
 
       cards.forEach(function(card) {
         var show = false;
