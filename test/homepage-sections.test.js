@@ -37,6 +37,49 @@ test("uses action links and natural descriptions", () => {
   assert.ok(homepage.includes("PAct generates complete, part-decomposed"));
 });
 
+test("renders the approved editorial section headings", () => {
+  assert.ok(
+    homepage.includes(
+      '<div class="section-heading"><h2 id="projects">Featured Projects</h2><span class="section-subtitle">Systems for embodied intelligence</span></div>'
+    )
+  );
+  assert.ok(
+    homepage.includes(
+      '<div class="section-heading"><h2 id="publications">Publications</h2><span class="section-subtitle">10 selected works</span></div>'
+    )
+  );
+});
+
+test("keeps project cards compact while preserving complete details", () => {
+  assert.equal((homepage.match(/class="project-details"/g) || []).length, 2);
+  assert.ok(
+    homepage.includes(
+      '<h3 class="card-title"><a href="https://github.com/DexForce/EmbodiChain" class="papertitle">EmbodiChain</a></h3>'
+    )
+  );
+  assert.ok(
+    homepage.includes(
+      '<p class="project-tagline">GPU-accelerated platform for scalable embodied AI.</p>'
+    )
+  );
+  assert.ok(
+    homepage.includes(
+      "EmbodiChain: An end-to-end, GPU-accelerated, and modular platform"
+    )
+  );
+  assert.ok(
+    homepage.includes("All of these components work seamlessly together")
+  );
+});
+
+test("renders publication venues and summaries as compact secondary content", () => {
+  assert.equal((homepage.match(/class="card-venue venue-pill"/g) || []).length, 7);
+  assert.equal((homepage.match(/class="publication-summary"/g) || []).length, 9);
+  assert.ok(homepage.includes("<summary>Summary</summary>"));
+  assert.ok(!/<details[^>]*\sopen(?:\s|>)/.test(homepage));
+  assert.ok(homepage.includes("PAct generates complete, part-decomposed"));
+});
+
 function classList(initial = []) {
   const values = new Set(initial);
   return {
