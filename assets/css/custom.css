@@ -677,14 +677,6 @@ a.papertitle:hover {
   }
 }
 
-@media (pointer: coarse) {
-  .action-link,
-  .intro-links a,
-  .pub-filter-btn {
-    min-height: 44px;
-  }
-}
-
 /* --- Tablet --- */
 @media (max-width: 860px) {
   .publication-card {
@@ -808,6 +800,16 @@ a.papertitle:hover {
 
   .pub-author-legend {
     line-height: 1.45;
+  }
+}
+
+@media (pointer: coarse) {
+  .action-link,
+  .intro-links a,
+  .pub-filter-btn,
+  .project-details summary,
+  .publication-summary summary {
+    min-height: 44px;
   }
 }
 

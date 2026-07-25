@@ -4,6 +4,7 @@ const test = require("node:test");
 const vm = require("node:vm");
 
 const homepage = fs.readFileSync("_site/index.html", "utf8");
+const stylesheet = fs.readFileSync("assets/css/custom.css", "utf8");
 
 test("renders projects as a two-item editorial collection", () => {
   const start = homepage.indexOf(
@@ -26,6 +27,17 @@ test("renders publication controls and ten publication rows", () => {
     10
   );
   assert.equal((homepage.match(/<h3 class="card-title">/g) || []).length, 12);
+  assert.equal(
+    (homepage.match(/class="publication-card pub-card" data-year="2026"/g) || [])
+      .length,
+    7
+  );
+  assert.equal(
+    (homepage.match(/class="publication-card pub-card" data-year="2025"/g) || [])
+      .length,
+    3
+  );
+  assert.equal((homepage.match(/data-category="position"/g) || []).length, 1);
 });
 
 test("uses action links and natural descriptions", () => {
@@ -78,6 +90,20 @@ test("renders publication venues and summaries as compact secondary content", ()
   assert.ok(homepage.includes("<summary>Summary</summary>"));
   assert.ok(!/<details[^>]*\sopen(?:\s|>)/.test(homepage));
   assert.ok(homepage.includes("PAct generates complete, part-decomposed"));
+});
+
+test("keeps every coarse-pointer control at least 44px tall", () => {
+  const phoneStart = stylesheet.indexOf("@media (max-width: 680px)");
+  const coarseStart = stylesheet.indexOf("@media (pointer: coarse)");
+  const coarseRules = stylesheet.slice(
+    coarseStart,
+    stylesheet.indexOf("/* --- Reduced motion --- */")
+  );
+
+  assert.ok(phoneStart >= 0 && coarseStart > phoneStart);
+  assert.ok(coarseRules.includes(".project-details summary"));
+  assert.ok(coarseRules.includes(".publication-summary summary"));
+  assert.ok(coarseRules.includes("min-height: 44px"));
 });
 
 function classList(initial = []) {
