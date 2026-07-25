@@ -85,6 +85,31 @@ I welcome research or open source project collaborations on Embodied Intelligenc
 
 <div class="card pub-card" data-year="2026">
   <div class="card-image">
+    <img src="images/research/pact.jpeg" alt="PAct">
+  </div>
+  <div class="card-content">
+    <a href="https://pact-project.github.io/" class="papertitle">PAct: Part-Decomposed Single-View Articulated Object Generation</a>
+    <div class="card-authors">
+      <a href="https://github.com/MobiusLqm">Qingming Liu</a>,
+      <a href="https://scholar.google.com/citations?user=ZOf_esUAAAAJ">Xinyue Yao</a>,
+      <a href="https://sanbingyouyong.github.io/">Shuyuan Zhang</a>,
+      <a href="https://yuecideng.github.io"><strong>Yueci Deng</strong></a>,
+      <a href="http://guiliang.me/">Guiliang Liu</a>,
+      <a href="https://itszhen.com/">Zhen Liu</a><sup>†</sup>,
+      <a href="http://kuijia.site/">Kui Jia</a>
+    </div>
+    <div class="card-venue">ACM SIGGRAPH Asia 2026</div>
+    <div class="card-links">
+      <a href="https://arxiv.org/abs/2602.14965">arXiv</a> /
+      <a href="https://pact-project.github.io/">Project</a> /
+      <a href="https://github.com/Mobiuslqm/PAct">Code</a>
+    </div>
+    <p class="card-desc"><strong>Description:</strong> PAct generates complete, part-decomposed articulated 3D objects from a single-view image, synthesizing high-fidelity geometry and appearance while estimating kinematic structures for direct use in physics-based simulation.</p>
+  </div>
+</div>
+
+<div class="card pub-card" data-year="2026">
+  <div class="card-image">
     <img src="images/research/apg_vs_ppo.png" alt="APG vs PPO">
   </div>
   <div class="card-content">
