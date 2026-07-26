@@ -172,3 +172,25 @@ test("publication filtering preserves all four branches", () => {
     assert.ok(selected.classList.contains("active"));
   }
 });
+
+test("defines scoped flat-row styles and responsive touch behavior", () => {
+  const requiredSelectors = [
+    ".project-list",
+    ".publication-list",
+    ".research-row",
+    ".project-row",
+    ".publication-row",
+    ".publication-row .card-image",
+    ".project-row .card-image",
+    ".research-row .card-title",
+  ];
+
+  for (const selector of requiredSelectors) {
+    assert.ok(stylesheet.includes(selector), `Missing ${selector}`);
+  }
+
+  assert.ok(stylesheet.includes("@media (max-width: 768px)"));
+  assert.ok(stylesheet.includes("@media (max-width: 559px)"));
+  assert.ok(stylesheet.includes("min-height: 44px"));
+  assert.ok(!stylesheet.includes(".research-row:hover {\n  transform:"));
+});
