@@ -225,11 +225,11 @@ test("defines scoped flat-row styles and responsive touch behavior", () => {
   assert.match(researchRow, /padding: 0\.9rem 0;/);
   assert.match(
     cssRule(stylesheet, ".project-row"),
-    /grid-template-columns: 260px minmax\(0, 1fr\);/
+    /grid-template-columns: 245px minmax\(0, 1fr\);/
   );
   assert.match(
     cssRule(stylesheet, ".publication-row"),
-    /grid-template-columns: 210px minmax\(0, 1fr\);/
+    /grid-template-columns: 195px minmax\(0, 1fr\);/
   );
 
   const rowMedia = cssRule(
@@ -264,11 +264,11 @@ test("defines scoped flat-row styles and responsive touch behavior", () => {
   const tablet = cssBlock(stylesheet, "@media (max-width: 768px)");
   assert.match(
     cssRule(tablet, ".project-row"),
-    /grid-template-columns: 180px minmax\(0, 1fr\);/
+    /grid-template-columns: 170px minmax\(0, 1fr\);/
   );
   assert.match(
     cssRule(tablet, ".publication-row"),
-    /grid-template-columns: 150px minmax\(0, 1fr\);/
+    /grid-template-columns: 145px minmax\(0, 1fr\);/
   );
 
   const phone = cssBlock(stylesheet, "@media (max-width: 559px)");
