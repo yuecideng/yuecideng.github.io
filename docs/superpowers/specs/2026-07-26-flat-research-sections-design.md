@@ -111,7 +111,7 @@ data attributes remain unchanged.
 
 ### Projects
 
-- Desktop image column: approximately 230px.
+- Desktop image column: approximately 260px.
 - Image ratio: 16:9.
 - Open3D image: `object-fit: contain` on a white image background.
 - Row gap: approximately 24px.
@@ -122,7 +122,7 @@ data attributes remain unchanged.
 
 ### Publications
 
-- Desktop thumbnail column: approximately 180px.
+- Desktop thumbnail column: approximately 210px.
 - Thumbnail ratio: approximately 16:9.
 - Row gap: approximately 20px.
 - Row vertical padding: approximately 14px.
@@ -146,13 +146,14 @@ data attributes remain unchanged.
 
 ### Desktop: 769px and above
 
-- Project rows use a 230px image column.
-- Publication rows use a 180px thumbnail column.
+- Project rows use a 260px image column.
+- Publication rows use a 210px thumbnail column.
 - All metadata remains visible.
 
 ### Tablet: 560px–768px
 
-- Project and publication image columns shrink to approximately 140–160px.
+- Project rows use an approximately 180px image column.
+- Publication rows use an approximately 150px thumbnail column.
 - Rows remain horizontal.
 - Gaps and type sizes reduce slightly without removing content.
 
