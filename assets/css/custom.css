@@ -299,12 +299,12 @@ sup {
 .project-row {
   align-items: center;
   gap: 1.5rem;
-  grid-template-columns: 230px minmax(0, 1fr);
+  grid-template-columns: 260px minmax(0, 1fr);
   padding: 1.1rem 0;
 }
 
 .publication-row {
-  grid-template-columns: 180px minmax(0, 1fr);
+  grid-template-columns: 210px minmax(0, 1fr);
 }
 
 .project-row .card-image,
@@ -576,12 +576,12 @@ a.papertitle:hover {
 
   .project-row {
     gap: 1.1rem;
-    grid-template-columns: 160px minmax(0, 1fr);
+    grid-template-columns: 180px minmax(0, 1fr);
   }
 
   .publication-row {
     gap: 1rem;
-    grid-template-columns: 140px minmax(0, 1fr);
+    grid-template-columns: 150px minmax(0, 1fr);
   }
 }
 
