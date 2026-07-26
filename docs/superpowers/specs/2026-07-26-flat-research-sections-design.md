@@ -22,6 +22,8 @@ responsive principles described by
   list in `_pages/about.md`.
 - New, section-specific CSS selectors in `assets/css/custom.css`.
 - Tests that protect the two research sections and their existing filtering.
+- A local-only Jekyll configuration that makes `localhost:4000` load local
+  stylesheets instead of the deployed production stylesheets.
 - Desktop, tablet, phone, light-theme, and dark-theme visual verification.
 
 ### Out of scope
@@ -33,6 +35,7 @@ responsive principles described by
 - Global page width, global heading treatment, footer, CV, and other pages.
 - New frameworks, fonts, dependencies, data files, or content-management
   changes.
+- Changes to the production `url` or `baseurl` values in `_config.yml`.
 - Reintroducing author-role markers removed by the requested revert.
 
 No global selector used by the profile or prose sections may be restyled as part
@@ -111,7 +114,7 @@ data attributes remain unchanged.
 
 ### Projects
 
-- Desktop image column: approximately 260px.
+- Desktop image column: approximately 245px.
 - Image ratio: 16:9.
 - Open3D image: `object-fit: contain` on a white image background.
 - Row gap: approximately 24px.
@@ -122,7 +125,7 @@ data attributes remain unchanged.
 
 ### Publications
 
-- Desktop thumbnail column: approximately 210px.
+- Desktop thumbnail column: approximately 195px.
 - Thumbnail ratio: approximately 16:9.
 - Row gap: approximately 20px.
 - Row vertical padding: approximately 14px.
@@ -146,14 +149,14 @@ data attributes remain unchanged.
 
 ### Desktop: 769px and above
 
-- Project rows use a 260px image column.
-- Publication rows use a 210px thumbnail column.
+- Project rows use a 245px image column.
+- Publication rows use a 195px thumbnail column.
 - All metadata remains visible.
 
 ### Tablet: 560px–768px
 
-- Project rows use an approximately 180px image column.
-- Publication rows use an approximately 150px thumbnail column.
+- Project rows use an approximately 170px image column.
+- Publication rows use an approximately 145px thumbnail column.
 - Rows remain horizontal.
 - Gaps and type sizes reduce slightly without removing content.
 
@@ -168,6 +171,32 @@ data attributes remain unchanged.
 - At a 390px viewport,
   `document.documentElement.scrollWidth ===
   document.documentElement.clientWidth`.
+
+## Local preview behavior
+
+The normal production configuration keeps:
+
+```yaml
+url: https://yuecideng.github.io
+```
+
+Create `_config_local.yml` containing:
+
+```yaml
+url: "http://localhost:4000"
+```
+
+Start the local preview with both configuration files:
+
+```bash
+bundle exec jekyll serve -l -H localhost \
+  --config _config.yml,_config_local.yml
+```
+
+This keeps production URLs unchanged while ensuring the local page loads
+`http://localhost:4000/assets/css/main.css` and
+`http://localhost:4000/assets/css/custom.css`. The local preview must never
+silently combine new local HTML with an older deployed production stylesheet.
 
 ## Accessibility and failure handling
 
@@ -201,12 +230,15 @@ Verify the real rendered homepage at:
 
 - 1200px desktop.
 - 820px tablet.
+- 768px tablet breakpoint.
 - 390px phone.
 - Light and dark themes.
 
 Check:
 
 - Correct row geometry and image cropping.
+- Local stylesheet URLs use `http://localhost:4000`, not the deployed
+  `https://yuecideng.github.io` origin.
 - No horizontal overflow.
 - Full visible descriptions.
 - Filter counts of 10, 7, 3, and 1.
@@ -224,4 +256,6 @@ The work is complete when:
 3. All research content and destinations are preserved.
 4. Filtering still produces 10/7/3/1 visible items.
 5. Desktop, tablet, phone, light, and dark layouts pass visual verification.
-6. The final response includes real desktop and phone previews.
+6. The local preview loads local stylesheets and cannot mix current markup
+   with stale deployed CSS.
+7. The final response includes real desktop and phone previews.
