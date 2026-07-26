@@ -48,30 +48,32 @@ I welcome research or open source project collaborations on Embodied Intelligenc
 
 ## Projects {#projects}
 
-<div class="card">
+<div class="project-list" aria-label="Research projects">
+<article class="research-row project-row">
   <div class="card-image">
     <img src="images/embodichain_teaser.jpg" alt="EmbodiChain">
   </div>
   <div class="card-content">
-    <a href="https://github.com/DexForce/EmbodiChain" class="papertitle">EmbodiChain: An end-to-end, GPU-accelerated, and modular platform for building generalized Embodied Intelligence</a>
+    <h3 class="card-title"><a href="https://github.com/DexForce/EmbodiChain" class="papertitle">EmbodiChain: An end-to-end, GPU-accelerated, and modular platform for building generalized Embodied Intelligence</a></h3>
     <div class="card-links">
       <a href="https://dexforce.com/embodichain/index.html#/">Website</a> | <a href="https://github.com/DexForce/EmbodiChain">Code</a>
     </div>
-    <p class="card-desc"><strong>Description:</strong> EmbodiChain is a unified, GPU-accelerated framework designed for pushing the boundaries of embodied AI research and development. It integrates high-performance simulation, data collection via automated generative simulation techniques, data scaling pipeline, modular model architectures, and efficient training & evaluation tools. All of these components work seamlessly together to facilitate rapid experimentation and deployment of embodied intelligence and perform Sim2Real transfer into real-world robotic systems.</p>
+    <p class="card-desc">EmbodiChain is a unified, GPU-accelerated framework designed for pushing the boundaries of embodied AI research and development. It integrates high-performance simulation, data collection via automated generative simulation techniques, data scaling pipeline, modular model architectures, and efficient training & evaluation tools. All of these components work seamlessly together to facilitate rapid experimentation and deployment of embodied intelligence and perform Sim2Real transfer into real-world robotic systems.</p>
   </div>
-</div>
+</article>
 
-<div class="card">
+<article class="research-row project-row">
   <div class="card-image">
     <img src="images/open3d.png" alt="Open3D">
   </div>
   <div class="card-content">
-    <a href="https://www.open3d.org/" class="papertitle">Open3D: A Modern Library for 3D Data Processing</a>
+    <h3 class="card-title"><a href="https://www.open3d.org/" class="papertitle">Open3D: A Modern Library for 3D Data Processing</a></h3>
     <div class="card-links">
       <a href="https://www.open3d.org/">Website</a> | <a href="https://github.com/isl-org/Open3D">Code</a>
     </div>
-    <p class="card-desc"><strong>Description:</strong> The leading open-source library for 3D processing with 400K+ monthly downloads from PyPI. Open3D exposes a set of carefully selected data structures and algorithms in both C++ and Python for 3D data processing tasks including point cloud processing, mesh processing, and 3D visualization.</p>
+    <p class="card-desc">The leading open-source library for 3D processing with 400K+ monthly downloads from PyPI. Open3D exposes a set of carefully selected data structures and algorithms in both C++ and Python for 3D data processing tasks including point cloud processing, mesh processing, and 3D visualization.</p>
   </div>
+</article>
 </div>
 
 ## Publications {#publications}
@@ -83,12 +85,13 @@ I welcome research or open source project collaborations on Embodied Intelligenc
   <button class="pub-filter-btn" data-filter="position">Position Papers</button>
 </div>
 
-<div class="card pub-card" data-year="2026">
+<div class="publication-list" aria-label="Selected publications">
+<article class="research-row publication-row pub-card" data-year="2026">
   <div class="card-image">
     <img src="images/research/pact.jpeg" alt="PAct">
   </div>
   <div class="card-content">
-    <a href="https://pact-project.github.io/" class="papertitle">PAct: Part-Decomposed Single-View Articulated Object Generation</a>
+    <h3 class="card-title"><a href="https://pact-project.github.io/" class="papertitle">PAct: Part-Decomposed Single-View Articulated Object Generation</a></h3>
     <div class="card-authors">
       <a href="https://github.com/MobiusLqm">Qingming Liu</a>,
       <a href="https://scholar.google.com/citations?user=ZOf_esUAAAAJ">Xinyue Yao</a>,
@@ -104,16 +107,16 @@ I welcome research or open source project collaborations on Embodied Intelligenc
       <a href="https://pact-project.github.io/">Project</a> /
       <a href="https://github.com/Mobiuslqm/PAct">Code</a>
     </div>
-    <p class="card-desc"><strong>Description:</strong> PAct generates complete, part-decomposed articulated 3D objects from a single-view image, synthesizing high-fidelity geometry and appearance while estimating kinematic structures for direct use in physics-based simulation.</p>
+    <p class="card-desc">PAct generates complete, part-decomposed articulated 3D objects from a single-view image, synthesizing high-fidelity geometry and appearance while estimating kinematic structures for direct use in physics-based simulation.</p>
   </div>
-</div>
+</article>
 
-<div class="card pub-card" data-year="2026">
+<article class="research-row publication-row pub-card" data-year="2026">
   <div class="card-image">
     <img src="images/research/apg_vs_ppo.png" alt="APG vs PPO">
   </div>
   <div class="card-content">
-    <span class="papertitle">Backpropagating Through Simulation: Analytic Policy Gradients for Sample and Learning Efficient Differentiable Continuous Control</span>
+    <h3 class="card-title"><span class="papertitle">Backpropagating Through Simulation: Analytic Policy Gradients for Sample and Learning Efficient Differentiable Continuous Control</span></h3>
     <div class="card-authors">
       <a href="https://yuecideng.github.io"><strong>Yueci Deng</strong></a>,
     </div>
@@ -121,16 +124,16 @@ I welcome research or open source project collaborations on Embodied Intelligenc
       <a href="https://arxiv.org/pdf/2606.21525">Paper</a> /
       <a href="https://github.com/yuecideng/analytic_policy_gradients">Code</a>
     </div>
-    <p class="card-desc"><strong>Description:</strong> A differentiable-control benchmark and training framework that compares Analytic Policy Gradients with PPO across continuous control tasks, using backpropagation through simulation to study sample-efficient policy optimization.</p>
+    <p class="card-desc">A differentiable-control benchmark and training framework that compares Analytic Policy Gradients with PPO across continuous control tasks, using backpropagation through simulation to study sample-efficient policy optimization.</p>
   </div>
-</div>
+</article>
 
-<div class="card pub-card" data-year="2026">
+<article class="research-row publication-row pub-card" data-year="2026">
   <div class="card-image">
     <img src="images/research/ftc.png" alt="FTC">
   </div>
   <div class="card-content">
-    <span class="papertitle">Focus-Then-Contact: Speeding Up Robotic Contact-Rich Task Learning with Affordance-Guided Real-World Residual Reinforcement Learning</span>
+    <h3 class="card-title"><span class="papertitle">Focus-Then-Contact: Speeding Up Robotic Contact-Rich Task Learning with Affordance-Guided Real-World Residual Reinforcement Learning</span></h3>
     <div class="card-authors">
       <a href="https://qiaoguanren.github.io/">Guanren Qiao</a>,
       Ruixiang Ouyang,
@@ -145,16 +148,16 @@ I welcome research or open source project collaborations on Embodied Intelligenc
     <div class="card-links">
       Paper / Project / Code (Coming Soon)
     </div>
-    <p class="card-desc"><strong>Description:</strong> A lightweight real-world RL method that uses residual RL and affordance-guided rewards to speed up contact-rich robot manipulation learning with minimal human-in-the-loop effort.</p>
+    <p class="card-desc">A lightweight real-world RL method that uses residual RL and affordance-guided rewards to speed up contact-rich robot manipulation learning with minimal human-in-the-loop effort.</p>
   </div>
-</div>
+</article>
 
-<div class="card pub-card" data-year="2026">
+<article class="research-row publication-row pub-card" data-year="2026">
   <div class="card-image">
     <img src="images/research/agent-chord.jpeg" alt="AgentChord">
   </div>
   <div class="card-content">
-    <span class="papertitle">From Reaction to Anticipation: Proactive Failure Recovery through Agentic Task Graph for Robotic Manipulation</span>
+    <h3 class="card-title"><span class="papertitle">From Reaction to Anticipation: Proactive Failure Recovery through Agentic Task Graph for Robotic Manipulation</span></h3>
     <div class="card-authors">
       <a href="https://shengxu.net/">Sheng Xu</a>,
       Ruixing Jin,
@@ -172,16 +175,16 @@ I welcome research or open source project collaborations on Embodied Intelligenc
       <a href="https://shengxu.net/AgentChord/">Project</a> /
       <a href="https://github.com/EDEM-AI/AgentChord">Code</a>
     </div>
-    <p class="card-desc"><strong>Description:</strong> A recovery-aware task-graph system that helps real robots anticipate disturbances, switch to prepared recovery branches, and keep long-horizon manipulation moving.</p>
+    <p class="card-desc">A recovery-aware task-graph system that helps real robots anticipate disturbances, switch to prepared recovery branches, and keep long-horizon manipulation moving.</p>
   </div>
-</div>
+</article>
 
-<div class="card pub-card" data-year="2026">
+<article class="research-row publication-row pub-card" data-year="2026">
   <div class="card-image">
     <img src="images/research/yoto++.png" alt="YOTO++">
   </div>
   <div class="card-content">
-    <span class="papertitle">YOTO++: Learning Long-Horizon Closed-Loop Bimanual Manipulation from One-Shot Human Video Demonstrations</span>
+    <h3 class="card-title"><span class="papertitle">YOTO++: Learning Long-Horizon Closed-Loop Bimanual Manipulation from One-Shot Human Video Demonstrations</span></h3>
     <div class="card-authors">
       <a href="https://hnuzhy.github.io/">Huayi Zhou</a>,
       <a href="https://robbinw.github.io/">Ruixiang Wang</a>,
@@ -197,16 +200,16 @@ I welcome research or open source project collaborations on Embodied Intelligenc
       <a href="https://hnuzhy.github.io/projects/YOTOPlus/final_YOTO++.pdf">PDF</a> /
       <a href="https://github.com/hnuzhy/YOTO">Code</a>
     </div>
-    <p class="card-desc"><strong>Description:</strong> YOTO++ (extended from the conference version You Only Teach Once) enables cross-embodiment deployment (from the contralateral to humanoid dual-arm setups), and facilitates diverse bimanual tasks including asynchronous, synchronous and tool-using scenarios, with closed-loop control under dynamic disturbances during pre-grasping.</p>
+    <p class="card-desc">YOTO++ (extended from the conference version You Only Teach Once) enables cross-embodiment deployment (from the contralateral to humanoid dual-arm setups), and facilitates diverse bimanual tasks including asynchronous, synchronous and tool-using scenarios, with closed-loop control under dynamic disturbances during pre-grasping.</p>
   </div>
-</div>
+</article>
 
-<div class="card pub-card" data-year="2026">
+<article class="research-row publication-row pub-card" data-year="2026">
   <div class="card-image">
     <img src="images/research/ewa.png" alt="EWA">
   </div>
   <div class="card-content">
-    <span class="papertitle">EWA: Aligning Video World Models with Executable Robot Actions via Inverse Dynamics Rewards</span>
+    <h3 class="card-title"><span class="papertitle">EWA: Aligning Video World Models with Executable Robot Actions via Inverse Dynamics Rewards</span></h3>
     <div class="card-authors">
       <a href="https://robbinw.github.io/">Ruixiang Wang</a>,
       <a href="https://github.com/MobiusLqm">Qingming Liu</a>,
@@ -220,16 +223,16 @@ I welcome research or open source project collaborations on Embodied Intelligenc
       <a href="https://eva-project-page.github.io/">Project</a> /
       <a href="https://github.com/RobbinW/EVA">Code</a>
     </div>
-    <p class="card-desc"><strong>Description:</strong> A reward-aligned post-training framework that bridges visually plausible video rollouts and executable robot actions via inverse dynamics rewards.</p>
+    <p class="card-desc">A reward-aligned post-training framework that bridges visually plausible video rollouts and executable robot actions via inverse dynamics rewards.</p>
   </div>
-</div>
+</article>
 
-<div class="card pub-card" data-year="2026">
+<article class="research-row publication-row pub-card" data-year="2026">
   <div class="card-image">
     <img src="images/sim2real-vla.png" alt="Sim2Real-VLA">
   </div>
   <div class="card-content">
-    <a href="https://openreview.net/pdf?id=H4SyKHjd4c" class="papertitle">Sim2Real VLA: Zero-Shot Generalization of Synthesized Skills to Realistic Manipulation</a>
+    <h3 class="card-title"><a href="https://openreview.net/pdf?id=H4SyKHjd4c" class="papertitle">Sim2Real VLA: Zero-Shot Generalization of Synthesized Skills to Realistic Manipulation</a></h3>
     <div class="card-authors">
       <a href="https://github.com/ZhaoRunyi">Runyi Zhao</a>,
       <a href="https://shengxu.net/">Sheng Xu</a>,
@@ -244,16 +247,16 @@ I welcome research or open source project collaborations on Embodied Intelligenc
       <a href="https://openreview.net/pdf?id=AVVXX0erKT">Paper</a> /
       <a href="https://github.com/DexForce/EmbodiChain">Code</a>
     </div>
-    <p class="card-desc"><strong>Description:</strong> This paper introduces Sim2Real-VLA, a generalist robotic control model that enables zero-shot transfer from synthetic simulation to real-world manipulation tasks.</p>
+    <p class="card-desc">This paper introduces Sim2Real-VLA, a generalist robotic control model that enables zero-shot transfer from synthetic simulation to real-world manipulation tasks.</p>
   </div>
-</div>
+</article>
 
-<div class="card pub-card" data-year="2025" data-category="position">
+<article class="research-row publication-row pub-card" data-year="2025" data-category="position">
   <div class="card-image">
     <img src="images/gs-world.png" alt="GS-World">
   </div>
   <div class="card-content">
-    <span class="papertitle">GS-World: An Engine-driven Learning Paradigm for Pursuing Embodied Intelligence using World Models of Generative Simulation</span>
+    <h3 class="card-title"><span class="papertitle">GS-World: An Engine-driven Learning Paradigm for Pursuing Embodied Intelligence using World Models of Generative Simulation</span></h3>
     <span class="pub-tag">Position paper</span>
     <div class="card-authors">
       <a href="http://guiliang.me/">Guiliang Liu</a>,
@@ -265,14 +268,14 @@ I welcome research or open source project collaborations on Embodied Intelligenc
       <a href="https://www.researchgate.net/profile/Guiliang-Liu-2/publication/396641390_GS-World_An_Efficient_Engine-driven_Learning_Paradigm_for_Pursuing_Embodied_Intelligence_using_World_Models_of_Generative_Simulation/links/68f33c277d9a4d4e870a9a9d/GS-World-An-Efficient-Engine-driven-Learning-Paradigm-for-Pursuing-Embodied-Intelligence-using-World-Models-of-Generative-Simulation.pdf">Paper</a>
     </div>
   </div>
-</div>
+</article>
 
-<div class="card pub-card" data-year="2025">
+<article class="research-row publication-row pub-card" data-year="2025">
   <div class="card-image">
     <img src="images/research/dexscale.png" alt="DexScale">
   </div>
   <div class="card-content">
-    <a href="https://edem-ai.github.io/dexscale.github.io/" class="papertitle">DexScale: Automating Data Scaling for Sim2Real Generalizable Robot Control</a>
+    <h3 class="card-title"><a href="https://edem-ai.github.io/dexscale.github.io/" class="papertitle">DexScale: Automating Data Scaling for Sim2Real Generalizable Robot Control</a></h3>
     <div class="card-authors">
       <a href="http://guiliang.me/">Guiliang Liu</a><sup>*</sup>,
       <a href="https://yuecideng.github.io"><strong>Yueci Deng</strong></a><sup>*</sup>,
@@ -290,16 +293,16 @@ I welcome research or open source project collaborations on Embodied Intelligenc
       <a href="https://openreview.net/pdf?id=AVVXX0erKT">Paper</a> /
       <a href="https://github.com/DexForce/EmbodiChain">Code</a>
     </div>
-    <p class="card-desc"><strong>Description:</strong> A novel data engine for automating data generation and scaling for sim-to-real transfer of robotic manipulation tasks.</p>
+    <p class="card-desc">A novel data engine for automating data generation and scaling for sim-to-real transfer of robotic manipulation tasks.</p>
   </div>
-</div>
+</article>
 
-<div class="card pub-card" data-year="2025">
+<article class="research-row publication-row pub-card" data-year="2025">
   <div class="card-image">
     <img src="images/yoto.png" alt="YOTO">
   </div>
   <div class="card-content">
-    <a href="https://hnuzhy.github.io/projects/YOTO" class="papertitle">You Only Teach Once: Learn One-Shot Bimanual Robotic Manipulation from Video Demonstrations</a>
+    <h3 class="card-title"><a href="https://hnuzhy.github.io/projects/YOTO" class="papertitle">You Only Teach Once: Learn One-Shot Bimanual Robotic Manipulation from Video Demonstrations</a></h3>
     <div class="card-authors">
       <a href="https://hnuzhy.github.io/">Huayi Zhou</a>,
       <a href="https://robbinw.github.io/">Ruixiang Wang</a>,
@@ -313,8 +316,9 @@ I welcome research or open source project collaborations on Embodied Intelligenc
       <a href="https://arxiv.org/abs/2501.14208">Paper</a> /
       <a href="https://github.com/hnuzhy/YOTO">Code</a>
     </div>
-    <p class="card-desc"><strong>Description:</strong> This work proposes the YOTO (You Only Teach Once), which can extract and then inject patterns of bimanual actions from as few as a single binocular observation of hand movements, and teach dual robot arms various complex tasks.</p>
+    <p class="card-desc">This work proposes the YOTO (You Only Teach Once), which can extract and then inject patterns of bimanual actions from as few as a single binocular observation of hand movements, and teach dual robot arms various complex tasks.</p>
   </div>
+</article>
 </div>
 
 <script src="{{ '/assets/js/pub-filter.js' | relative_url }}" defer></script>
