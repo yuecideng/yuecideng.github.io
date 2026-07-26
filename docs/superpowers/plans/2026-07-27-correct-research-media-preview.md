@@ -147,7 +147,7 @@ Run:
 
 ```bash
 node --test test/research-sections.test.js
-npm test
+node --test
 bundle exec jekyll build
 ```
 
