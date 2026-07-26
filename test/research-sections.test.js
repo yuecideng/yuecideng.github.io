@@ -173,24 +173,120 @@ test("publication filtering preserves all four branches", () => {
   }
 });
 
-test("defines scoped flat-row styles and responsive touch behavior", () => {
-  const requiredSelectors = [
-    ".project-list",
-    ".publication-list",
-    ".research-row",
-    ".project-row",
-    ".publication-row",
-    ".publication-row .card-image",
-    ".project-row .card-image",
-    ".research-row .card-title",
-  ];
+function cssBlock(source, marker) {
+  const markerIndex = source.indexOf(marker);
+  assert.notEqual(markerIndex, -1, `Missing ${marker}`);
 
-  for (const selector of requiredSelectors) {
-    assert.ok(stylesheet.includes(selector), `Missing ${selector}`);
+  const openIndex = source.indexOf("{", markerIndex);
+  let depth = 0;
+
+  for (let index = openIndex; index < source.length; index += 1) {
+    if (source[index] === "{") depth += 1;
+    if (source[index] === "}") depth -= 1;
+    if (depth === 0) return source.slice(openIndex + 1, index);
   }
 
-  assert.ok(stylesheet.includes("@media (max-width: 768px)"));
-  assert.ok(stylesheet.includes("@media (max-width: 559px)"));
-  assert.ok(stylesheet.includes("min-height: 44px"));
-  assert.ok(!stylesheet.includes(".research-row:hover {\n  transform:"));
+  assert.fail(`Unclosed CSS block for ${marker}`);
+}
+
+function cssRule(source, selector) {
+  return cssBlock(source, `${selector} {`);
+}
+
+function lastCssRule(source, selector) {
+  const marker = `${selector} {`;
+  const markerIndex = source.lastIndexOf(marker);
+  assert.notEqual(markerIndex, -1, `Missing ${selector}`);
+  return cssBlock(source.slice(markerIndex), marker);
+}
+
+function cssRules(source, selector) {
+  const marker = `${selector} {`;
+  const rules = [];
+  let start = 0;
+
+  while (true) {
+    const markerIndex = source.indexOf(marker, start);
+    if (markerIndex === -1) return rules;
+    rules.push(cssBlock(source.slice(markerIndex), marker));
+    start = markerIndex + marker.length;
+  }
+}
+
+test("defines scoped flat-row styles and responsive touch behavior", () => {
+  const list = cssRule(stylesheet, ".project-list,\n.publication-list");
+  assert.match(list, /border-top: 1px solid var\(--c-border\);/);
+  assert.match(list, /border-bottom: 1px solid var\(--c-border\);/);
+  assert.match(list, /display: grid;/);
+
+  const researchRow = cssRule(stylesheet, ".research-row");
+  assert.match(researchRow, /background: transparent;/);
+  assert.match(researchRow, /display: grid;/);
+  assert.match(researchRow, /padding: 0\.9rem 0;/);
+  assert.match(
+    cssRule(stylesheet, ".project-row"),
+    /grid-template-columns: 230px minmax\(0, 1fr\);/
+  );
+  assert.match(
+    cssRule(stylesheet, ".publication-row"),
+    /grid-template-columns: 180px minmax\(0, 1fr\);/
+  );
+
+  const rowMedia = cssRule(
+    stylesheet,
+    ".project-row .card-image,\n.publication-row .card-image"
+  );
+  assert.match(rowMedia, /background: var\(--c-surface-alt\);/);
+  assert.match(rowMedia, /width: 100%;/);
+  assert.match(
+    cssRule(stylesheet, ".research-row .card-title"),
+    /font-size: inherit;/
+  );
+
+  const filterBar = cssRules(stylesheet, "#pub-filter-bar").find((rule) =>
+    rule.includes("border-bottom: 1px solid var(--c-border);")
+  );
+  assert.ok(filterBar, "Missing scoped publication-filter tab bar");
+  assert.match(filterBar, /border-bottom: 1px solid var\(--c-border\);/);
+  assert.match(filterBar, /gap: 1\.15rem;/);
+
+  const tabs = lastCssRule(stylesheet, "#pub-filter-bar .pub-filter-btn");
+  assert.match(tabs, /background: transparent;/);
+  assert.match(tabs, /border: 0;/);
+  assert.match(tabs, /border-bottom: 2px solid transparent;/);
+  assert.match(tabs, /border-radius: 0;/);
+  assert.match(tabs, /min-height: 40px;/);
+  assert.match(
+    lastCssRule(stylesheet, "#pub-filter-bar .pub-filter-btn.active"),
+    /border-bottom-color: var\(--c-accent\);/
+  );
+
+  const tablet = cssBlock(stylesheet, "@media (max-width: 768px)");
+  assert.match(
+    cssRule(tablet, ".project-row"),
+    /grid-template-columns: 160px minmax\(0, 1fr\);/
+  );
+  assert.match(
+    cssRule(tablet, ".publication-row"),
+    /grid-template-columns: 140px minmax\(0, 1fr\);/
+  );
+
+  const phone = cssBlock(stylesheet, "@media (max-width: 559px)");
+  assert.match(
+    cssRule(phone, ".project-row"),
+    /grid-template-columns: minmax\(0, 1fr\);/
+  );
+  assert.match(
+    cssRule(phone, ".publication-row"),
+    /grid-template-columns: 104px minmax\(0, 1fr\);/
+  );
+
+  const coarsePointer = cssBlock(stylesheet, "@media (pointer: coarse)");
+  const touchTargets = cssRule(
+    coarsePointer,
+    "#pub-filter-bar .pub-filter-btn,\n  .research-row .card-links a"
+  );
+  assert.match(touchTargets, /display: inline-flex;/);
+  assert.match(touchTargets, /min-height: 44px;/);
+  assert.doesNotMatch(stylesheet, /\.research-row:hover\s*\{[^}]*transform:/);
 });
