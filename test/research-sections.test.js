@@ -290,3 +290,11 @@ test("defines scoped flat-row styles and responsive touch behavior", () => {
   assert.match(touchTargets, /min-height: 44px;/);
   assert.doesNotMatch(stylesheet, /\.research-row:hover\s*\{[^}]*transform:/);
 });
+
+test("keeps local preview assets on localhost without changing production", () => {
+  const localConfig = fs.readFileSync("_config_local.yml", "utf8");
+  const productionConfig = fs.readFileSync("_config.yml", "utf8");
+
+  assert.match(localConfig, /^url: "http:\/\/localhost:4000"$/m);
+  assert.match(productionConfig, /https:\/\/yuecideng\.github\.io/);
+});
