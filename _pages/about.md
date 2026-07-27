@@ -46,6 +46,8 @@ My research interests are mainly in the following areas:
 
 I welcome research or open source project collaborations on Embodied Intelligence and Simulation Infrastructure. If you're interested in joint projects, code sharing, student internships, or industry partnerships, please contact me at <a href="mailto:yuecideng@link.cuhk.edu.cn">yuecideng@link.cuhk.edu.cn</a>.
 
+<section class="research-section research-projects-section" markdown="1">
+
 ## Projects {#projects}
 
 <div class="project-list" aria-label="Research projects">
@@ -75,6 +77,10 @@ I welcome research or open source project collaborations on Embodied Intelligenc
   </div>
 </article>
 </div>
+
+</section>
+
+<section class="research-section research-publications-section" markdown="1">
 
 ## Publications {#publications}
 
@@ -320,5 +326,7 @@ I welcome research or open source project collaborations on Embodied Intelligenc
   </div>
 </article>
 </div>
+
+</section>
 
 <script src="{{ '/assets/js/pub-filter.js' | relative_url }}" defer></script>

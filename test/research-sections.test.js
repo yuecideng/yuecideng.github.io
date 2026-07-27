@@ -14,11 +14,19 @@ const baseline = execFileSync(
 );
 
 const projectsMarker = "## Projects {#projects}";
+const projectsSectionMarker =
+  '<section class="research-section research-projects-section" markdown="1">';
 const scriptMarker =
   "<script src=\"{{ '/assets/js/pub-filter.js' | relative_url }}\" defer></script>";
 
 function beforeProjects(markdown) {
-  return markdown.slice(0, markdown.indexOf(projectsMarker));
+  const headingIndex = markdown.indexOf(projectsMarker);
+  const wrapperIndex = markdown.indexOf(projectsSectionMarker);
+  const sectionStart =
+    wrapperIndex !== -1 && wrapperIndex < headingIndex
+      ? wrapperIndex
+      : headingIndex;
+  return markdown.slice(0, sectionStart);
 }
 
 function researchRegion(markdown) {
@@ -47,6 +55,18 @@ test("does not modify homepage content before Projects", () => {
 });
 
 test("renders semantic flat rows for two projects and ten publications", () => {
+  assert.match(
+    source,
+    /<section class="research-section research-projects-section" markdown="1">\s*## Projects \{#projects\}/
+  );
+  assert.match(
+    source,
+    /<section class="research-section research-publications-section" markdown="1">\s*## Publications \{#publications\}/
+  );
+  assert.equal(
+    (rendered.match(/class="research-section research-/g) || []).length,
+    2
+  );
   assert.equal(
     (rendered.match(/class="research-row project-row"/g) || []).length,
     2
