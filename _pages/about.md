@@ -91,7 +91,7 @@ I welcome research or open source project collaborations on Embodied Intelligenc
   <button class="pub-filter-btn" data-filter="position" aria-pressed="false">Position Papers</button>
 </div>
 
-<p class="publication-author-legend" aria-label="Publication author role legend"><sup>*</sup> Equal contribution; <sup>†</sup> Corresponding author</p>
+<p class="publication-author-legend"><sup>*</sup> Equal contribution; <sup>†</sup> Corresponding author</p>
 
 <div class="publication-list" aria-label="Selected publications">
 <article class="research-row publication-row pub-card" data-year="2026">

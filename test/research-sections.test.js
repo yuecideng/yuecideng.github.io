@@ -9,6 +9,7 @@ const stylesheet = fs.readFileSync("assets/css/custom.css", "utf8");
 const baseline = fs.readFileSync("test/fixtures/about-baseline.md", "utf8");
 
 const projectsMarker = "## Projects {#projects}";
+const publicationsMarker = "## Publications {#publications}";
 const projectsSectionMarker =
   '<section class="research-section research-projects-section" markdown="1">';
 const scriptMarker =
@@ -47,13 +48,18 @@ function publicationCardByAlt(alt) {
 }
 
 function withoutAuthorRoleAnnotations(markdown) {
-  return markdown
+  const publicationsStart = markdown.indexOf(publicationsMarker);
+  if (publicationsStart === -1) return markdown;
+
+  const projects = markdown.slice(0, publicationsStart);
+  const publications = markdown.slice(publicationsStart)
     .replace(/<sup>[*†]<\/sup>/g, "")
     .replace(/<div class="card-note">[\s\S]*?<\/div>/g, "")
     .replace(
       /<p class="publication-author-legend"[^>]*>[\s\S]*?<\/p>/g,
       ""
     );
+  return projects + publications;
 }
 
 function escapeRegExp(value) {
@@ -153,6 +159,7 @@ test("renders one shared publication author-role legend", () => {
   ) || [];
 
   assert.equal(legends.length, 1);
+  assert.doesNotMatch(legends[0], /\saria-label=/);
   assert.match(
     legends[0],
     /<sup>\*<\/sup>\s*Equal contribution;\s*<sup>†<\/sup>\s*Corresponding author/
