@@ -414,7 +414,10 @@ test("defines scoped flat-row styles and responsive touch behavior", () => {
     /border-bottom-color: var\(--c-accent\);/
   );
 
-  const authorLegend = cssRule(stylesheet, ".publication-author-legend");
+  const authorLegend = cssRule(
+    stylesheet,
+    ".page__content .publication-author-legend"
+  );
   assert.match(authorLegend, /color: var\(--c-text-note\);/);
   assert.match(authorLegend, /font-size: 0\.78rem;/);
   assert.match(authorLegend, /line-height: 1\.4;/);

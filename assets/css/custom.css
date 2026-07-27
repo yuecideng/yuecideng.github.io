@@ -539,7 +539,7 @@ a.papertitle:hover {
   color: var(--c-text);
 }
 
-.publication-author-legend {
+.page__content .publication-author-legend {
   color: var(--c-text-note);
   font-size: 0.78rem;
   line-height: 1.4;
