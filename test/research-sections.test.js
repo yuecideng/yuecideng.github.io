@@ -414,6 +414,12 @@ test("defines scoped flat-row styles and responsive touch behavior", () => {
     /border-bottom-color: var\(--c-accent\);/
   );
 
+  const authorLegend = cssRule(stylesheet, ".publication-author-legend");
+  assert.match(authorLegend, /color: var\(--c-text-note\);/);
+  assert.match(authorLegend, /font-size: 0\.78rem;/);
+  assert.match(authorLegend, /line-height: 1\.4;/);
+  assert.match(authorLegend, /margin: 0\.4rem 0 0\.45rem;/);
+
   const tablet = cssBlock(stylesheet, "@media (max-width: 768px)");
   assert.match(
     cssRule(tablet, ".project-row"),

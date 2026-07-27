@@ -539,6 +539,13 @@ a.papertitle:hover {
   color: var(--c-text);
 }
 
+.publication-author-legend {
+  color: var(--c-text-note);
+  font-size: 0.78rem;
+  line-height: 1.4;
+  margin: 0.4rem 0 0.45rem;
+}
+
 .pub-card {
   transition: opacity 0.3s ease;
 }
