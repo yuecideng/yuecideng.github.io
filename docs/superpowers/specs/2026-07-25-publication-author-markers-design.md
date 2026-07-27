@@ -4,6 +4,14 @@
 
 Show equal-contribution and corresponding-author roles consistently across every publication card on the homepage without repeating explanatory notes inside individual cards.
 
+## Selected Approach
+
+Keep the current static publication markup and add semantic `<sup>` markers
+directly after the applicable author names. Place one shared legend below the
+publication filter bar. This restores the previously verified author-role
+mapping without introducing a new data layer or changing unrelated homepage
+content.
+
 ## Scope
 
 - Update the 10 cards under the homepage `Publications` section.
