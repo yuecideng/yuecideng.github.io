@@ -91,6 +91,8 @@ I welcome research or open source project collaborations on Embodied Intelligenc
   <button class="pub-filter-btn" data-filter="position" aria-pressed="false">Position Papers</button>
 </div>
 
+<p class="publication-author-legend" aria-label="Publication author role legend"><sup>*</sup> Equal contribution; <sup>†</sup> Corresponding author</p>
+
 <div class="publication-list" aria-label="Selected publications">
 <article class="research-row publication-row pub-card" data-year="2026">
   <div class="card-image">
@@ -124,7 +126,7 @@ I welcome research or open source project collaborations on Embodied Intelligenc
   <div class="card-content">
     <h3 class="card-title"><span class="papertitle">Backpropagating Through Simulation: Analytic Policy Gradients for Sample and Learning Efficient Differentiable Continuous Control</span></h3>
     <div class="card-authors">
-      <a href="https://yuecideng.github.io"><strong>Yueci Deng</strong></a>,
+      <a href="https://yuecideng.github.io"><strong>Yueci Deng</strong></a><sup>†</sup>,
     </div>
     <div class="card-links">
       <a href="https://arxiv.org/pdf/2606.21525">Paper</a> /
@@ -148,7 +150,7 @@ I welcome research or open source project collaborations on Embodied Intelligenc
       <a href="https://yuecideng.github.io"><strong>Yueci Deng</strong></a>,
       Yunxin Tai,
       <a href="http://kuijia.site/">Kui Jia</a>,
-      <a href="http://guiliang.me/">Guiliang Liu</a>
+      <a href="http://guiliang.me/">Guiliang Liu</a><sup>†</sup>
     </div>
     <div class="card-venue">International Conference on Machine Learning (ICML), 2026</div>
     <div class="card-links">
@@ -173,7 +175,7 @@ I welcome research or open source project collaborations on Embodied Intelligenc
       Yunxin Tai,
       <a href="https://yuecideng.github.io"><strong>Yueci Deng</strong></a>,
       <a href="http://kuijia.site/">Kui Jia</a>,
-      <a href="http://guiliang.me/">Guiliang Liu</a>,
+      <a href="http://guiliang.me/">Guiliang Liu</a><sup>†</sup>,
     </div>
     <div class="card-venue">Robotics: Science and Systems (RSS), 2026</div>
     <div class="card-links">
@@ -197,7 +199,7 @@ I welcome research or open source project collaborations on Embodied Intelligenc
       Yunxin Tai,
       <a href="https://yuecideng.github.io"><strong>Yueci Deng</strong></a>,
       <a href="http://guiliang.me/">Guiliang Liu</a>,
-      <a href="http://kuijia.site/">Kui Jia</a>
+      <a href="http://kuijia.site/">Kui Jia</a><sup>†</sup>
     </div>
     <div class="card-venue">Transactions on Pattern Analysis and Machine Intelligence (TPAMI), 2026</div>
     <div class="card-links">
@@ -221,7 +223,7 @@ I welcome research or open source project collaborations on Embodied Intelligenc
       <a href="https://github.com/MobiusLqm">Qingming Liu</a>,
       <a href="https://yuecideng.github.io"><strong>Yueci Deng</strong></a>,
       <a href="http://guiliang.me/">Guiliang Liu</a>,
-      <a href="https://itszhen.com/">Zhen Liu</a>,
+      <a href="https://itszhen.com/">Zhen Liu</a><sup>†</sup>,
       <a href="http://kuijia.site/">Kui Jia</a>
     </div>
     <div class="card-links">
@@ -246,7 +248,7 @@ I welcome research or open source project collaborations on Embodied Intelligenc
       <a href="https://yuecideng.github.io"><strong>Yueci Deng</strong></a>,
       Yunxin Tai,
       <a href="http://kuijia.site/">Kui Jia</a>,
-      <a href="http://guiliang.me/">Guiliang Liu</a>
+      <a href="http://guiliang.me/">Guiliang Liu</a><sup>†</sup>
     </div>
     <div class="card-venue">International Conference on Learning Representations (ICLR), 2026 Poster</div>
     <div class="card-links">
@@ -268,7 +270,7 @@ I welcome research or open source project collaborations on Embodied Intelligenc
       <a href="http://guiliang.me/">Guiliang Liu</a>,
       <a href="https://yuecideng.github.io"><strong>Yueci Deng</strong></a>,
       <a href="https://itszhen.com/">Zhen Liu</a>,
-      <a href="http://kuijia.site/">Kui Jia</a>
+      <a href="http://kuijia.site/">Kui Jia</a><sup>†</sup>
     </div>
     <div class="card-links">
       <a href="https://www.researchgate.net/profile/Guiliang-Liu-2/publication/396641390_GS-World_An_Efficient_Engine-driven_Learning_Paradigm_for_Pursuing_Embodied_Intelligence_using_World_Models_of_Generative_Simulation/links/68f33c277d9a4d4e870a9a9d/GS-World-An-Efficient-Engine-driven-Learning-Paradigm-for-Pursuing-Embodied-Intelligence-using-World-Models-of-Generative-Simulation.pdf">Paper</a>
@@ -291,9 +293,8 @@ I welcome research or open source project collaborations on Embodied Intelligenc
       Jietao Chen,
       Ruiyan Xu,
       Yunxin Tai,
-      <a href="http://kuijia.site/">Kui Jia</a>
+      <a href="http://kuijia.site/">Kui Jia</a><sup>†</sup>
     </div>
-    <div class="card-note">(*Equal contribution)</div>
     <div class="card-venue">International Conference on Machine Learning (ICML), 2025 Poster</div>
     <div class="card-links">
       <a href="https://openreview.net/pdf?id=AVVXX0erKT">Paper</a> /
@@ -315,7 +316,7 @@ I welcome research or open source project collaborations on Embodied Intelligenc
       Yunxin Tai,
       <a href="https://yuecideng.github.io"><strong>Yueci Deng</strong></a>,
       <a href="http://guiliang.me/">Guiliang Liu</a>,
-      <a href="http://kuijia.site/">Kui Jia</a>
+      <a href="http://kuijia.site/">Kui Jia</a><sup>†</sup>
     </div>
     <div class="card-venue">Robotics: Science and Systems (RSS), 2025</div>
     <div class="card-links">

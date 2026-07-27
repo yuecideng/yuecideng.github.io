@@ -30,6 +30,36 @@ function researchRegion(markdown) {
   return markdown.slice(start, scriptStart);
 }
 
+function publicationCardByAlt(alt) {
+  const publicationList = rendered.match(
+    /<div class="publication-list"[^>]*>[\s\S]*?<\/div>\s*<\/section>/
+  );
+  assert.ok(publicationList, "Missing rendered publication list");
+
+  const cards = publicationList[0].match(
+    /<article class="research-row publication-row pub-card"[\s\S]*?<\/article>/g
+  ) || [];
+  const card = cards.find((entry) =>
+    new RegExp(`<img[^>]+alt="${escapeRegExp(alt)}"`).test(entry)
+  );
+  assert.ok(card, `Missing publication card for ${alt}`);
+  return card;
+}
+
+function withoutAuthorRoleAnnotations(markdown) {
+  return markdown
+    .replace(/<sup>[*†]<\/sup>/g, "")
+    .replace(/<div class="card-note">[\s\S]*?<\/div>/g, "")
+    .replace(
+      /<p class="publication-author-legend"[^>]*>[\s\S]*?<\/p>/g,
+      ""
+    );
+}
+
+function escapeRegExp(value) {
+  return value.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+}
+
 function attributes(markdown, name) {
   return [...markdown.matchAll(new RegExp(`${name}="([^"]+)"`, "g"))]
     .map((match) => match[1])
@@ -94,7 +124,10 @@ test("preserves research text, images, links, and filter metadata", () => {
   const currentRegion = researchRegion(source);
   const baselineRegion = researchRegion(baseline);
 
-  assert.equal(visibleText(currentRegion), visibleText(baselineRegion));
+  assert.equal(
+    visibleText(withoutAuthorRoleAnnotations(currentRegion)),
+    visibleText(withoutAuthorRoleAnnotations(baselineRegion))
+  );
   assert.deepEqual(attributes(currentRegion, "href"), attributes(baselineRegion, "href"));
   assert.deepEqual(attributes(currentRegion, "src"), attributes(baselineRegion, "src"));
   assert.deepEqual(
@@ -112,6 +145,59 @@ test("keeps the rendered publication distribution at 10, 7, 3, and 1", () => {
   assert.equal((rendered.match(/data-year="2026"/g) || []).length, 7);
   assert.equal((rendered.match(/data-year="2025"/g) || []).length, 3);
   assert.equal((rendered.match(/data-category="position"/g) || []).length, 1);
+});
+
+test("renders one shared publication author-role legend", () => {
+  const legends = rendered.match(
+    /<p class="publication-author-legend"[^>]*>[\s\S]*?<\/p>/g
+  ) || [];
+
+  assert.equal(legends.length, 1);
+  assert.match(
+    legends[0],
+    /<sup>\*<\/sup>\s*Equal contribution;\s*<sup>†<\/sup>\s*Corresponding author/
+  );
+  assert.match(
+    rendered,
+    /<div id="pub-filter-bar">[\s\S]*?<\/div>\s*<p class="publication-author-legend"[^>]*>[\s\S]*?<\/p>\s*<div class="publication-list"/
+  );
+  assert.doesNotMatch(rendered, /class="card-note"/);
+});
+
+test("renders the verified author-role mapping for all publications", () => {
+  const correspondingAuthors = [
+    ["PAct", "Zhen Liu"],
+    ["APG vs PPO", "Yueci Deng"],
+    ["FTC", "Guiliang Liu"],
+    ["AgentChord", "Guiliang Liu"],
+    ["YOTO++", "Kui Jia"],
+    ["EWA", "Zhen Liu"],
+    ["Sim2Real-VLA", "Guiliang Liu"],
+    ["GS-World", "Kui Jia"],
+    ["DexScale", "Kui Jia"],
+    ["YOTO", "Kui Jia"],
+  ];
+
+  for (const [alt, author] of correspondingAuthors) {
+    assert.match(
+      publicationCardByAlt(alt),
+      new RegExp(`>${escapeRegExp(author)}(?:</strong>)?</a><sup>†</sup>`)
+    );
+  }
+
+  const publicationMarkup = correspondingAuthors
+    .map(([alt]) => publicationCardByAlt(alt))
+    .join("\n");
+  assert.equal((publicationMarkup.match(/<sup>†<\/sup>/g) || []).length, 10);
+  assert.equal((publicationMarkup.match(/<sup>\*<\/sup>/g) || []).length, 2);
+
+  const dexScale = publicationCardByAlt("DexScale");
+  assert.match(dexScale, />Guiliang Liu<\/a><sup>\*<\/sup>/);
+  assert.match(dexScale, />Yueci Deng<\/strong><\/a><sup>\*<\/sup>/);
+  assert.doesNotMatch(
+    publicationMarkup.replace(dexScale, ""),
+    /<sup>\*<\/sup>/
+  );
 });
 
 function classList(initial = []) {
