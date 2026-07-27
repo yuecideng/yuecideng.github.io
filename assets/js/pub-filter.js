@@ -6,8 +6,12 @@ document.addEventListener('DOMContentLoaded', function() {
     btn.addEventListener('click', function() {
       var filter = this.getAttribute('data-filter');
 
-      buttons.forEach(function(b) { b.classList.remove('active'); });
+      buttons.forEach(function(b) {
+        b.classList.remove('active');
+        b.setAttribute('aria-pressed', 'false');
+      });
       this.classList.add('active');
+      this.setAttribute('aria-pressed', 'true');
 
       cards.forEach(function(card) {
         var show = false;

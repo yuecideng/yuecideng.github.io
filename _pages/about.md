@@ -85,10 +85,10 @@ I welcome research or open source project collaborations on Embodied Intelligenc
 ## Publications {#publications}
 
 <div id="pub-filter-bar">
-  <button class="pub-filter-btn active" data-filter="all">All</button>
-  <button class="pub-filter-btn" data-filter="2026">2026</button>
-  <button class="pub-filter-btn" data-filter="2025">2025</button>
-  <button class="pub-filter-btn" data-filter="position">Position Papers</button>
+  <button class="pub-filter-btn active" data-filter="all" aria-pressed="true">All</button>
+  <button class="pub-filter-btn" data-filter="2026" aria-pressed="false">2026</button>
+  <button class="pub-filter-btn" data-filter="2025" aria-pressed="false">2025</button>
+  <button class="pub-filter-btn" data-filter="position" aria-pressed="false">Position Papers</button>
 </div>
 
 <div class="publication-list" aria-label="Selected publications">

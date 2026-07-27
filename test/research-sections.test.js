@@ -1,5 +1,4 @@
 const assert = require("node:assert/strict");
-const { execFileSync } = require("node:child_process");
 const fs = require("node:fs");
 const test = require("node:test");
 const vm = require("node:vm");
@@ -7,11 +6,7 @@ const vm = require("node:vm");
 const source = fs.readFileSync("_pages/about.md", "utf8");
 const rendered = fs.readFileSync("_site/index.html", "utf8");
 const stylesheet = fs.readFileSync("assets/css/custom.css", "utf8");
-const baseline = execFileSync(
-  "git",
-  ["show", "7950870:_pages/about.md"],
-  { encoding: "utf8" }
-);
+const baseline = fs.readFileSync("test/fixtures/about-baseline.md", "utf8");
 
 const projectsMarker = "## Projects {#projects}";
 const projectsSectionMarker =
@@ -84,6 +79,17 @@ test("renders semantic flat rows for two projects and ten publications", () => {
   assert.ok(!researchRegion(source).includes("<strong>Description:</strong>"));
 });
 
+test("exposes the initial publication filter selection to assistive technology", () => {
+  const filters = [...source.matchAll(/<button class="pub-filter-btn(?: active)?" data-filter="([^"]+)" aria-pressed="([^"]+)">/g)];
+
+  assert.deepEqual(filters.map(([, filter, pressed]) => [filter, pressed]), [
+    ["all", "true"],
+    ["2026", "false"],
+    ["2025", "false"],
+    ["position", "false"],
+  ]);
+});
+
 test("preserves research text, images, links, and filter metadata", () => {
   const currentRegion = researchRegion(source);
   const baselineRegion = researchRegion(baseline);
@@ -126,10 +132,16 @@ function classList(initial = []) {
 function filterHarness() {
   const listeners = {};
   const buttons = ["all", "2026", "2025", "position"].map((filter, index) => ({
-    attributes: { "data-filter": filter },
+    attributes: {
+      "data-filter": filter,
+      "aria-pressed": index === 0 ? "true" : "false",
+    },
     classList: classList(index === 0 ? ["active"] : []),
     getAttribute(name) {
       return this.attributes[name];
+    },
+    setAttribute(name, value) {
+      this.attributes[name] = value;
     },
     addEventListener(event, handler) {
       listeners[filter] = handler;
@@ -190,6 +202,17 @@ test("publication filtering preserves all four branches", () => {
       1
     );
     assert.ok(selected.classList.contains("active"));
+    assert.equal(
+      buttons.filter((button) => button.attributes["aria-pressed"] === "true")
+        .length,
+      1
+    );
+    assert.equal(selected.attributes["aria-pressed"], "true");
+    assert.ok(
+      buttons
+        .filter((button) => button !== selected)
+        .every((button) => button.attributes["aria-pressed"] === "false")
+    );
   }
 });
 
