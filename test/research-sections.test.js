@@ -296,7 +296,7 @@ test("defines scoped flat-row styles and responsive touch behavior", () => {
   );
   assert.match(
     cssRule(wide, ".publication-row"),
-    /grid-template-columns: 270px minmax\(0, 1fr\);/
+    /grid-template-columns: 330px minmax\(0, 1fr\);/
   );
 
   const rowMedia = cssRule(
