@@ -8,10 +8,11 @@ document.addEventListener('DOMContentLoaded', function() {
       var selectedButton = this;
 
       buttons.forEach(function(b) {
-        var isActive = b === selectedButton;
-        b.classList.toggle('active', isActive);
-        b.setAttribute('aria-pressed', String(isActive));
+        b.classList.remove('active');
+        b.setAttribute('aria-pressed', 'false');
       });
+      this.classList.add('active');
+      this.setAttribute('aria-pressed', 'true');
 
       cards.forEach(function(card) {
         var show = false;
