@@ -37,7 +37,7 @@ The research rows will use the following image-column widths:
 
 | Viewport | Projects | Publications |
 | --- | ---: | ---: |
-| 1025px and wider | 300px | 230px |
+| 1025px and wider | 330px | 270px |
 | 769px–1024px | 245px | 195px |
 | 560px–768px | 170px | 145px |
 | Up to 559px | stacked | 104px |
@@ -88,7 +88,7 @@ Automated layout-contract tests will verify:
 - both research sections use the dedicated wrapper;
 - no homepage content before Projects changes;
 - the wide wrapper has a 1120px maximum and safe viewport gutters;
-- desktop image columns are 300px and 230px;
+- desktop image columns are 330px and 270px;
 - the existing 245px/195px, 170px/145px, and stacked/104px breakpoints remain;
 - publication filtering and content preservation tests still pass.
 
