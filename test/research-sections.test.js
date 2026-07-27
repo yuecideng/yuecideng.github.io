@@ -251,6 +251,30 @@ test("defines scoped flat-row styles and responsive touch behavior", () => {
     cssRule(stylesheet, ".publication-row"),
     /grid-template-columns: 195px minmax\(0, 1fr\);/
   );
+  assert.match(
+    cssRule(stylesheet, ".research-section"),
+    /width: 100%;/
+  );
+
+  const breakout = cssBlock(stylesheet, "@media (min-width: 901px)");
+  const breakoutSection = cssRule(breakout, ".research-section");
+  assert.match(breakoutSection, /left: 50%;/);
+  assert.match(breakoutSection, /position: relative;/);
+  assert.match(breakoutSection, /transform: translateX\(-50%\);/);
+  assert.match(
+    breakoutSection,
+    /width: min\(1120px, calc\(100vw - 2rem\)\);/
+  );
+
+  const wide = cssBlock(stylesheet, "@media (min-width: 1025px)");
+  assert.match(
+    cssRule(wide, ".project-row"),
+    /grid-template-columns: 300px minmax\(0, 1fr\);/
+  );
+  assert.match(
+    cssRule(wide, ".publication-row"),
+    /grid-template-columns: 230px minmax\(0, 1fr\);/
+  );
 
   const rowMedia = cssRule(
     stylesheet,

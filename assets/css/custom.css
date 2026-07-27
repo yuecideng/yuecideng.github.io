@@ -275,6 +275,19 @@ sup {
 }
 
 /* --- Flat homepage research sections --- */
+.research-section {
+  width: 100%;
+}
+
+@media (min-width: 901px) {
+  .research-section {
+    left: 50%;
+    position: relative;
+    transform: translateX(-50%);
+    width: min(1120px, calc(100vw - 2rem));
+  }
+}
+
 .project-list,
 .publication-list {
   border-bottom: 1px solid var(--c-border);
@@ -305,6 +318,16 @@ sup {
 
 .publication-row {
   grid-template-columns: 195px minmax(0, 1fr);
+}
+
+@media (min-width: 1025px) {
+  .project-row {
+    grid-template-columns: 300px minmax(0, 1fr);
+  }
+
+  .publication-row {
+    grid-template-columns: 230px minmax(0, 1fr);
+  }
 }
 
 .project-row .card-image,
