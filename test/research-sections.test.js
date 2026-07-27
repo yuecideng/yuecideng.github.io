@@ -292,11 +292,11 @@ test("defines scoped flat-row styles and responsive touch behavior", () => {
   const wide = cssBlock(stylesheet, "@media (min-width: 1025px)");
   assert.match(
     cssRule(wide, ".project-row"),
-    /grid-template-columns: 300px minmax\(0, 1fr\);/
+    /grid-template-columns: 330px minmax\(0, 1fr\);/
   );
   assert.match(
     cssRule(wide, ".publication-row"),
-    /grid-template-columns: 230px minmax\(0, 1fr\);/
+    /grid-template-columns: 270px minmax\(0, 1fr\);/
   );
 
   const rowMedia = cssRule(

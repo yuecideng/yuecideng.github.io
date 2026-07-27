@@ -322,11 +322,11 @@ sup {
 
 @media (min-width: 1025px) {
   .project-row {
-    grid-template-columns: 300px minmax(0, 1fr);
+    grid-template-columns: 330px minmax(0, 1fr);
   }
 
   .publication-row {
-    grid-template-columns: 230px minmax(0, 1fr);
+    grid-template-columns: 270px minmax(0, 1fr);
   }
 }
 
