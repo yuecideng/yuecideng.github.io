@@ -399,6 +399,17 @@ test("defines scoped flat-row styles and responsive touch behavior", () => {
   assert.match(rowMedia, /background: var\(--c-surface-alt\);/);
   assert.match(rowMedia, /width: 100%;/);
   assert.match(
+    cssRule(
+      stylesheet,
+      ".project-row .card-image img,\n.publication-row .card-image img"
+    ),
+    /object-fit: cover;/
+  );
+  assert.match(
+    lastCssRule(stylesheet, ".publication-row .card-image img"),
+    /object-fit: contain;/
+  );
+  assert.match(
     cssRule(stylesheet, ".research-row .card-title"),
     /font-size: inherit;/
   );

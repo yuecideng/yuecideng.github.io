@@ -354,6 +354,10 @@ sup {
   width: 100%;
 }
 
+.publication-row .card-image img {
+  object-fit: contain;
+}
+
 .project-row .card-image img[alt="Open3D"] {
   background: #ffffff;
   object-fit: contain;
