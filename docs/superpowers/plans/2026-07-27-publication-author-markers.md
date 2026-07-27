@@ -71,6 +71,10 @@ function withoutAuthorRoleAnnotations(markdown) {
       ""
     );
 }
+
+function escapeRegExp(value) {
+  return value.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+}
 ```
 
 Update the existing research-content preservation assertion to compare:
@@ -123,7 +127,7 @@ test("renders the verified author-role mapping for all publications", () => {
   for (const [alt, author] of correspondingAuthors) {
     assert.match(
       publicationCardByAlt(alt),
-      new RegExp(`>${author.replace(/[.*+?^${}()|[\\]\\\\]/g, "\\\\$&")}</a><sup>†</sup>`)
+      new RegExp(`>${escapeRegExp(author)}</a><sup>†</sup>`)
     );
   }
 
