@@ -23,23 +23,23 @@ redirect_from:
   </div>
 </div>
 
-My research focuses on building high-performance, automated, and scalable simulation, data-generation, and AI training systems for embodied intelligence. My long-term goal is to develop neural world models and simulation engines that enable embodied agents to autonomously learn, evolve, transfer to the real world, and continually improve during deployment.
+<section class="research-agenda-section" markdown="1">
 
-My research interests are mainly in the following areas:
-- **Systems**:
-    - High-performance, Heterogeneous and GPU-accelerated Simulation Engine Architecture
-    - Data Generation and Model Training Systems for Embodied Intelligence
+## Research {#research}
 
-- **Simulation**:
-    - Generative Simulation 
-    - Neural Representation for Simulation
-    - Differentiable Simulation for Analytic Policy Gradients
+<p class="research-summary">I build high-performance, scalable systems that connect generative worlds, hybrid simulation, and continual Sim2Real learning, helping embodied agents improve from real-world experience.</p>
 
-- **Embodied Intelligence**:
-    - Neural Motion Generation for Robot Control
-    - Physics-Structured Model Architecture
-    - Sim2Real Transfer and Domain Adaptation
-    - Online and Continual Learning for Embodied Agents
+<figure class="research-agenda-figure">
+  <a class="research-agenda-link" href="images/research/sim2real-embodied-ai-agenda.png" aria-describedby="research-agenda-caption">
+    <picture>
+      <source srcset="images/research/sim2real-embodied-ai-agenda.webp" type="image/webp">
+      <img src="images/research/sim2real-embodied-ai-agenda.png" alt="Closed-loop Sim2Real research agenda: generate executable worlds, combine physics-based and neural world simulation, learn from verified experience, deploy to real robots, evaluate results, and feed failures back into world generation and calibration." width="1536" height="1024" loading="lazy" decoding="async">
+    </picture>
+  </a>
+  <figcaption id="research-agenda-caption">Select the diagram to view it at full resolution.</figcaption>
+</figure>
+
+</section>
 
 
 ## Collaborations & Opportunities
