@@ -58,7 +58,7 @@ I welcome research or open source project collaborations on Embodied Intelligenc
   <div class="card-content">
     <h3 class="card-title"><a href="https://github.com/DexForce/EmbodiChain" class="papertitle">EmbodiChain: An end-to-end, GPU-accelerated, and modular platform for building generalized Embodied Intelligence</a></h3>
     <div class="card-links">
-      <a href="https://dexforce.com/embodichain/index.html#/">Website</a> | <a href="https://github.com/DexForce/EmbodiChain">Code</a>
+      <a href="https://dexforce.com/embodichain/index.html#/"><i class="fas fa-globe" aria-hidden="true"></i> Website</a> | <a href="https://github.com/DexForce/EmbodiChain"><i class="fab fa-github" aria-hidden="true"></i> Code</a>
     </div>
     <p class="card-desc">EmbodiChain is a unified, GPU-accelerated framework designed for pushing the boundaries of embodied AI research and development. It integrates high-performance simulation, data collection via automated generative simulation techniques, data scaling pipeline, modular model architectures, and efficient training & evaluation tools. All of these components work seamlessly together to facilitate rapid experimentation and deployment of embodied intelligence and perform Sim2Real transfer into real-world robotic systems.</p>
   </div>
@@ -71,7 +71,7 @@ I welcome research or open source project collaborations on Embodied Intelligenc
   <div class="card-content">
     <h3 class="card-title"><a href="https://www.open3d.org/" class="papertitle">Open3D: A Modern Library for 3D Data Processing</a></h3>
     <div class="card-links">
-      <a href="https://www.open3d.org/">Website</a> | <a href="https://github.com/isl-org/Open3D">Code</a>
+      <a href="https://www.open3d.org/"><i class="fas fa-globe" aria-hidden="true"></i> Website</a> | <a href="https://github.com/isl-org/Open3D"><i class="fab fa-github" aria-hidden="true"></i> Code</a>
     </div>
     <p class="card-desc">The leading open-source library for 3D processing with 400K+ monthly downloads from PyPI. Open3D exposes a set of carefully selected data structures and algorithms in both C++ and Python for 3D data processing tasks including point cloud processing, mesh processing, and 3D visualization.</p>
   </div>
@@ -94,6 +94,24 @@ I welcome research or open source project collaborations on Embodied Intelligenc
 <p class="publication-author-legend"><sup>*</sup> Equal contribution; <sup>†</sup> Corresponding author</p>
 
 <div class="publication-list" aria-label="Selected publications">
+<article class="research-row publication-row pub-card" data-year="2026">
+  <div class="card-image">
+    <img src="https://robosyn-bench.net/static/assets/robosynchallenge-pipeline.png" alt="RoboSynChallenge">
+  </div>
+  <div class="card-content">
+    <h3 class="card-title"><a href="https://robosyn-bench.net/#/home" class="papertitle">RoboSynChallenge: Mastering Real-World Dexterity via Generalizing Synthesized Manipulation Skills</a></h3>
+    <div class="card-authors">RoboSynChallenge Organizing Team</div>
+    <div class="card-venue venue-pill">NeurIPS 2026 Competition</div>
+    <div class="action-links publication-links">
+      <a href="https://robosyn-bench.net/#/home" class="action-link"><i class="fas fa-globe" aria-hidden="true"></i> Website</a>
+      <a href="https://robosyn-bench.net/material/RoboSynChallenge-report.pdf" class="action-link"><i class="fas fa-file-alt" aria-hidden="true"></i> Report</a>
+      <a href="https://edem-ai.github.io/RoboSynChallenge/html/" class="action-link"><i class="fas fa-book" aria-hidden="true"></i> Document</a>
+      <a href="https://github.com/EDEM-AI/RoboSynChallenge" class="action-link"><i class="fab fa-github" aria-hidden="true"></i> Code</a>
+    </div>
+    <p class="card-desc">A public benchmark for training robot manipulation policies with scalable synthetic data and limited real demonstrations, qualifying them in simulation, and evaluating their generalization on a standardized real-world dual-arm platform.</p>
+  </div>
+</article>
+
 <article class="research-row publication-row pub-card" data-year="2026">
   <div class="card-image">
     <img src="images/research/pact.jpeg" alt="PAct">

@@ -8,40 +8,61 @@ const stylesheet = fs.readFileSync("assets/css/custom.css", "utf8");
 
 test("renders projects as a two-item editorial collection", () => {
   const start = homepage.indexOf(
-    '<div class="projects-grid" aria-label="Research projects">'
+    '<div class="project-list" aria-label="Research projects">'
   );
   const end = homepage.indexOf('<h2 id="publications">', start);
   const grid = homepage.slice(start, end);
 
   assert.ok(start >= 0 && end > start, "Missing rendered projects grid");
-  assert.equal((grid.match(/class="project-card"/g) || []).length, 2);
+  assert.equal((grid.match(/class="research-row project-row"/g) || []).length, 2);
   assert.ok(grid.includes('aria-label="Research projects"'));
 });
 
-test("renders publication controls and ten publication rows", () => {
-  assert.ok(homepage.includes('class="publication-toolbar"'));
-  assert.ok(homepage.includes('aria-label="Filter publications"'));
+test("renders publication controls and eleven publication rows", () => {
+  assert.ok(homepage.includes('id="pub-filter-bar"'));
   assert.ok(homepage.includes('class="publication-list"'));
   assert.equal(
-    (homepage.match(/class="publication-card pub-card"/g) || []).length,
-    10
+    (homepage.match(/class="research-row publication-row pub-card"/g) || []).length,
+    11
   );
-  assert.equal((homepage.match(/<h3 class="card-title">/g) || []).length, 12);
+  assert.equal((homepage.match(/<h3 class="card-title">/g) || []).length, 13);
   assert.equal(
-    (homepage.match(/class="publication-card pub-card" data-year="2026"/g) || [])
+    (homepage.match(/class="research-row publication-row pub-card" data-year="2026"/g) || [])
       .length,
-    7
+    8
   );
   assert.equal(
-    (homepage.match(/class="publication-card pub-card" data-year="2025"/g) || [])
+    (homepage.match(/class="research-row publication-row pub-card" data-year="2025"/g) || [])
       .length,
     3
   );
   assert.equal((homepage.match(/data-category="position"/g) || []).length, 1);
 });
 
+test("renders RoboSynChallenge with verified project resources", () => {
+  assert.ok(homepage.includes("RoboSynChallenge: Mastering Real-World Dexterity"));
+  assert.ok(homepage.includes("RoboSynChallenge Organizing Team"));
+  assert.ok(!homepage.includes("RoboSynChallenge Organizing Team, including"));
+  assert.ok(homepage.includes("NeurIPS 2026 Competition"));
+  assert.ok(homepage.includes('href="https://robosyn-bench.net/#/home"'));
+  assert.ok(
+    homepage.includes(
+      'href="https://robosyn-bench.net/material/RoboSynChallenge-report.pdf"'
+    )
+  );
+  assert.ok(
+    homepage.includes('href="https://github.com/EDEM-AI/RoboSynChallenge"')
+  );
+});
+
 test("uses action links and natural descriptions", () => {
-  assert.ok(homepage.includes('class="action-links project-links"'));
+  assert.ok(homepage.includes('class="card-links"'));
+  assert.equal((homepage.match(/<i class="fas fa-globe" aria-hidden="true"><\/i> Website/g) || []).length, 3);
+  assert.ok(
+    homepage.includes(
+      '<a href="https://github.com/DexForce/EmbodiChain"><i class="fab fa-github" aria-hidden="true"></i> Code</a>'
+    )
+  );
   assert.ok(homepage.includes('class="action-links publication-links"'));
   assert.ok(homepage.includes('class="action-link"'));
   assert.ok(homepage.includes("Paper / Project / Code (Coming Soon)"));
@@ -50,28 +71,20 @@ test("uses action links and natural descriptions", () => {
 });
 
 test("renders the approved editorial section headings", () => {
-  assert.ok(
-    homepage.includes(
-      '<div class="section-heading"><h2 id="projects">Featured Projects</h2><span class="section-subtitle">Systems for embodied intelligence</span></div>'
-    )
-  );
-  assert.ok(
-    homepage.includes(
-      '<div class="section-heading"><h2 id="publications">Publications</h2><span class="section-subtitle">10 selected works</span></div>'
-    )
-  );
+  assert.ok(homepage.includes('<h2 id="projects">Projects</h2>'));
+  assert.ok(homepage.includes('<h2 id="publications">Publications</h2>'));
 });
 
 test("keeps project cards compact while preserving complete details", () => {
-  assert.equal((homepage.match(/class="project-details"/g) || []).length, 2);
+  assert.equal((homepage.match(/class="research-row project-row"/g) || []).length, 2);
   assert.ok(
     homepage.includes(
-      '<h3 class="card-title"><a href="https://github.com/DexForce/EmbodiChain" class="papertitle">EmbodiChain</a></h3>'
+      '<h3 class="card-title"><a href="https://github.com/DexForce/EmbodiChain" class="papertitle">EmbodiChain: An end-to-end, GPU-accelerated, and modular platform'
     )
   );
   assert.ok(
     homepage.includes(
-      '<p class="project-tagline">GPU-accelerated platform for scalable embodied AI.</p>'
+      "EmbodiChain: An end-to-end, GPU-accelerated, and modular platform"
     )
   );
   assert.ok(
@@ -84,10 +97,9 @@ test("keeps project cards compact while preserving complete details", () => {
   );
 });
 
-test("renders publication venues and summaries as compact secondary content", () => {
-  assert.equal((homepage.match(/class="card-venue venue-pill"/g) || []).length, 7);
-  assert.equal((homepage.match(/class="publication-summary"/g) || []).length, 9);
-  assert.ok(homepage.includes("<summary>Summary</summary>"));
+test("renders publication venues and complete descriptions", () => {
+  assert.equal((homepage.match(/class="card-venue venue-pill"/g) || []).length, 8);
+  assert.equal((homepage.match(/class="publication-summary"/g) || []).length, 0);
   assert.ok(!/<details[^>]*\sopen(?:\s|>)/.test(homepage));
   assert.ok(homepage.includes("PAct generates complete, part-decomposed"));
 });
@@ -101,8 +113,8 @@ test("keeps every coarse-pointer control at least 44px tall", () => {
   );
 
   assert.ok(phoneStart >= 0 && coarseStart > phoneStart);
-  assert.ok(coarseRules.includes(".project-details summary"));
-  assert.ok(coarseRules.includes(".publication-summary summary"));
+  assert.ok(coarseRules.includes("#pub-filter-bar .pub-filter-btn"));
+  assert.ok(coarseRules.includes(".research-row .card-links a"));
   assert.ok(coarseRules.includes("min-height: 44px"));
 });
 
