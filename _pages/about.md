@@ -14,7 +14,7 @@ redirect_from:
   <div class="intro-bio">
     <h1 class="intro-name">Yueci Deng (邓岳慈)</h1>
     <p class="intro-affil">Ph.D. Student, School of Data Science, CUHK-SZ</p>
-    <p class="intro-text">I am a first-year CS Ph.D. student at the Chinese University of Hong Kong, Shenzhen (CUHK-SZ), supervised by Prof <a href="http://kuijia.site/">Kui Jia</a>. I received my B.S. from UESTC (2014-2018) and M.S. from NTU, Singapore (2018-2019). Before joining CUHK-SZ, I worked as an architect at <a href="https://en.dexforce.com/core.html">DexForce Technology</a>, where I led the development of DexVerse<sup>TM</sup>, a Sim2Real AI Platform for Embodied Intelligence.</p>
+    <p class="intro-text">I am a PhD student at the Chinese University of Hong Kong, Shenzhen (CUHK-SZ), supervised by Prof <a href="http://kuijia.site/">Kui Jia</a>. I received my B.S. from UESTC (2014-2018) and M.S. from NTU, Singapore (2018-2019). Before joining CUHK-SZ, I worked as an architect at <a href="https://en.dexforce.com/core.html">DexForce Technology</a>, where I led the development of DexVerse<sup>TM</sup>, a Sim2Real AI Platform for Embodied Intelligence.</p>
     <div class="intro-links">
       <a href="mailto:yuecideng@link.cuhk.edu.cn"><i class="fas fa-envelope"></i> Email</a>
       <a href="https://scholar.google.com/citations?user=URHu9IUAAAAJ"><i class="ai ai-google-scholar"></i> Scholar</a>
