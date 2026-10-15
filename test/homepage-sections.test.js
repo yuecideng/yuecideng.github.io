@@ -18,18 +18,18 @@ test("renders projects as a two-item editorial collection", () => {
   assert.ok(grid.includes('aria-label="Research projects"'));
 });
 
-test("renders publication controls and eleven publication rows", () => {
+test("renders publication controls and twelve publication rows", () => {
   assert.ok(homepage.includes('id="pub-filter-bar"'));
   assert.ok(homepage.includes('class="publication-list"'));
   assert.equal(
     (homepage.match(/class="research-row publication-row pub-card"/g) || []).length,
-    11
+    12
   );
-  assert.equal((homepage.match(/<h3 class="card-title">/g) || []).length, 13);
+  assert.equal((homepage.match(/<h3 class="card-title">/g) || []).length, 14);
   assert.equal(
     (homepage.match(/class="research-row publication-row pub-card" data-year="2026"/g) || [])
       .length,
-    8
+    9
   );
   assert.equal(
     (homepage.match(/class="research-row publication-row pub-card" data-year="2025"/g) || [])
@@ -98,7 +98,7 @@ test("keeps project cards compact while preserving complete details", () => {
 });
 
 test("renders publication venues and complete descriptions", () => {
-  assert.equal((homepage.match(/class="card-venue venue-pill"/g) || []).length, 8);
+  assert.equal((homepage.match(/class="card-venue venue-pill"/g) || []).length, 9);
   assert.equal((homepage.match(/class="publication-summary"/g) || []).length, 0);
   assert.ok(!/<details[^>]*\sopen(?:\s|>)/.test(homepage));
   assert.ok(homepage.includes("PAct generates complete, part-decomposed"));

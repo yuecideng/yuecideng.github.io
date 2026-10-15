@@ -96,6 +96,30 @@ I welcome research or open source project collaborations on Embodied Intelligenc
 <div class="publication-list" aria-label="Selected publications">
 <article class="research-row publication-row pub-card" data-year="2026">
   <div class="card-image">
+    <img src="images/research/rico.png" alt="RiCo framework for local contact reasoning and rigid-body motion prediction" loading="lazy" decoding="async">
+  </div>
+  <div class="card-content">
+    <h3 class="card-title"><a href="https://arxiv.org/abs/2610.12333" class="papertitle">RiCo: Neural Simulation of Rigid-Body Interactions via Local Contact Reasoning</a></h3>
+    <div class="card-authors">
+      Ruixiang Ouyang,
+      <a href="https://qiaoguanren.github.io/">Guanren Qiao</a>,
+      Fansen Meng,
+      <a href="https://yuecideng.github.io"><strong>Yueci Deng</strong></a>,
+      Ruixing Jin,
+      <a href="http://kuijia.site/">Kui Jia</a>,
+      <a href="http://guiliang.me/">Guiliang Liu</a><sup>†</sup>
+    </div>
+    <div class="card-venue venue-pill">arXiv preprint, 2026</div>
+    <div class="action-links publication-links">
+      <a href="https://arxiv.org/abs/2610.12333" class="action-link"><i class="ai ai-arxiv" aria-hidden="true"></i> arXiv</a>
+      <a href="https://arxiv.org/pdf/2610.12333" class="action-link"><i class="fas fa-file-pdf" aria-hidden="true"></i> PDF</a>
+    </div>
+    <p class="card-desc">RiCo learns rigid-body dynamics through sparse local contact neighborhoods and intra-object reasoning, improving motion prediction and contact fidelity while generalizing zero-shot to scenes with 270 objects and showing preliminary sim-to-real transfer in multi-ball collisions.</p>
+  </div>
+</article>
+
+<article class="research-row publication-row pub-card" data-year="2026">
+  <div class="card-image">
     <img src="https://robosyn-bench.net/static/assets/robosynchallenge-pipeline.png" alt="RoboSynChallenge">
   </div>
   <div class="card-content">
