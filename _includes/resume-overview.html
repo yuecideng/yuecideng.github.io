@@ -1,0 +1,30 @@
+{% assign cv = site.data.cv %}
+{% assign dexforce = cv.work | where: 'company', 'DexForce Technology Co., Ltd.' | first %}
+{% assign grant = cv.projects | where: 'role', 'Principal Investigator' | first %}
+<section class="background-section" aria-labelledby="background">
+  <div class="section-heading">
+    <h2 id="background">Background &amp; Experience</h2>
+    <a class="resume-text-link" href="{{ '/cv/' | relative_url }}">Full CV &rarr;</a>
+  </div>
+  <div class="background-grid">
+    <div>
+      <h3 class="background-label">Education</h3>
+      <ul class="background-education">
+        {% for entry in cv.education %}
+        <li>
+          <span class="background-years">{{ entry.startDate | slice: 0, 4 }} – {% if entry.endDate == 'Present' %}Present{% else %}{{ entry.endDate | slice: 0, 4 }}{% endif %}</span>
+          <strong>{{ entry.shortName | escape }}</strong>
+          <span>{% if forloop.last %}Joint B.Eng. programme · First Class Honours (Glasgow){% else %}{{ entry.area | escape }}{% endif %}</span>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+    <div class="background-highlights">
+      <h3 class="background-label">Industry &amp; Research</h3>
+      <p><strong>{{ dexforce.position | escape }} · DexForce</strong><br><span class="background-earlier">{{ dexforce.dateLabel | escape }}</span><br>{{ dexforce.highlights.first | escape }}</p>
+      <p class="background-earlier">Industry experience at Pudu, RVBUST, Appotronics, and Panasonic R&amp;D.</p>
+      <p><strong>{{ grant.role | escape }} · {{ grant.funding | escape }}</strong><br><span class="background-earlier">{{ grant.dateLabel | escape }}</span><br>{{ grant.summary | escape }}</p>
+      <a class="resume-text-link" href="{{ '/cv/#grants-projects' | relative_url }}">Grants &amp; open-source contributions &rarr;</a>
+    </div>
+  </div>
+</section>

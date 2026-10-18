@@ -18,3 +18,11 @@ package-lock.json
 
 # Ignore folders related to IDEs
 .vscode/
+
+# Standalone LaTeX CV build products (keep the published files/cv.pdf).
+/resume/build/
+/resume/*.aux
+/resume/*.log
+/resume/*.out
+/resume/*.pdf
+/resume/*.synctex.gz

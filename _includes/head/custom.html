@@ -4,6 +4,9 @@
 
 <!-- Custom styles -->
 <link rel="stylesheet" href="{{ base_path }}/assets/css/custom.css"/>
+{% if page.resume or page.url == '/' %}
+<link rel="stylesheet" href="{{ '/assets/css/resume.css' | relative_url }}"/>
+{% endif %}
 
 <!-- Google Fonts (Lato) -->
 <link rel="preconnect" href="https://fonts.googleapis.com">

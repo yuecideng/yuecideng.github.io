@@ -1,18 +1,15 @@
 ---
-layout: archive
-title: "CV"
+layout: single
+title: "Curriculum Vitae"
 permalink: /cv/
-author_profile: true
+author_profile: false
+resume: true
+excerpt: "Education, industry experience, research grants, open-source contributions, publications, skills, and patents."
 redirect_from:
   - /resume
+  - /resume/
+  - /cv-json/
+  - /resume-json
 ---
 
-{% include base_path %}
-
-Education
-======
-* Ph.D. in Computer Science, The Chinese University of Hong Kong, Shenzhen (CUHK-SZ), 2025 - Present
-  * Supervisor: Prof. Kui Jia
-* M.S. in Nanyang Technological University (NTU), Singapore, 2018 - 2019
-* B.S. in University of Electronic Science and Technology of China (UESTC), 2014 - 2018
-
+{% include cv-template.html %}

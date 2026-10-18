@@ -1,147 +1,417 @@
 {
   "basics": {
-    "name": "Yueci Deng (邓岳慈）",
+    "name": "Yueci Deng (邓岳慈)",
+    "label": "Ph.D. Student · Systems, Simulation & Embodied Intelligence",
     "email": "yuecideng@link.cuhk.edu.cn",
-    "phone": "(+86) 15361017685",
     "website": "https://yuecideng.github.io/",
-    "summary": "Currently first-year PhD student", 
+    "summary": "I build high-performance simulation systems and learning infrastructure for embodied intelligence, connecting 3D perception, synthetic data generation, and Sim2Real robot learning.",
     "location": {
-      "address": "",
-      "postalCode": "",
       "city": "Shenzhen, China",
-      "countryCode": "CN",
-      "region": ""
+      "countryCode": "CN"
     },
     "profiles": [
       {
         "network": "Google Scholar",
-        "username": "",
         "url": "https://scholar.google.com/citations?user=URHu9IUAAAAJ&hl=en"
       },
       {
         "network": "GitHub",
-        "username": "yuecideng",
         "url": "https://github.com/yuecideng"
       }
     ]
   },
-  "work": [],
   "education": [
     {
       "institution": "The Chinese University of Hong Kong, Shenzhen",
-      "area": "PhD in Computer Science",
-      "studyType": "full-time",
+      "shortName": "CUHK-Shenzhen",
+      "area": "Ph.D. in Computer Science",
       "startDate": "2025",
       "endDate": "Present",
-      "gpa": null,
-      "courses": []
+      "dateLabel": "2025 – Present",
+      "details": [
+        "School of Data Science. Supervisor: Prof. Kui Jia."
+      ]
     },
     {
-      "institution": "GitHub University",
-      "area": "M.S. in Jekyll",
-      "studyType": "",
-      "startDate": "",
-      "endDate": "2014",
-      "gpa": null,
-      "courses": []
+      "institution": "Nanyang Technological University, Singapore",
+      "shortName": "NTU, Singapore",
+      "area": "M.Sc. in Signal Processing",
+      "startDate": "2018-07",
+      "endDate": "2019-06",
+      "dateLabel": "Jul 2018 – Jun 2019",
+      "details": [
+        "Electrical and Electronic Engineering."
+      ]
     },
     {
-      "institution": "GitHub University",
-      "area": "B.S. in GitHub",
-      "studyType": "",
-      "startDate": "",
-      "endDate": "2012",
-      "gpa": null,
-      "courses": []
+      "institution": "University of Electronic Science and Technology of China / University of Glasgow",
+      "shortName": "UESTC / University of Glasgow",
+      "area": "B.Eng. in Electronic Information Engineering / B.Eng. (Honours) in Electronics and Electrical Engineering",
+      "startDate": "2014-09",
+      "endDate": "2018-06",
+      "dateLabel": "Sep 2014 – Jun 2018",
+      "details": [
+        "Joint college programme. University of Glasgow: First Class Honours."
+      ]
     }
   ],
-  "skills": [],
-  "languages": [],
-  "interests": [],
-  "references": [],
+  "work": [
+    {
+      "company": "DexForce Technology Co., Ltd.",
+      "position": "Head of Core Engine Team",
+      "type": "Full-time",
+      "startDate": "2022-08",
+      "endDate": "2025-08",
+      "dateLabel": "Aug 2022 – Aug 2025",
+      "highlights": [
+        "Led core engine development for a Sim2Real embodied AI platform, spanning robot simulation and large-scale synthetic data generation.",
+        "Built training and deployment infrastructure and a unified computer vision and robotics library for product development.",
+        "Developed physics-based simulation, rendering, and domain-adaptation pipelines for robotic perception and control."
+      ]
+    },
+    {
+      "company": "Pudu Technology Inc.",
+      "position": "Computer Vision Engineer",
+      "type": "Full-time",
+      "startDate": "2021-12",
+      "endDate": "2022-07",
+      "dateLabel": "Dec 2021 – Jul 2022",
+      "highlights": [
+        "Developed 6D pose estimation, scene reconstruction, and collision avoidance for catering service robots.",
+        "Automated annotation for synthetic, mixed-reality, and real-world data; researched Sim2Real learning with Tsinghua Shenzhen International Graduate School."
+      ]
+    },
+    {
+      "company": "RVBUST Inc.",
+      "position": "Computer Vision Engineer",
+      "type": "Full-time",
+      "startDate": "2020-04",
+      "endDate": "2021-12",
+      "dateLabel": "Apr 2020 – Dec 2021",
+      "highlights": [
+        "Developed point cloud registration, recognition, segmentation, and 6D pose estimation for industrial robot vision.",
+        "Led a cross-functional team developing bin-picking and 3D inspection products."
+      ]
+    },
+    {
+      "company": "Appotronics Inc., Research Institute",
+      "position": "Computer Vision Engineer",
+      "type": "Full-time",
+      "startDate": "2019-08",
+      "endDate": "2020-04",
+      "dateLabel": "Aug 2019 – Apr 2020",
+      "highlights": [
+        "Developed projector autofocus and calibration algorithms for camera alignment, screen correction, and distortion compensation.",
+        "Prototyped 3D projection mapping and projected AR systems, and authored related patents."
+      ]
+    },
+    {
+      "company": "Panasonic R&D Centre Singapore",
+      "position": "Research Engineer",
+      "type": "Internship",
+      "startDate": "2018-09",
+      "endDate": "2019-04",
+      "dateLabel": "Sep 2018 – Apr 2019",
+      "highlights": [
+        "Developed object detection, pose estimation, and point cloud processing for robotic picking.",
+        "Researched deep reinforcement learning for motion planning in simulation."
+      ],
+      "url": "https://github.com/yuecideng/Ur5_DRL",
+      "linkLabel": "Robot learning code"
+    }
+  ],
+  "projects": [
+    {
+      "name": "Development of Multimodal Databases for Robot Learning of Human Skills",
+      "role": "Principal Investigator",
+      "startDate": "2024-12",
+      "endDate": "2026-12",
+      "dateLabel": "Dec 2024 – Dec 2026",
+      "funding": "RMB 4 million",
+      "organization": "Shenzhen Science and Technology Innovation Project (深圳市具身智能重大专项)",
+      "summary": "Lead simulator-based data generation, Real2Sim mapping, and multimodal dataset and skill database development for robot learning."
+    },
+    {
+      "name": "EmbodiChain",
+      "role": "Project Lead",
+      "url": "https://github.com/DexForce/EmbodiChain",
+      "links": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/DexForce/EmbodiChain"
+        },
+        {
+          "label": "Website",
+          "url": "https://dexforce.com/embodichain/index.html#/"
+        }
+      ],
+      "summary": "A modular, GPU-accelerated platform for simulation, synthetic data generation, and robot policy training and evaluation, supporting Sim2Real transfer."
+    },
+    {
+      "name": "Open3D",
+      "role": "Open-source Collaborator",
+      "startDate": "2022-04",
+      "endDate": "Present",
+      "dateLabel": "Apr 2022 – Present",
+      "url": "https://github.com/isl-org/Open3D",
+      "summary": "Collaborate on tensor-based geometry, 3D reconstruction, and the tensor backend of an open-source 3D data processing library.",
+      "links": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/isl-org/Open3D"
+        },
+        {
+          "label": "Website",
+          "url": "https://www.open3d.org/"
+        }
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "name": "Programming & tools",
+      "keywords": [
+        "C / C++ / CUDA",
+        "Python",
+        "CMake",
+        "Git"
+      ]
+    },
+    {
+      "name": "Research & engineering",
+      "keywords": [
+        "3D Computer Vision",
+        "Robotics",
+        "Machine Learning",
+        "Computer Graphics",
+        "Differentiable Simulation"
+      ]
+    },
+    {
+      "name": "Delivery",
+      "keywords": [
+        "Applied R&D",
+        "Technology Productization",
+        "Large-scale Software Development"
+      ]
+    }
+  ],
+  "patents": [
+    {
+      "number": "CN114155291A",
+      "name": "Box pose recognition method, apparatus, terminal and storage medium.",
+      "url": "https://patents.google.com/patent/CN114155291A/zh",
+      "assignee": "RVBUST",
+      "kind": "Published application"
+    },
+    {
+      "number": "CN114653629B",
+      "name": "Vision-based sorting method, intelligent sorting system and readable storage medium.",
+      "url": "https://patents.google.com/patent/CN114653629B/zh",
+      "assignee": "RVBUST",
+      "kind": "Granted invention"
+    },
+    {
+      "number": "CN114820781A",
+      "name": "Machine vision-based intelligent handling method, apparatus, system and storage medium.",
+      "url": "https://patents.google.com/patent/CN114820781A/zh",
+      "assignee": "RVBUST",
+      "kind": "Published application"
+    },
+    {
+      "number": "CN217453968U",
+      "name": "Robot, robotic arm and pneumatic gripper.",
+      "url": "https://patents.google.com/patent/CN217453968U/zh",
+      "assignee": "Pudu",
+      "kind": "Granted utility model"
+    },
+    {
+      "number": "CN121018513A",
+      "name": "Robot URDF model free assembly and constraint management method and system.",
+      "url": "https://patents.google.com/patent/CN121018513A/zh",
+      "assignee": "DexForce",
+      "kind": "Published application"
+    },
+    {
+      "number": "CN121683799A",
+      "name": "Semantic recognition-based dynamic URDF model construction system and method.",
+      "url": "https://patents.google.com/patent/CN121683799A/zh",
+      "assignee": "DexForce",
+      "kind": "Published application"
+    },
+    {
+      "number": "CN121934817A",
+      "name": "Robot URDF model construction method, apparatus, electronic device and storage medium.",
+      "url": "https://patents.google.com/patent/CN121934817A/zh",
+      "assignee": "DexForce",
+      "kind": "Published application"
+    },
+    {
+      "number": "CN122595497A",
+      "name": "Robot model generation method, apparatus, device and medium.",
+      "url": "https://patents.google.com/patent/CN122595497A/zh",
+      "assignee": "DexForce",
+      "kind": "Published application"
+    },
+    {
+      "number": "CN122574319A",
+      "name": "Grasping pose generation method, apparatus, device and computer-readable storage medium.",
+      "url": "https://patents.google.com/patent/CN122574319A/zh",
+      "assignee": "DexForce",
+      "kind": "Published application"
+    },
+    {
+      "number": "CN122595647A",
+      "name": "Data processing method, apparatus, computer, storage medium and program product.",
+      "url": "https://patents.google.com/patent/CN122595647A/zh",
+      "assignee": "DexForce",
+      "kind": "Published application"
+    },
+    {
+      "number": "CN113359381B",
+      "name": "Projection system and projection screen adjustment method.",
+      "url": "https://patents.google.com/patent/CN113359381B/zh",
+      "assignee": "Appotronics",
+      "kind": "Granted invention"
+    },
+    {
+      "number": "CN113467600B",
+      "name": "Augmented reality-based information display method, system, apparatus and projection device.",
+      "url": "https://patents.google.com/patent/CN113467600B/zh",
+      "assignee": "Appotronics",
+      "kind": "Granted invention"
+    },
+    {
+      "number": "CN113467601B",
+      "name": "Augmented reality-based information display method, system, apparatus and projection device.",
+      "url": "https://patents.google.com/patent/CN113467601B/zh",
+      "assignee": "Appotronics",
+      "kind": "Granted invention"
+    },
+    {
+      "number": "CN113497925B",
+      "name": "Projection focusing method and projection focusing device.",
+      "url": "https://patents.google.com/patent/CN113497925B/zh",
+      "assignee": "Appotronics",
+      "kind": "Granted invention"
+    },
+    {
+      "number": "CN113573035A",
+      "name": "Vision-based adaptive AR-HUD brightness adjustment method.",
+      "url": "https://patents.google.com/patent/CN113573035A/zh",
+      "assignee": "Appotronics",
+      "kind": "Published application"
+    },
+    {
+      "number": "CN113934098B",
+      "name": "Projection device, automatic focusing method and apparatus.",
+      "url": "https://patents.google.com/patent/CN113934098B/zh",
+      "assignee": "Appotronics",
+      "kind": "Granted invention"
+    },
+    {
+      "number": "CN114286064A",
+      "name": "Real-time focusing method, apparatus, system and computer-readable storage medium.",
+      "url": "https://patents.google.com/patent/CN114286064A/zh",
+      "assignee": "Appotronics",
+      "kind": "Published application"
+    }
+  ],
   "publications": [
     {
-      "name": "Paper Title Number 1",
-      "publisher": "Journal 1",
-      "releaseDate": "2009-10-01",
-      "website": "http://academicpages.github.io/files/paper1.pdf",
-      "summary": "This paper is about the number 1. The number 2 is left for future work."
+      "name": "RiCo: Neural Simulation of Rigid-Body Interactions via Local Contact Reasoning",
+      "publisher": "arXiv preprint",
+      "releaseDate": "2026",
+      "authors": "Ruixiang Ouyang, Guanren Qiao, Fansen Meng, Yueci Deng, Ruixing Jin, Kui Jia, Guiliang Liu†",
+      "type": "preprint",
+      "website": "https://arxiv.org/abs/2610.12333"
     },
     {
-      "name": "Paper Title Number 2",
-      "publisher": "Journal 1",
-      "releaseDate": "2010-10-01",
-      "website": "http://academicpages.github.io/files/paper2.pdf",
-      "summary": "This paper is about the number 2. The number 3 is left for future work."
+      "name": "RoboSynChallenge: Mastering Real-World Dexterity via Generalizing Synthesized Manipulation Skills",
+      "publisher": "NeurIPS Competition Report",
+      "releaseDate": "2026",
+      "authors": "RoboSynChallenge Organizing Team",
+      "type": "competition-report",
+      "website": "https://robosyn-bench.net/material/RoboSynChallenge-report.pdf"
     },
     {
-      "name": "Paper Title Number 3",
-      "publisher": "Journal 1",
-      "releaseDate": "2015-10-01",
-      "website": "http://academicpages.github.io/files/paper3.pdf",
-      "summary": "This paper is about the number 3. The number 4 is left for future work."
+      "name": "PAct: Part-Decomposed Single-View Articulated Object Generation",
+      "publisher": "ACM SIGGRAPH Asia",
+      "releaseDate": "2026",
+      "authors": "Qingming Liu, Xinyue Yao, Shuyuan Zhang, Yueci Deng, Guiliang Liu, Zhen Liu†, Kui Jia",
+      "type": "conference",
+      "website": "https://arxiv.org/abs/2602.14965"
     },
     {
-      "name": "Paper Title Number 4",
-      "publisher": "GitHub Journal of Bugs",
-      "releaseDate": "2024-02-17",
-      "website": "http://academicpages.github.io/files/paper3.pdf",
-      "summary": "This paper is about fixing template issue #693."
-    }
-  ],
-  "presentations": [
-    {
-      "name": "Talk 1 on Relevant Topic in Your Field",
-      "event": "UC San Francisco, Department of Testing",
-      "date": "2012-03-01",
-      "location": "San Francisco, CA, USA",
-      "description": ""
+      "name": "Backpropagating Through Simulation: Analytic Policy Gradients for Sample and Learning Efficient Differentiable Continuous Control",
+      "publisher": "arXiv preprint",
+      "releaseDate": "2026",
+      "authors": "Yueci Deng†",
+      "type": "preprint",
+      "website": "https://arxiv.org/pdf/2606.21525"
     },
     {
-      "name": "Tutorial 1 on Relevant Topic in Your Field",
-      "event": "UC-Berkeley Institute for Testing Science",
-      "date": "2013-03-01",
-      "location": "Berkeley, CA, USA",
-      "description": ""
+      "name": "Focus-Then-Contact: Speeding Up Robotic Contact-Rich Task Learning with Affordance-Guided Real-World Residual Reinforcement Learning",
+      "publisher": "ICML",
+      "releaseDate": "2026",
+      "authors": "Guanren Qiao, Ruixiang Ouyang, Sheng Xu, Ruixing Jin, Yueci Deng, Yunxin Tai, Kui Jia, Guiliang Liu†",
+      "type": "conference"
     },
     {
-      "name": "Talk 2 on Relevant Topic in Your Field",
-      "event": "London School of Testing",
-      "date": "2014-02-01",
-      "location": "London, UK",
-      "description": ""
+      "name": "From Reaction to Anticipation: Proactive Failure Recovery through Agentic Task Graph for Robotic Manipulation",
+      "publisher": "RSS",
+      "releaseDate": "2026",
+      "authors": "Sheng Xu, Ruixing Jin, Huayi Zhou, Bo Yue, Guanren Qiao, Yunxin Tai, Yueci Deng, Kui Jia, Guiliang Liu†",
+      "type": "conference",
+      "website": "https://arxiv.org/abs/2605.11951"
     },
     {
-      "name": "Conference Proceeding talk 3 on Relevant Topic in Your Field",
-      "event": "Testing Institute of America 2014 Annual Conference",
-      "date": "2014-03-01",
-      "location": "Los Angeles, CA, USA",
-      "description": ""
-    }
-  ],
-  "teaching": [
-    {
-      "course": "Teaching experience 1",
-      "institution": "University 1, Department",
-      "date": "2014-01-01",
-      "role": "Undergraduate course",
-      "description": ""
+      "name": "YOTO++: Learning Long-Horizon Closed-Loop Bimanual Manipulation from One-Shot Human Video Demonstrations",
+      "publisher": "IEEE TPAMI",
+      "releaseDate": "2026",
+      "authors": "Huayi Zhou, Ruixiang Wang, Yunxin Tai, Yueci Deng, Guiliang Liu, Kui Jia†",
+      "type": "journal",
+      "website": "https://ieeexplore.ieee.org/document/11495283/"
     },
     {
-      "course": "Teaching experience 2",
-      "institution": "University 1, Department",
-      "date": "2015-01-01",
-      "role": "Workshop",
-      "description": ""
-    }
-  ],
-  "portfolio": [
+      "name": "EWA: Aligning Video World Models with Executable Robot Actions via Inverse Dynamics Rewards",
+      "publisher": "arXiv preprint",
+      "releaseDate": "2026",
+      "authors": "Ruixiang Wang, Qingming Liu, Yueci Deng, Guiliang Liu, Zhen Liu†, Kui Jia",
+      "type": "preprint",
+      "website": "https://arxiv.org/pdf/2603.17808"
+    },
     {
-      "name": "Portfolio item number 1",
-      "category": "portfolio",
-      "date": "",
-      "url": "",
-      "description": "Short description of portfolio item number 1<br/><img src='/images/500x300.png'>"
+      "name": "Sim2Real VLA: Zero-Shot Generalization of Synthesized Skills to Realistic Manipulation",
+      "publisher": "ICLR Poster",
+      "releaseDate": "2026",
+      "authors": "Runyi Zhao, Sheng Xu, Ruixing Jin, Yueci Deng, Yunxin Tai, Kui Jia, Guiliang Liu†",
+      "type": "conference",
+      "website": "https://openreview.net/pdf?id=H4SyKHjd4c"
+    },
+    {
+      "name": "GS-World: An Engine-driven Learning Paradigm for Pursuing Embodied Intelligence using World Models of Generative Simulation",
+      "publisher": "Position paper",
+      "releaseDate": "2025",
+      "authors": "Guiliang Liu, Yueci Deng, Zhen Liu, Kui Jia†",
+      "type": "position",
+      "website": "https://www.researchgate.net/profile/Guiliang-Liu-2/publication/396641390_GS-World_An_Efficient_Engine-driven_Learning_Paradigm_for_Pursuing_Embodied_Intelligence_using_World_Models_of_Generative_Simulation/links/68f33c277d9a4d4e870a9a9d/GS-World-An-Efficient-Engine-driven-Learning-Paradigm-for-Pursuing-Embodied-Intelligence-using-World-Models-of-Generative-Simulation.pdf"
+    },
+    {
+      "name": "DexScale: Automating Data Scaling for Sim2Real Generalizable Robot Control",
+      "publisher": "ICML Poster",
+      "releaseDate": "2025",
+      "authors": "Guiliang Liu*, Yueci Deng*, Runyi Zhao, Huayi Zhou, Jian Chen, Jietao Chen, Ruiyan Xu, Yunxin Tai, Kui Jia†",
+      "type": "conference",
+      "website": "https://openreview.net/pdf?id=AVVXX0erKT"
+    },
+    {
+      "name": "You Only Teach Once: Learn One-Shot Bimanual Robotic Manipulation from Video Demonstrations",
+      "publisher": "RSS",
+      "releaseDate": "2025",
+      "authors": "Huayi Zhou, Ruixiang Wang, Yunxin Tai, Yueci Deng, Guiliang Liu, Kui Jia†",
+      "type": "conference",
+      "website": "https://arxiv.org/abs/2501.14208"
     }
   ]
 }

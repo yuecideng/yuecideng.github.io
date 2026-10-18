@@ -1,96 +1,84 @@
-# Academic Pages
-**Academic Pages is a GitHub Pages template for personal and professional portfolio-oriented websites.**
+# Yueci Deng — Personal Academic Website
 
-![Academic Pages template example](images/homepage.png "Academic Pages template example")
+This repository contains the source for [yuecideng.github.io](https://yuecideng.github.io/), the academic website of **Yueci Deng (邓岳慈)**, a Ph.D. student at the School of Data Science, The Chinese University of Hong Kong, Shenzhen.
 
-# Getting Started
+The site presents research on high-performance systems, simulation, Sim2Real learning, and embodied intelligence, together with selected projects, publications, and a curriculum vitae.
 
-1. Register a GitHub account if you don't have one and confirm your e-mail (required!)
-1. Click the "Use this template" button in the top right.
-1. On the "New repository" page, enter your public repository name as "[your GitHub username].github.io", which will also be your website's URL.
-1. Set site-wide configuration and add your content.
-1. Upload any files (like PDFs, .zip files, etc.) to the `files/` directory. They will appear at https://[your GitHub username].github.io/files/example.pdf.
-1. Check status by going to the repository settings, in the "GitHub pages" section
-1. (Optional) Use the Jupyter notebooks or python scripts in the `markdown_generator` folder to generate markdown files for publications and talks from a TSV file.
+## Website
 
-See more info at https://academicpages.github.io/
+- [Home and research overview](https://yuecideng.github.io/)
+- [Selected projects](https://yuecideng.github.io/#projects)
+- [Publications](https://yuecideng.github.io/#publications)
+- [Curriculum vitae](https://yuecideng.github.io/cv/)
 
-## Running locally
+## Local preview
 
-When you are initially working on your website, it is very useful to be able to preview the changes locally before pushing them to GitHub. To work locally you will need to:
-
-1. Clone the repository and made updates as detailed above.
-
-### Using a different IDE
-1. Make sure you have ruby-dev, bundler, and nodejs installed
-    
-    On most Linux distribution and [Windows Subsystem Linux](https://learn.microsoft.com/en-us/windows/wsl/about) the command is:
-    ```bash
-    sudo apt install ruby-dev ruby-bundler nodejs
-    ```
-    If you see error `Unable to locate package ruby-bundler`, `Unable to locate package nodejs `, run the following:
-    ```bash
-    sudo apt update && sudo apt upgrade -y
-    ```
-    then try run `sudo apt install ruby-dev ruby-bundler nodejs` again.
-
-    On MacOS the commands are:
-    ```bash
-    brew install ruby
-    brew install node
-    gem install bundler
-    ```
-1. Run `bundle install` to install ruby dependencies. If you get errors, delete Gemfile.lock and try again.
-
-    If you see file permission error like `Fetching bundler-2.6.3.gem ERROR:  While executing gem (Gem::FilePermissionError) You don't have write permissions for the /var/lib/gems/3.2.0 directory.` or `Bundler::PermissionError: There was an error while trying to write to /usr/local/bin.`
-    Install Gems Locally (Recommended):
-    ```bash
-    bundle config set --local path 'vendor/bundle'
-    ```
-    then try run `bundle install` again. If succeeded, you should see a folder called `vendor` and `.bundle`.
-
-1. Run `jekyll serve -l -H localhost` to generate the HTML and serve it from `localhost:4000` the local server will automatically rebuild and refresh the pages on change.
-    You may also try `bundle exec jekyll serve -l -H localhost` to ensure jekyll to use specific dependencies on your own local machine.
-
-If you are running on Linux it may be necessary to install some additional dependencies prior to being able to run locally: `sudo apt install build-essential gcc make`
-
-## Using Docker
-
-Working from a different OS, or just want to avoid installing dependencies? You can use the provided `Dockerfile` to build a container that will run the site for you if you have [Docker](https://www.docker.com/) installed.
-
-You can build and execute the container by running the following command in the repository:
+The site is built with Jekyll and the Academic Pages theme.
 
 ```bash
-chmod -R 777 .
-docker compose up
+bundle install
+bundle exec jekyll serve
 ```
 
-You should now be able to access the website from `localhost:4000`.
+Then open `http://localhost:4000`.
 
-### Using the DevContainer in VS Code
+## Standalone PDF CV
 
-If you are using [Visual Studio Code](https://code.visualstudio.com/) you can use the [Dev Container](https://code.visualstudio.com/docs/devcontainers/containers) that comes with this Repository. Normally VS Code detects that a development coontainer configuration is available and asks you if you want to use the container. If this doesn't happen you can manually start the container by **F1->DevContainer: Reopen in Container**. This restarts your VS Code in the container and automatically hosts your academic page locally on http://localhost:4000. All changes will be updated live to that page after a few seconds.
+The `resume/` directory contains a standalone LaTeX project migrated from
+`yueci_resume`, with an updated local `resume.cls` layout. It compiles independently
+of Jekyll and Node.js. Install TeX Live or MacTeX with XeLaTeX, then run:
 
-# Maintenance
+```bash
+bash scripts/build_cv.sh
+```
 
-Bug reports and feature requests to the template should be [submitted via GitHub](https://github.com/academicpages/academicpages.github.io/issues/new/choose). For questions concerning how to style the template, please feel free to start a [new discussion on GitHub](https://github.com/academicpages/academicpages.github.io/discussions).
+The script compiles twice and copies the result to `files/cv.pdf`, which the CV
+page exposes through its **Download PDF** link. Commit that PDF with source
+updates so GitHub Pages can serve it without a LaTeX installation.
 
-This repository was forked (then detached) by [Stuart Geiger](https://github.com/staeiou) from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/), which is © 2016 Michael Rose and released under the MIT License (see LICENSE.md). It is currently being maintained by [Robert Zupko](https://github.com/rjzupkoii) and additional maintainers would be welcomed.
+To compile only the LaTeX project, including after copying `resume/` elsewhere:
 
-## Bugfixes and enhancements
+```bash
+cd resume
+xelatex -no-shell-escape -interaction=nonstopmode -halt-on-error main.tex
+xelatex -no-shell-escape -interaction=nonstopmode -halt-on-error main.tex
+```
 
-If you have bugfixes and enhancements that you would like to submit as a pull request, you will need to [fork](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo) this repository as opposed to using it as a template. This will also allow you to [synchronize your copy](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/syncing-a-fork) of template to your fork as well.
+This produces `resume/main.pdf`. Edit `resume/main.tex` for PDF content and
+`resume/resume.cls` for its layout. The web CV remains maintained separately in
+`_data/cv.json`; update both when changing shared information. The PDF uses the
+website's academic email and includes its Ph.D. entry.
 
-Unfortunately, one logistical issue with a template theme like Academic Pages that makes it a little tricky to get bug fixes and updates to the core theme. If you use this template and customize it, you will probably get merge conflicts if you attempt to synchronize. If you want to save your various .yml configuration files and markdown files, you can delete the repository and fork it again. Or you can manually patch.
+The PDF uses two A4 pages: education, industry experience, and research projects
+on the first page; all publications, technical skills, and patents on the second.
+The local class controls typography, section spacing, aligned dates, and page footers.
 
----
-<div align="center">
-    
-![pages-build-deployment](https://github.com/academicpages/academicpages.github.io/actions/workflows/pages/pages-build-deployment/badge.svg)
-[![GitHub contributors](https://img.shields.io/github/contributors/academicpages/academicpages.github.io.svg)](https://github.com/academicpages/academicpages.github.io/graphs/contributors)
-[![GitHub release](https://img.shields.io/github/v/release/academicpages/academicpages.github.io)](https://github.com/academicpages/academicpages.github.io/releases/latest)
-[![GitHub license](https://img.shields.io/github/license/academicpages/academicpages.github.io?color=blue)](https://github.com/academicpages/academicpages.github.io/blob/master/LICENSE)
+Publication entries follow the homepage, including author order, contribution
+markers, venue/status, and paper links. After editing the homepage cards, run:
 
-[![GitHub stars](https://img.shields.io/github/stars/academicpages/academicpages.github.io)](https://github.com/academicpages/academicpages.github.io)
-[![GitHub forks](https://img.shields.io/github/forks/academicpages/academicpages.github.io)](https://github.com/academicpages/academicpages.github.io/fork)
-</div>
+```bash
+python3 scripts/sync_cv_publications.py
+bash scripts/build_cv.sh
+```
+
+The sync script updates `_data/cv.json` and `resume/publications.tex`. Keep the
+generated TeX file with `main.tex` and `resume.cls` when copying the standalone
+project. Edit homepage cards rather than the generated publication entries.
+
+## Content structure
+
+- `_pages/about.md` — homepage, research overview, projects, and publications
+- `_data/cv.json` — CV content; edit non-publication sections directly, sync publications from the homepage
+- `_pages/cv.md` and `_includes/cv-template.html` — full CV at `/cv/` (legacy CV URLs redirect here)
+- `_includes/resume-overview.html` — compact background and experience overview after Research on the homepage
+- `assets/css/resume.css` — responsive, theme-aware styles for the CV and homepage overview
+- `resume/main.tex` and `resume/resume.cls` — independently compilable LaTeX CV
+- `resume/publications.tex` — publication list generated from the homepage
+- `files/cv.pdf` — compiled PDF available from the web CV
+- `_config.yml` — site metadata and author links
+- `assets/` and `_sass/` — styling and client-side behavior
+- `images/` — portraits, project media, and research figures
+
+## Credits
+
+Built with [Jekyll](https://jekyllrb.com/) and [Academic Pages](https://academicpages.github.io/), which is based on [Minimal Mistakes](https://mmistakes.github.io/minimal-mistakes/). See [LICENSE](LICENSE) for licensing information.

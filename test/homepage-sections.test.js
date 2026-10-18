@@ -75,7 +75,7 @@ test("renders the approved editorial section headings", () => {
   assert.ok(homepage.includes('<h2 id="publications">Publications</h2>'));
 });
 
-test("keeps project cards compact while preserving complete details", () => {
+test("keeps project cards compact with the current CV roles and descriptions", () => {
   assert.equal((homepage.match(/class="research-row project-row"/g) || []).length, 2);
   assert.ok(
     homepage.includes(
@@ -93,8 +93,20 @@ test("keeps project cards compact while preserving complete details", () => {
     )
   );
   assert.ok(
-    homepage.includes("All of these components work seamlessly together")
+    homepage.includes("A modular, GPU-accelerated platform for simulation, synthetic data generation")
   );
+  assert.ok(homepage.includes("<strong>Project Lead</strong>"));
+  assert.ok(homepage.includes("<strong>Open-source Collaborator</strong>"));
+  assert.ok(homepage.includes("Collaborate on tensor-based geometry, 3D reconstruction"));
+});
+
+test("shows the updated employment dates, joint degrees, and PDF CV entry", () => {
+  const intro = homepage.slice(homepage.indexOf('<div class="intro">'), homepage.indexOf('<section class="research-agenda-section"'));
+  assert.ok(intro.includes("Aug 2022 – Aug 2025"));
+  assert.ok(!intro.includes("Aug 2022 – Present"));
+  assert.ok(intro.includes("joint B.Eng. degrees from UESTC and the University of Glasgow"));
+  assert.ok(intro.includes("First Class Honours from Glasgow"));
+  assert.ok(/href="\/files\/cv\.pdf" download/.test(intro));
 });
 
 test("renders publication venues and complete descriptions", () => {

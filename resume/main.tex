@@ -1,0 +1,113 @@
+% !TEX program = xelatex
+\documentclass{resume}
+\usepackage[UTF8,fontset=fandol,scheme=plain]{ctex}
+\usepackage[left=17mm,right=17mm,top=13mm,bottom=16mm,footskip=9mm]{geometry}
+\setmainfont{texgyrepagella-regular.otf}[
+  BoldFont=texgyrepagella-bold.otf,
+  ItalicFont=texgyrepagella-italic.otf,
+  BoldItalicFont=texgyrepagella-bolditalic.otf]
+\usepackage[colorlinks=true,urlcolor=cvAccent,linkcolor=cvAccent]{hyperref}
+\hypersetup{pdftitle={Yueci Deng - Curriculum Vitae},pdfauthor={Yueci Deng}}
+\AtBeginDocument{\color{cvText}\setlength{\parindent}{0pt}\fontsize{10}{12}\selectfont}
+
+\begin{document}
+{\fontsize{24}{27}\selectfont\bfseries Yueci Deng}\hfill
+{\small\color{cvMuted}Shenzhen, China}\par
+\vspace{3pt}
+{\sffamily\fontsize{9.5}{12}\selectfont\color{cvAccent}
+Systems, Simulation \& Embodied Intelligence\par}
+\vspace{4pt}
+{\fontsize{9}{11}\selectfont
+\href{mailto:yuecideng@link.cuhk.edu.cn}{yuecideng@link.cuhk.edu.cn}
+\enspace\textbar\enspace\href{https://yuecideng.github.io/}{yuecideng.github.io}
+\enspace\textbar\enspace\href{https://github.com/yuecideng}{GitHub}
+\enspace\textbar\enspace\href{https://scholar.google.com/citations?user=URHu9IUAAAAJ}{Google Scholar}\par}
+
+\begin{rSection}{Education}
+\cveducation{The Chinese University of Hong Kong, Shenzhen}{2025 - Present}
+{Ph.D. in Computer Science, School of Data Science. Supervisor: Prof. Kui Jia.}
+\cveducation{Nanyang Technological University, Singapore}{Jul 2018 - Jun 2019}
+{M.Sc. in Signal Processing, Electrical and Electronic Engineering.}
+\cveducation{UESTC / University of Glasgow}{Sep 2014 - Jun 2018}
+{Joint B.Eng. programme: Electronic Information Engineering (UESTC); Electronics and Electrical Engineering (Glasgow), First Class Honours.}
+\end{rSection}
+
+\begin{rSection}{Industry Experience}
+\begin{rSubsection}{DexForce Technology Co., Ltd.}{Aug 2022 - Aug 2025}{Head of Core Engine Team}{}
+\item Led core engine development for a Sim2Real embodied AI platform, spanning robot simulation and large-scale synthetic data generation.
+\item Built training and deployment infrastructure and a unified computer vision and robotics library for product development.
+\item Developed physics-based simulation, rendering, and domain-adaptation pipelines for robotic perception and control.
+\end{rSubsection}
+
+\begin{rSubsection}{Pudu Technology Inc.}{Dec 2021 - Jul 2022}{Computer Vision Engineer}{}
+\item Developed 6D pose estimation, scene reconstruction, and collision avoidance for catering service robots.
+\item Automated annotation for synthetic, mixed-reality, and real-world data; researched Sim2Real learning with Tsinghua Shenzhen International Graduate School.
+\end{rSubsection}
+
+\begin{rSubsection}{RVBUST Inc.}{Apr 2020 - Dec 2021}{Computer Vision Engineer}{}
+\item Developed point cloud registration, recognition, segmentation, and 6D pose estimation for industrial robot vision.
+\item Led a cross-functional team developing bin-picking and 3D inspection products.
+\end{rSubsection}
+
+\begin{rSubsection}{Appotronics Inc., Research Institute}{Aug 2019 - Apr 2020}{Computer Vision Engineer}{}
+\item Developed projector autofocus and calibration algorithms for camera alignment, screen correction, and distortion compensation.
+\item Prototyped 3D projection mapping and projected AR systems, and authored related patents.
+\end{rSubsection}
+
+\begin{rSubsection}{Panasonic R\&D Centre Singapore}{Sep 2018 - Apr 2019}{Research Engineer}{Internship}
+\item Developed object detection, pose estimation, and point cloud processing for robotic picking.
+\item Researched deep reinforcement learning for motion planning in simulation. \href{https://github.com/yuecideng/Ur5\_DRL}{[Code]}
+\end{rSubsection}
+
+\end{rSection}
+
+\begin{rSection}{Research Grants \& Open Source}
+\cvproject{Multimodal Databases for Robot Learning of Human Skills}{Dec 2024 - Dec 2026}
+{Principal Investigator \enspace\textbar\enspace RMB 4 million \enspace\textbar\enspace 深圳市具身智能重大专项}
+{Lead simulator-based data generation, Real2Sim mapping, and multimodal dataset and skill database development for robot learning.}
+
+\cvproject{\href{https://github.com/DexForce/EmbodiChain}{EmbodiChain}}{}
+{Project Lead \enspace\textbar\enspace\href{https://github.com/DexForce/EmbodiChain}{GitHub} \enspace\textbar\enspace\href{https://dexforce.com/embodichain/index.html\#/}{Website}}
+{A modular, GPU-accelerated platform for simulation, synthetic data generation, and robot policy training and evaluation, supporting Sim2Real transfer.}
+
+\cvproject{\href{https://github.com/isl-org/Open3D}{Open3D}}{Apr 2022 - Present}
+{Open-source Collaborator \enspace\textbar\enspace\href{https://github.com/isl-org/Open3D}{GitHub} \enspace\textbar\enspace\href{https://www.open3d.org/}{Website}}
+{Collaborate on tensor-based geometry, 3D reconstruction, and the tensor backend of an open-source 3D data processing library.}
+\end{rSection}
+
+\clearpage
+{\small\sffamily\color{cvMuted}Yueci Deng\hfill Research \& Technical Profile\par}
+\input{publications}
+
+\begin{rSection}{Technical Skills}
+{\fontsize{9.3}{11.5}\selectfont
+\textbf{Programming \& tools}\enspace C / C++ / CUDA, Python, CMake, Git.\\
+\textbf{Research \& engineering}\enspace 3D vision, robotics, machine learning, computer graphics, differentiable simulation.\\
+\textbf{Delivery}\enspace Applied R\&D, technology productization, large-scale software development.\par}
+\end{rSection}
+
+\begin{rSection}{Patents and Applications}
+{\fontsize{9.1}{11}\selectfont
+\begin{itemize}[itemsep=1pt]
+\item \href{https://patents.google.com/patent/CN114155291A/zh}{\textbf{CN114155291A}} --- Box pose recognition method, apparatus, terminal and storage medium.
+\item \href{https://patents.google.com/patent/CN114653629B/zh}{\textbf{CN114653629B}} --- Vision-based sorting method, intelligent sorting system and readable storage medium.
+\item \href{https://patents.google.com/patent/CN114820781A/zh}{\textbf{CN114820781A}} --- Machine vision-based intelligent handling method, apparatus, system and storage medium.
+\item \href{https://patents.google.com/patent/CN217453968U/zh}{\textbf{CN217453968U}} --- Robot, robotic arm and pneumatic gripper.
+\item \href{https://patents.google.com/patent/CN121018513A/zh}{\textbf{CN121018513A}} --- Robot URDF model free assembly and constraint management method and system.
+\item \href{https://patents.google.com/patent/CN121683799A/zh}{\textbf{CN121683799A}} --- Semantic recognition-based dynamic URDF model construction system and method.
+\item \href{https://patents.google.com/patent/CN121934817A/zh}{\textbf{CN121934817A}} --- Robot URDF model construction method, apparatus, electronic device and storage medium.
+\item \href{https://patents.google.com/patent/CN122595497A/zh}{\textbf{CN122595497A}} --- Robot model generation method, apparatus, device and medium.
+\item \href{https://patents.google.com/patent/CN122574319A/zh}{\textbf{CN122574319A}} --- Grasping pose generation method, apparatus, device and computer-readable storage medium.
+\item \href{https://patents.google.com/patent/CN122595647A/zh}{\textbf{CN122595647A}} --- Data processing method, apparatus, computer, storage medium and program product.
+\item \href{https://patents.google.com/patent/CN113359381B/zh}{\textbf{CN113359381B}} --- Projection system and projection screen adjustment method.
+\item \href{https://patents.google.com/patent/CN113467600B/zh}{\textbf{CN113467600B}} --- Augmented reality-based information display method, system, apparatus and projection device.
+\item \href{https://patents.google.com/patent/CN113467601B/zh}{\textbf{CN113467601B}} --- Augmented reality-based information display method, system, apparatus and projection device.
+\item \href{https://patents.google.com/patent/CN113497925B/zh}{\textbf{CN113497925B}} --- Projection focusing method and projection focusing device.
+\item \href{https://patents.google.com/patent/CN113573035A/zh}{\textbf{CN113573035A}} --- Vision-based adaptive AR-HUD brightness adjustment method.
+\item \href{https://patents.google.com/patent/CN113934098B/zh}{\textbf{CN113934098B}} --- Projection device, automatic focusing method and apparatus.
+\item \href{https://patents.google.com/patent/CN114286064A/zh}{\textbf{CN114286064A}} --- Real-time focusing method, apparatus, system and computer-readable storage medium.
+\end{itemize}
+{\fontsize{8.2}{10}\selectfont\color{cvMuted}A: application publication; B: invention grant; U: utility model grant.\par}
+}
+\end{rSection}
+\end{document}

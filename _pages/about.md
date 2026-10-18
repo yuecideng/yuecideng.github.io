@@ -7,6 +7,11 @@ redirect_from:
   - /about.html
 ---
 
+{% assign cv = site.data.cv %}
+{% assign dexforce = cv.work | where: 'company', 'DexForce Technology Co., Ltd.' | first %}
+{% assign embodichain = cv.projects | where: 'name', 'EmbodiChain' | first %}
+{% assign open3d = cv.projects | where: 'name', 'Open3D' | first %}
+
 <div class="intro">
   <div class="intro-photo">
     <img src="images/dyc.png" alt="Yueci Deng">
@@ -14,11 +19,14 @@ redirect_from:
   <div class="intro-bio">
     <h1 class="intro-name">Yueci Deng (邓岳慈)</h1>
     <p class="intro-affil">Ph.D. Student, School of Data Science, CUHK-SZ</p>
-    <p class="intro-text">I am a PhD student at the Chinese University of Hong Kong, Shenzhen (CUHK-SZ), supervised by Prof <a href="http://kuijia.site/">Kui Jia</a>. I received my B.S. from UESTC (2014-2018) and M.S. from NTU, Singapore (2018-2019). Before joining CUHK-SZ, I worked as an architect at <a href="https://en.dexforce.com/core.html">DexForce Technology</a>, where I led the development of DexVerse<sup>TM</sup>, a Sim2Real AI Platform for Embodied Intelligence.</p>
+    <p class="intro-text">I am a Ph.D. student at the Chinese University of Hong Kong, Shenzhen (CUHK-SZ), supervised by Prof. <a href="http://kuijia.site/">Kui Jia</a>. {{ cv.basics.summary | escape }}</p>
+    <p class="intro-text">Previously, I led the core engine team at <a href="https://en.dexforce.com/core.html">DexForce Technology</a> ({{ dexforce.dateLabel | escape }}), building robot simulation, synthetic data, and model training and deployment infrastructure. I hold an M.Sc. in Signal Processing from NTU, Singapore, and joint B.Eng. degrees from UESTC and the University of Glasgow, with First Class Honours from Glasgow.</p>
     <div class="intro-links">
       <a href="mailto:yuecideng@link.cuhk.edu.cn"><i class="fas fa-envelope"></i> Email</a>
       <a href="https://scholar.google.com/citations?user=URHu9IUAAAAJ"><i class="ai ai-google-scholar"></i> Scholar</a>
       <a href="https://github.com/yuecideng"><i class="fab fa-github"></i> GitHub</a>
+      <a href="{{ '/cv/' | relative_url }}"><i class="fas fa-file-alt" aria-hidden="true"></i> CV</a>
+      <a href="{{ '/files/cv.pdf' | relative_url }}" download><i class="fas fa-file-pdf" aria-hidden="true"></i> PDF CV</a>
     </div>
   </div>
 </div>
@@ -42,6 +50,8 @@ redirect_from:
 </section>
 
 
+{% include resume-overview.html %}
+
 ## Collaborations & Opportunities
 
 I welcome research or open source project collaborations on Embodied Intelligence and Simulation Infrastructure. If you're interested in joint projects, code sharing, student internships, or industry partnerships, please contact me at <a href="mailto:yuecideng@link.cuhk.edu.cn">yuecideng@link.cuhk.edu.cn</a>.
@@ -60,7 +70,8 @@ I welcome research or open source project collaborations on Embodied Intelligenc
     <div class="card-links">
       <a href="https://dexforce.com/embodichain/index.html#/"><i class="fas fa-globe" aria-hidden="true"></i> Website</a> | <a href="https://github.com/DexForce/EmbodiChain"><i class="fab fa-github" aria-hidden="true"></i> Code</a>
     </div>
-    <p class="card-desc">EmbodiChain is a unified, GPU-accelerated framework designed for pushing the boundaries of embodied AI research and development. It integrates high-performance simulation, data collection via automated generative simulation techniques, data scaling pipeline, modular model architectures, and efficient training & evaluation tools. All of these components work seamlessly together to facilitate rapid experimentation and deployment of embodied intelligence and perform Sim2Real transfer into real-world robotic systems.</p>
+    <div class="card-authors"><strong>{{ embodichain.role | escape }}</strong></div>
+    <p class="card-desc">{{ embodichain.summary | escape }}</p>
   </div>
 </article>
 
@@ -73,7 +84,8 @@ I welcome research or open source project collaborations on Embodied Intelligenc
     <div class="card-links">
       <a href="https://www.open3d.org/"><i class="fas fa-globe" aria-hidden="true"></i> Website</a> | <a href="https://github.com/isl-org/Open3D"><i class="fab fa-github" aria-hidden="true"></i> Code</a>
     </div>
-    <p class="card-desc">The leading open-source library for 3D processing with 400K+ monthly downloads from PyPI. Open3D exposes a set of carefully selected data structures and algorithms in both C++ and Python for 3D data processing tasks including point cloud processing, mesh processing, and 3D visualization.</p>
+    <div class="card-authors"><strong>{{ open3d.role | escape }}</strong> · {{ open3d.dateLabel | escape }}</div>
+    <p class="card-desc">{{ open3d.summary | escape }}</p>
   </div>
 </article>
 </div>

@@ -366,6 +366,8 @@ def parse_portfolio(portfolio_dir):
 
 def create_cv_json(md_file, config_file, repo_root, output_file):
     """Create a JSON CV from markdown and other repository data."""
+    if '{% include cv-template.html %}' in Path(md_file).read_text(encoding='utf-8'):
+        raise SystemExit('CV content is maintained in _data/cv.json. Edit that file directly; the CV page and homepage overview render from it.')
     # Parse the markdown CV
     sections = parse_markdown_cv(md_file)
     
