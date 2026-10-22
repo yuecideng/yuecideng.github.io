@@ -63,7 +63,7 @@ I welcome research or open source project collaborations on Embodied Intelligenc
 <div class="project-list" aria-label="Research projects">
 <article class="research-row project-row">
   <div class="card-image">
-    <img src="images/embodichain_teaser.jpg" alt="EmbodiChain">
+    <img src="https://raw.githubusercontent.com/DexForce/EmbodiChain/main/assets/imgs/teaser.jpg" alt="EmbodiChain">
   </div>
   <div class="card-content">
     <h3 class="card-title"><a href="https://github.com/DexForce/EmbodiChain" class="papertitle">EmbodiChain: An end-to-end, GPU-accelerated, and modular platform for building generalized Embodied Intelligence</a></h3>
